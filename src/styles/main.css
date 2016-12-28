@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-.hexagon:nth-child(6n + 1) {
+.hexagon:nth-child(6n + 2) {
     clear: left;
 }
 
@@ -94,7 +94,7 @@
     display: inline-block;
     position: absolute;
     width: 50em;
-    padding: 5em;
+    padding: 0.5em 5em;
 }
 
 .section-title::before {
@@ -117,4 +117,21 @@
 .work-experience-title::before {
     background: url('../assets/experience-logo.gif');
     background-size: cover;
+}
+
+.experiences {
+    list-style: none;
+}
+
+.timespan {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.timespan time:first-child::after {
+    content: ' - '
+}
+
+.experience-description {
+    display: inline-block;
 }
