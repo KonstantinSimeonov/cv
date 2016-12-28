@@ -1,5 +1,12 @@
 {
     "fullname": "Konstantin Simeonov",
+    "workExperience": [
+        {
+            "from": 2015,
+            "to": 2016,
+            "description": "Technical Trainer @ Telerik Academy"
+        }
+    ],
     "skills": [
         {
             "name": "Git",
@@ -26,7 +33,7 @@
             "type": "tech"
         },
         {
-            "name": "Unix shell scripting/Linux expirience",
+            "name": "Shell scripting",
             "description": "TODO",
             "iconUrl": "/assets/default.jpg",
             "type": "tech"
@@ -60,6 +67,36 @@
             "description": "TODO",
             "iconUrl": "/assets/default.jpg",
             "type": "tech"
+        },
+        {
+            "name": "Presentation",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "soft"
+        },
+        {
+            "name": "Communication",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "soft"
+        },
+        {
+            "name": "Leadership",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "soft"
+        },
+        {
+            "name": "Organization",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "soft"
+        },
+        {
+            "name": "Creativity",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "soft"
         }
     ]
 }

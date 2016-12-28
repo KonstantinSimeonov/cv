@@ -2,38 +2,74 @@
     content: '';
     width: 0;
     display: block;
-    border-bottom: 30px solid #FF5050;
     border-left: 52px solid transparent;
     border-right: 52px solid transparent;
 }
 
-.hexagon:hover .skill-content {
+.hexagon::after {
+    content: '';
+    display: block;
+    width: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.hexagon.tech::before {
+    border-bottom: 30px solid #FF5050;
+}
+
+.hexagon.soft::before {
+    border-bottom: 30px solid #6666ff;
+}
+
+.hexagon.tech::after {
+    border-top: 30px solid #FF5050;
+}
+
+.hexagon.soft::after {
+    border-top: 30px solid #6666ff;
+}
+
+.hexagon.tech .skill-content {
+    background: #FF5050;
+}
+
+.hexagon.soft .skill-content {
+    background: #6666ff;
+}
+
+.hexagon.tech:hover .skill-content {
     background: #ff9999;
 }
 
-.hexagon:hover::before {
+.hexagon.tech:hover::before {
     border-bottom: 30px solid #ff9999;
 }
 
-.hexagon:hover::after {
+.hexagon.tech:hover::after {
     border-top: 30px solid #ff9999;
 }
 
 .hexagon {
+    margin: 1em;
+    float: left;
     width: 104px;
     cursor: pointer;
-    display: inline-block;
+}
+
+.hexagon:nth-child(6n + 1) {
+    clear: left;
 }
 
 .hexagon .skill-content {
     height: 52px;
-    background: #FF5050;
     margin: 0;
     color: white;
 }
 
 .hexagon .skill-content .skill-name {
     margin: 0;
+    display: block;
 }
 
 .skill {
@@ -46,11 +82,39 @@
     display: inline-block;
 }
 
-.hexagon::after {
+#personal-info-panel {
+    border: 1px solid black;
+    display: inline-block;
+    width: 20em;
+    height: 30em;
+}
+
+#main-content {
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    width: 50em;
+    padding: 5em;
+}
+
+.section-title::before {
     content: '';
-    display: block;
-    width: 0;
-    border-top: 30px solid #FF5050;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    left: 1em;
+}
+
+.skills-title::before {
+    background: url('../assets/skills-icon.png');
+    background-size: cover;
+}
+
+.work-experience-title {
+    color: #0068A9;
+}
+
+.work-experience-title::before {
+    background: url('../assets/experience-logo.gif');
+    background-size: cover;
 }
