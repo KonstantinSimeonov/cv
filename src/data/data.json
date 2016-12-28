@@ -4,12 +4,62 @@
         {
             "name": "Git",
             "description": "Source control",
-            "iconUrl": "/assets/git-logo.png"
+            "iconUrl": "/assets/git-logo.png",
+            "type": "tech"
         },
         {
             "name": "Algorithms",
             "description": "Dynammic programming, bfs, dfs, sorting algorithms",
-            "iconUrl": "/assets/default.jpg"
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "HTML5, CSS, JS",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "Node.js",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "Unix shell scripting/Linux expirience",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "Mathematics",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "C#, ASP.NET",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "MongoDB",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "Unit testing",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
+        },
+        {
+            "name": "Functional and OOP",
+            "description": "TODO",
+            "iconUrl": "/assets/default.jpg",
+            "type": "tech"
         }
     ]
 }

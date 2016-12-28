@@ -21,8 +21,8 @@
 
 .hexagon {
     width: 104px;
-    overflow: hidden;
     cursor: pointer;
+    display: inline-block;
 }
 
 .hexagon .skill-content {
@@ -32,7 +32,7 @@
     color: white;
 }
 
-.hexagon .skill-content h3 {
+.hexagon .skill-content .skill-name {
     margin: 0;
 }
 

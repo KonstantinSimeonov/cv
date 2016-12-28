@@ -11,7 +11,7 @@
     "cv",
     "resume"
   ],
-  "author": "",
+  "author": "Konstantin Simeonov <kon.simeonov@protonmail.com>",
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.0.6",

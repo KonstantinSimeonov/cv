@@ -8,7 +8,7 @@ $(() => {
     .then(resolved => {
         const [compiledTemplate, personalData] = resolved;
         console.log(personalData);
-        $('#main-content').html(compiledTemplate(personalData));
+        $('#skills').html(compiledTemplate(personalData));
     })
     .catch(error => console.log(error));
 });
