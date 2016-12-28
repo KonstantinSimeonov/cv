@@ -1,0 +1,56 @@
+.hexagon::before {
+    content: '';
+    width: 0;
+    display: block;
+    border-bottom: 30px solid #FF5050;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+
+.hexagon:hover .skill-content {
+    background: #ff9999;
+}
+
+.hexagon:hover::before {
+    border-bottom: 30px solid #ff9999;
+}
+
+.hexagon:hover::after {
+    border-top: 30px solid #ff9999;
+}
+
+.hexagon {
+    width: 104px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hexagon .skill-content {
+    height: 52px;
+    background: #FF5050;
+    margin: 0;
+    color: white;
+}
+
+.hexagon .skill-content h3 {
+    margin: 0;
+}
+
+.skill {
+    font-size: 12px;
+    text-align: center;
+}
+
+.skill-icon {
+    width: 30px;
+    display: inline-block;
+}
+
+.hexagon::after {
+    content: '';
+    display: block;
+    width: 0;
+    border-top: 30px solid #FF5050;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}

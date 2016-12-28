@@ -1,0 +1,15 @@
+{
+    "fullname": "Konstantin Simeonov",
+    "skills": [
+        {
+            "name": "Git",
+            "description": "Source control",
+            "iconUrl": "/assets/git-logo.png"
+        },
+        {
+            "name": "Algorithms",
+            "description": "Dynammic programming, bfs, dfs, sorting algorithms",
+            "iconUrl": "/assets/default.jpg"
+        }
+    ]
+}

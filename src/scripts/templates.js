@@ -13,8 +13,11 @@ const templates = (() => {
             return new Promise((resolve, reject) => {
                 $.ajax({
                     method: 'GET',
-                    url: `/templates/${templateName}`,
-                    success: resolve,
+                    url: `/templates/${templateName}.handlebars`,
+                    success: rawTemplate => {
+                        TEMPLATE_CACHE[templateName] = Handlebars.compile(rawTemplate);
+                        resolve(TEMPLATE_CACHE[templateName]);
+                    },
                     error: reject
                 });
             });
