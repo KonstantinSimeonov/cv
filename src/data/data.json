@@ -1,5 +1,29 @@
 {
-    "fullname": "Konstantin Simeonov",
+    "personalInfo": {
+        "names": {
+            "first": "Konstantin",
+            "middle": "Simeonov",
+            "last": "Simeonov"
+        },
+        "photoUrl": "/assets/placeholder-photo.jpg",
+        "contacts": [
+            {
+                "content": "0885 032 502",
+                "iconUrl": "/assets/phone-icon.png",
+                "type": "phone"
+            },
+            {
+                "content": "kon.simeonov@protonmail.com",
+                "iconUrl": "/assets/email-icon.png",
+                "type": "email"
+            },
+            {
+                "content": "i live here",
+                "iconUrl": "/assets/adress-icon.png",
+                "type": "adress"
+            }
+        ]
+    },
     "workExperience": [
         {
             "from": 2015,

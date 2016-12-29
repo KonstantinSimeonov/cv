@@ -1,14 +1,14 @@
-<h2 class="section-title work-experience-title">Work experience</h2>
-<div>
-    <ol class="experiences">
-        {{#each workExperience}}
+<h1>{{this.names.first}} {{names.last}}</h1>
+<img class="photo" src="{{photoUrl}}" alt="photo of me">
+<ul class="contacts">
+    {{#each contacts}}
         <li>
-            <div class="timespan">
-                <time>{{from}}</time>
-                <time>{{to}}</time>
-            </div>
-            <p class="experience-description">{{description}}</p>
+            <img class="img-contact" src="{{iconUrl}}">
+            {{#ifEqual type "email"}}
+                <a href="mailto:{{content}}">{{this.content}}</a>
+            {{else}}
+                <em>{{content}}</em>
+            {{/ifEqual}}
         </li>
-        {{/each}}
-    </ol>
-</div>
+    {{/each}}
+</ul>

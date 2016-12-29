@@ -50,6 +50,18 @@
     border-top: 30px solid #ff9999;
 }
 
+.hexagon.soft:hover .skill-content {
+    background: #9999ff;
+}
+
+.hexagon.soft:hover::before {
+    border-bottom: 30px solid #9999ff;
+}
+
+.hexagon.soft:hover::after {
+    border-top: 30px solid #9999ff;
+}
+
 .hexagon {
     margin: 1em;
     float: left;
@@ -82,15 +94,16 @@
     display: inline-block;
 }
 
-#personal-info-panel {
-    border: 1px solid black;
+.personal-info-panel {
+    border: 1px solid black; /* for development, remove after */
     display: inline-block;
-    width: 20em;
+    width: 25em;
     height: 30em;
+    text-align: center;
 }
 
 #main-content {
-    border: 1px solid black;
+    border: 1px solid black; /* for development, remove after */
     display: inline-block;
     position: absolute;
     width: 50em;
@@ -134,4 +147,24 @@
 
 .experience-description {
     display: inline-block;
+}
+
+.photo {
+    width: 10em;
+    display: inline-block;
+}
+
+.img-contact {
+    width: 2em;
+}
+
+.contacts {
+    margin-left: 0;
+    list-style: none;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.contacts li {
+    margin: 0.5em 0;
 }
