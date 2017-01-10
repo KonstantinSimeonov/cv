@@ -1,0 +1,14 @@
+<h2 class="section-title work-experience-title">Work experience</h2>
+<div>
+    <ol class="experiences">
+        {{#each workExperience}}
+        <li>
+            <div class="timespan">
+                <time>{{from}}</time>
+                <time>{{to}}</time>
+            </div>
+            <p class="experience-description">{{description}}</p>
+        </li>
+        {{/each}}
+    </ol>
+</div>
