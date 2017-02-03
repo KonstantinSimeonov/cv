@@ -56,7 +56,8 @@
     ],
     "languages": [
         { "languageName": "English", "level": "proficient" },
-        { "languageName": "German", "level": "Advanced" }
+        { "languageName": "German", "level": "Advanced" },
+        { "languageName": "French", "level": "je suis kon" }
     ],
     "skills": [
         {
@@ -108,7 +109,7 @@
             "type": "tech"
         },
         {
-            "name": "Unit testing",
+            "name": "Eating",
             "description": "TODO",
             "iconUrl": "./assets/default.jpg",
             "type": "tech"
@@ -120,7 +121,7 @@
             "type": "tech"
         },
         {
-            "name": "Presentation",
+            "name": "Being Fabulous",
             "description": "TODO",
             "iconUrl": "./assets/default.jpg",
             "type": "soft"
