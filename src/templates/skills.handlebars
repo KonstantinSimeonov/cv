@@ -1,9 +1,17 @@
-<h2 class="section-title skills-title">Skills</h2>
- {{#each skills}}
-    <article class="skill hexagon {{type}}">
-        <div class="skill-content">
-            <strong class="skill-name">{{name}}</strong>
-            <img class="skill-icon" src="{{iconUrl}}" alt="{{name}} icon">
+<section class="cv-component work-experience-component">
+    <h2 class="section-title skills-title">Skills</h2>
+    <div class="skills-container">
+        {{#each rows}}
+        <div class="skill-row clearfix">
+            {{#each this}}
+            <article class="skill hexagon {{type}}">
+                <div class="skill-content">
+                    <strong class="skill-name">{{name}}</strong>
+                    <img class="skill-icon" src="{{iconUrl}}" alt="{{name}} icon">
+                </div>
+            </article>
+            {{/each}}
         </div>
-    </article>
-{{/each}}
+        {{/each}}
+    </div>
+</section>

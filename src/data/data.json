@@ -5,6 +5,7 @@
             "middle": "Simeonov",
             "last": "Simeonov"
         },
+        "title": "Full-stack JavaScript developer who loves to dance",
         "photoUrl": "/assets/placeholder-photo.jpg",
         "contacts": [
             {
@@ -19,27 +20,38 @@
             },
             {
                 "content": "i live here",
-                "iconUrl": "/assets/adress-icon.png",
-                "type": "adress"
+                "iconUrl": "/assets/address-icon.png",
+                "type": "address"
+            },
+            {
+                "content": "https://github.com/KonstantinSimeonov",
+                "iconUrl": "/assets/github-icon.png"
             }
         ],
         "aboutMe": "Here be text"
     },
     "workExperience": [
         {
-            "from": 2015,
-            "to": 2016,
-            "description": "Technical Trainer @ Telerik Academy"
+            "from": "Dec 2015",
+            "to": "Jan 2017",
+            "jobTitle": "Technical Trainer",
+            "location": "Telerik Academy",
+            "descriptions": [
+                "i did stuff there",
+                "it was awesome"
+            ]
         },
         {
             "from": "once upon a time",
             "to": "2014",
-            "description": "This is a teeeeeeeestgosho @ Testy Solutions"
+            "jobTitle": "This is a teeeeeeeestgosho",
+            "location": "Testy Solutions"
         },
         {
             "from": 2016,
             "to": 2017,
-            "description": "Looks kinda ugly, should change maybe hurr durr"
+            "jobTitle": "Looks kinda ugly, should change maybe hurr durr",
+            "location": "Hurr Durr"
         }
     ],
     "skills": [

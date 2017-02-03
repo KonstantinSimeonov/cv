@@ -1,0 +1,70 @@
+.personal-info-component {
+    padding-left: 2em;
+}
+
+.personal-info-component .cv-name {
+    font-size: 32px;
+}
+
+.photo {
+    width: 12.5em;
+    border-radius: 50%;
+}
+
+.img-contact {
+    width: 2em;
+}
+
+.contacts {
+    margin-left: 0;
+    padding-left: 1em;
+    list-style: none;
+    text-align: left;
+    width: 60em;
+}
+
+.contacts li {
+    width: 25em;
+    display: inline-block;
+    margin: 0.5em;
+    line-height: 0.5em;
+    vertical-align: middle;
+}
+
+.contacts em, .contacts a {
+    vertical-align: middle;
+    display: inline-block;
+    height: 1.5em;
+}
+
+.experiences li * {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.experiences li {
+    margin-top: 1em;
+}
+
+.date-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.location {
+    color: #6666ff;
+    font-weight: bold;
+}
+
+.cv-title {
+    color: #FF5050;
+}
+
+.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
