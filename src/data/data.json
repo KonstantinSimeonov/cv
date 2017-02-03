@@ -54,6 +54,10 @@
             "location": "Hurr Durr"
         }
     ],
+    "languages": [
+        { "languageName": "English", "level": "proficient" },
+        { "languageName": "German", "level": "Advanced" }
+    ],
     "skills": [
         {
             "name": "Git",

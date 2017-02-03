@@ -12,13 +12,22 @@ html * {
     color: #333333;
 }
 
+.no-bullets {
+    list-style: none;
+}
+
 .cv-component {
     margin: 2em;
+    position: relative;
+}
+
+.bottom-dashed {
+    border-bottom: 2px dashed lightgray;
 }
 
 .section-title {
     border-bottom: 2px solid #333333;
-    margin-left: 1.5em;
+    margin-left: 2.5em;
 }
 
 .section-title::before {
@@ -26,7 +35,7 @@ html * {
     position: absolute;
     height: 32px;
     width: 32px;
-    left: 1em;
+    left: 0;
 }
 
 .timespan {

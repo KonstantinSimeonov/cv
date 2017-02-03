@@ -1,0 +1,15 @@
+.languages-component strong {
+    text-transform: uppercase;
+}
+
+.languages-component em {
+    text-transform: capitalize;
+}
+.languages-component li {
+    padding: 0.5em 2.5em;
+}
+
+.languages-title::before {
+    background: url('../assets/languages-icon.png');
+    background-size: cover;
+}

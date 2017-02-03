@@ -5,10 +5,11 @@ $(() => {
         templates.get('skills'),
         templates.get('work-experience'),
         templates.get('personal-info'),
+        templates.get('languages'),
         data.get()
     ])
     .then(resolved => {
-        const [skillsTemplate, workExpTemplate, personalInfoTemplate, personalData] = resolved;
+        const [skillsTemplate, workExpTemplate, personalInfoTemplate, languagesTemplate, personalData] = resolved;
         
         const skills = [
             [1, 2, 3, 4],
@@ -25,7 +26,7 @@ $(() => {
         }
 
         $('.skills-section').html(skillsTemplate({ rows: skills }));
-
+        $('.languages-section').html(languagesTemplate(personalData));
         $('.work-expirience-section').html(workExpTemplate(personalData));
         $('.personal-info-panel').html(personalInfoTemplate(personalData.personalInfo));
 })
