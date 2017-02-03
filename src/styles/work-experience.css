@@ -26,7 +26,6 @@
 .experiences > li {
     margin-left: 3em;
     padding: 0.5em;
-    border-bottom: 2px dashed lightgray;
 }
 
 .experiences .description-highlights li {
