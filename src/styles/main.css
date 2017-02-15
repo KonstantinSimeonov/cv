@@ -12,6 +12,10 @@ html * {
     color: #333333;
 }
 
+.collapsed {
+    display: none;
+}
+
 .no-bullets {
     list-style: none;
 }
@@ -46,4 +50,8 @@ html * {
 
 .pull-left {
     float: left;
+}
+
+.pull-right {
+    float: right;
 }

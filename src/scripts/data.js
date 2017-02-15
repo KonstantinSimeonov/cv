@@ -2,7 +2,7 @@
 
 const data = (() => {
     let CACHE = null;
-
+    
     return {
         get() {
             if(CACHE) {

@@ -1,12 +1,4 @@
-.hexagon::before {
-    content: '';
-    width: 0;
-    display: block;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-}
-
-.hexagon::after {
+.hexagon::after, .hexagon::before {
     content: '';
     display: block;
     width: 0;
@@ -72,7 +64,10 @@
 .hexagon .skill-content {
     height: 52px;
     margin: 0;
-    color: white;
+}
+
+.hexagon .skill-content .skill-name {
+    color: white;    
 }
 
 .hexagon .skill-content .skill-name {
@@ -101,4 +96,51 @@
 
 .skills-container {
     margin-top: 2em;
+}
+
+.skill-details-container {
+    position: fixed;
+    z-index: 999;
+    top: 2.5em;
+    right: 2.5em;
+    width: 35em;
+    min-height: 10em;
+    background: white;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #cccccc;
+}
+
+.skill-description {
+    margin-top: 1em;
+}
+
+.close-btn {
+    border: 2px dashed lightgray;
+    color: gray;
+    text-align: center;
+    line-height: 1.4em;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.skill-details-container.tech {
+    border: 2px dashed #FF5050;    
+}
+
+.close-btn.tech:hover {
+    background-color: #ff9999;
+}
+
+.skill-details-container.soft {
+    border: 2px dashed #6666ff;
+}
+
+.close-btn.soft:hover {
+    background-color: #9999ff;
 }

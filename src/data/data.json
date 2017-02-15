@@ -59,6 +59,10 @@
         { "languageName": "German", "level": "Advanced" },
         { "languageName": "French", "level": "je suis kon" }
     ],
+    "educations": [
+        { "educationTitle": "High School", "location": "91. German High School", "from": "Sep 2008", "to": "May 2013", "certificate": "https://undefinedisnotafunction.com/NaN" },
+        { "educationTitle": "Bachelor in Software Engineering", "location": "FMI, Sofia University \"St. Kliment Ohridski\"", "from": "Oct 2013", "to": "ongoing" }
+    ],
     "skills": [
         {
             "name": "Git",

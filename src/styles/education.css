@@ -1,0 +1,13 @@
+.education-component .section-title::before {
+    background: url('../assets/education-icon.png');
+    background-size: cover;
+}
+
+.education-component .location {
+    color: #FF5050;
+}
+
+.education-component li {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+}
