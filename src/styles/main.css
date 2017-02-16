@@ -55,3 +55,7 @@ html * {
 .pull-right {
     float: right;
 }
+
+.column-2 {
+    width: 35em;
+}

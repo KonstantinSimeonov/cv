@@ -18,7 +18,7 @@
         $container.removeClass(classToRemove).addClass(classToAdd);
 
         $skillTitle.html(skillName);
-        
+
         data.get().then(dataInfo => {
             const description = dataInfo.skills.find(sk => sk.name === skillName).description;
 

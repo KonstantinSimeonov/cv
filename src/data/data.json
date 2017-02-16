@@ -55,13 +55,45 @@
         }
     ],
     "languages": [
-        { "languageName": "English", "level": "proficient" },
-        { "languageName": "German", "level": "Advanced" },
-        { "languageName": "French", "level": "je suis kon" }
+        {
+            "languageName": "English",
+            "level": "proficient"
+        },
+        {
+            "languageName": "German",
+            "level": "Advanced"
+        },
+        {
+            "languageName": "French",
+            "level": "je suis kon"
+        }
     ],
     "educations": [
-        { "educationTitle": "High School", "location": "91. German High School", "from": "Sep 2008", "to": "May 2013", "certificate": "https://undefinedisnotafunction.com/NaN" },
-        { "educationTitle": "Bachelor in Software Engineering", "location": "FMI, Sofia University \"St. Kliment Ohridski\"", "from": "Oct 2013", "to": "ongoing" }
+        {
+            "educationTitle": "High School",
+            "location": "91. German High School",
+            "from": "Sep 2008",
+            "to": "May 2013",
+            "certificate": "https://undefinedisnotafunction.com/NaN"
+        },
+        {
+            "educationTitle": "Bachelor in Software Engineering",
+            "location": "FMI, Sofia University \"St. Kliment Ohridski\"",
+            "from": "Oct 2013",
+            "to": "ongoing"
+        }
+    ],
+    "strengths": [
+        {
+            "name": "People person",
+            "description": "Dancing, working on group projects with fellow students, teaching programming and being part of the trainers team @TelerikAcademy, made team work as natural as breathing to me.",
+            "iconUrl": "./assets/learning-icon.png"
+        },
+        {
+            "name": "Passionate learner",
+            "description": "No matter if it comes to teaching or dancing, learning new things,  skills and concepts has always been a great experience to me.",
+            "iconUrl": "./assets/heart-icon.png"
+        }
     ],
     "skills": [
         {

@@ -7,6 +7,7 @@ $(() => {
         templates.get('personal-info'),
         templates.get('languages'),
         templates.get('education'),
+        templates.get('strengths'),
         data.get()
     ])
         .then(resolved => {
@@ -16,6 +17,7 @@ $(() => {
                 personalInfoTemplate,
                 languagesTemplate,
                 educationTemplate,
+                strengthsTemplate,
                 personalData
             ] = resolved;
 
@@ -38,6 +40,7 @@ $(() => {
             $('.languages-section').html(languagesTemplate(personalData));
             $('.work-expirience-section').html(workExpTemplate(personalData));
             $('.personal-info-panel').html(personalInfoTemplate(personalData.personalInfo));
+            $('.strengths-section').html(strengthsTemplate(personalData));
         })
         .catch(error => console.log(error));
 });

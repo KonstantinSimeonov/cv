@@ -1,0 +1,24 @@
+.strengths-title::before {
+    background: url('../assets/strengths-icon.png');
+    background-size: cover;
+}
+
+.strengths-component strong {
+    color: #69B900;
+    text-transform: uppercase;
+}
+
+.strengths li {
+    margin: 1em;
+    padding: 0.25em;
+}
+
+.img-strength {
+    width: 1.5em;
+}
+
+.strengths p {
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+}
+

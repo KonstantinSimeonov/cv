@@ -23,7 +23,7 @@
     width: 60em;
 }
 
-.contacts li {
+.contacts .pull-left {
     width: 25em;
     display: inline-block;
     margin: 0.5em;

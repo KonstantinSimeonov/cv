@@ -2,15 +2,15 @@
     <div class="pull-left">
         <h1 class="cv-name">{{names.first}} {{names.last}}</h1>
         <h3 class="cv-title">{{title}}</h3>
-        <ul class="contacts">
+        <div class="contacts clearfix">
             {{#each contacts}}
-            <li>
+            <div class="pull-left">
                 <img class="img-contact" src="{{iconUrl}}"> {{#ifEqual type "email"}}
                 <a href="mailto:{{content}}">{{this.content}}</a> {{else}}
                 <em class="content">{{content}}</em> {{/ifEqual}}
-            </li>
+            </div>
             {{/each}}
-        </ul>
+        </div>
 
         <h3>About me</h3>
         <p>{{aboutMe}}</p>
