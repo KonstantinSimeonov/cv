@@ -46,6 +46,17 @@
     background: #9999ff;
 }
 
+.skill-content {
+    box-sizing: content-box;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.skill-content strong {
+    display: inline-block;
+    margin: 10% auto;
+}
+
 .hexagon.soft:hover::before {
     border-bottom: 30px solid #9999ff;
 }
@@ -69,11 +80,6 @@
 
 .hexagon .skill-content .skill-name {
     color: white;    
-}
-
-.hexagon .skill-content .skill-name {
-    margin: 0;
-    display: block;
 }
 
 .skill {
