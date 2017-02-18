@@ -12,6 +12,16 @@ html * {
     color: #333333;
 }
 
+.link::before {
+    content: '';
+    height: 14px;
+    width: 14px;
+    margin-right: 2px;
+    display: inline-block;
+    background: url('../assets/link-icon.png');
+    background-size: cover;
+}
+
 .collapsed {
     display: none;
 }

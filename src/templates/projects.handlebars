@@ -1,10 +1,20 @@
 <section class="cv-component projects-component">
     <h2 class="section-title projects-title">Projects</h2>
-    <div class="projects-container">
+    <ul class="no-bullets projects">
         {{#each projects}}
+        <li class="bottom-dashed">
+            <strong>{{title}}</strong>
             <p>
-                <strong>{{title}}</strong>
+                <a href="{{url}}" class="link" target="_blank" title="Home page">{{url}}</a>
             </p>
+            <p>
+                <a href="{{repository}}" class="link" target="_blank" title="Source code">{{repository}}</a>
+            </p>
+            <p class="description">
+                {{description}}
+            </p>
+        </li>
         {{/each}}
-    </div>
+    </ul>
+    <link rel="stylesheet" href="./styles/projects.css">
 </section>

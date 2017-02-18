@@ -1,5 +1,7 @@
 .languages-component strong {
     text-transform: uppercase;
+    color: #B23737;
+    
 }
 
 .languages-component em {

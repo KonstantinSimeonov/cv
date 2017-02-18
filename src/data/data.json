@@ -83,6 +83,20 @@
             "to": "ongoing"
         }
     ],
+    "projects": [
+        {
+            "title": "fluent-schemer",
+            "description": "Small validation library in javascript for fluent and declarative validation",
+            "url": "https://www.npmjs.com/package/fluent-schemer",
+            "repository": "https://github.com/KonstantinSimeonov/fluent-schemer"
+        },
+        {
+            "title": "horsebin",
+            "description": "Web platform for fast & easy paste sharing",
+            "url": "https://horsebin.herokuapp.com/pastes/create",
+            "repository": "https://github.com/KonstantinSimeonov/horsebin"
+        }
+    ],
     "strengths": [
         {
             "name": "People person",

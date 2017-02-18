@@ -1,7 +1,3 @@
-.work-experience-title {
-    color: #0068A9;
-}
-
 .work-experience-component li {
     margin: 2em;
 }
@@ -21,6 +17,11 @@
 
 .job-title {
     font-size: 20px;
+}
+
+.location {
+    color: #0068A9;
+    font-weight: bold;
 }
 
 .experiences > li {

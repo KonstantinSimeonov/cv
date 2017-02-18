@@ -1,0 +1,24 @@
+.projects-title::before {
+    background: url('../assets/projects-icon.png');
+    background-size: cover;
+}
+
+.projects-component .projects li {
+    padding: 1em;
+}
+
+.projects-component .projects li strong {
+    margin-bottom: 0.5em;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: normal;
+    color: #F54F33;
+}
+
+.projects-component .projects .description {
+    margin-top: 0.5em;
+}
+
+.projects-component .link {
+    color: #53899F;
+}

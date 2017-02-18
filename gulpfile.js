@@ -14,3 +14,4 @@ gulp.task('bundle', () => gulp
                             .pipe(gulpif('*.js', uglify()))
                             .pipe(gulpif('*.css', minifyCss()))
                             .pipe(gulp.dest('../cv-build')));
+                            
