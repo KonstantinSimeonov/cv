@@ -45,6 +45,8 @@ $(() => {
             $('.personal-info-panel').html(personalInfoTemplate(personalData.personalInfo));
             $('.strengths-section').html(strengthsTemplate(personalData));
             $('.projects-section').html(projectsTemplate(personalData));
+
+            $('body').addClass('visible');
         })
         .catch(error => console.log(error));
 });
