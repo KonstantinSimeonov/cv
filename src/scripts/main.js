@@ -1,3 +1,5 @@
+/* globals $, templates, data */
+
 'use strict';
 
 $(() => {
@@ -21,23 +23,22 @@ $(() => {
                 strengthsTemplate,
                 projectsTemplate,
                 personalData
-            ] = resolved;
-
-            const skills = [
-                [1, 2, 3, 4],
-                [1, 2, 3],
-                [1, 2, 3],
-                [1, 2, 3, 4]
-            ];
+            ] = resolved,
+                skillsLayout = [
+                    [1, 2, 3, 4],
+                    [1, 2, 3],
+                    [1, 2, 3],
+                    [1, 2, 3, 4]
+                ];
 
             let next = 0;
-            for (let i = 0, len = skills.length; i < len; i += 1) {
-                for (let j = 0, len2 = skills[i].length; j < len2; j += 1) {
-                    skills[i][j] = personalData.skills[next++];
+            for (let i = 0, len = skillsLayout.length; i < len; i += 1) {
+                for (let j = 0, len2 = skillsLayout[i].length; j < len2; j += 1) {
+                    skillsLayout[i][j] = personalData.skills[next++];
                 }
             }
 
-            $('.skills-section').html(skillsTemplate({ rows: skills }));
+            $('.skills-section').html(skillsTemplate({ rows: skillsLayout }));
             $('.education-section').html(educationTemplate(personalData));
             $('.languages-section').html(languagesTemplate(personalData));
             $('.work-expirience-section').html(workExpTemplate(personalData));

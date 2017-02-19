@@ -1,3 +1,5 @@
+/* globals $, Handlebars */
+
 'use strict';
 
 const templates = (() => {
@@ -22,5 +24,5 @@ const templates = (() => {
                 });
             });
         }
-    }
+    };
 })();

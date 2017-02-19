@@ -1,11 +1,12 @@
+/* global $ */
 'use strict';
 
 const data = (() => {
     let CACHE = null;
-    
+
     return {
         get() {
-            if(CACHE) {
+            if (CACHE) {
                 return Promise.resolve(CACHE);
             }
 
@@ -22,5 +23,5 @@ const data = (() => {
                 });
             });
         }
-    }
+    };
 })();

@@ -1,5 +1,8 @@
+/* globals $, data */
+
+'use strict';
+
 (() => {
-    'use strict';
 
     const $container = $('<div />').addClass('skill-details-container'),
         $closeBtn = $('<a href="#" />').addClass('close-btn pull-right').text('x').appendTo($container),
