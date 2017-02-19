@@ -12,6 +12,12 @@ html * {
     color: #333333;
 }
 
+#container {
+    background: url('../assets/cv-background.png');
+    background-size: cover;
+    display: inline-block;
+}
+
 .link::before {
     content: '';
     height: 14px;
