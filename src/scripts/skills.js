@@ -7,12 +7,12 @@
         $skillTitle = $('<strong />').addClass('skill-title').appendTo($msgBox),
         $skillDescription = $('<p />').addClass('skill-description').appendTo($msgBox);
 
-    $('.skills-container').on('click', '.hexagon', ev => {
+    $('.skills-container').on('click', '.ellipse', ev => {
         const $target = $(ev.target),
-            $hexagon = $target.hasClass('hexagon') ? $target : $target.parents('.hexagon'),
-            classToAdd = $hexagon.hasClass('tech') ? 'tech' : 'soft',
+            $ellipse = $target.hasClass('ellipse') ? $target : $target.parents('.ellipse'),
+            classToAdd = $ellipse.hasClass('tech') ? 'tech' : 'soft',
             classToRemove = classToAdd === 'tech' ? 'soft' : 'tech',
-            skillName = $hexagon.find('.skill-name').html();
+            skillName = $ellipse.find('.skill-name').html();
 
         $closeBtn.removeClass(classToRemove).addClass(classToAdd);
         $container.removeClass(classToRemove).addClass(classToAdd);

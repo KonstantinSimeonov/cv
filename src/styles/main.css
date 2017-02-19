@@ -16,6 +16,7 @@ html * {
     background: url('../assets/cv-background.png');
     background-size: cover;
     display: inline-block;
+    position: relative;
 }
 
 .link::before {
