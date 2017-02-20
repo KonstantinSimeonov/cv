@@ -49,4 +49,16 @@ $(() => {
             $('body').addClass('visible');
         })
         .catch(error => console.log(error));
+
+    $('.pdf-export-btn').on('click', ev => {
+        const doc = new jsPDF('portrait', 'cm'),
+            $btn = $(ev.target);
+
+        $btn.hide();
+
+        doc.addHTML($('#container').get(0), () => {
+            $btn.show();
+            doc.save(document.title + '.pdf');
+        });
+    });
 });

@@ -2,15 +2,15 @@
     <h2 class="section-title skills-title">Skills</h2>
     <div class="skills-container">
         {{#each rows}}
-        <div class="skill-row clearfix">
+        <ul class="no-bullets">
             {{#each this}}
-            <article class="skill ellipse {{type}}">
+            <li class="skill ellipse {{type}}">
                 <div class="skill-content">
                     <strong class="skill-name">{{name}}</strong>
                 </div>
-            </article>
+            </li>
             {{/each}}
-        </div>
+        </ul>
         {{/each}}
     </div>
     <script src="./scripts/skills.js"></script>

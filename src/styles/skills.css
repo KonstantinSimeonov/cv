@@ -18,13 +18,13 @@
 
 .skill-content {
     box-sizing: content-box;
-    font-size: 10px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
 .skill-content strong {
     display: inline-block;
-    margin: 10% auto;
+    margin: 0.25em auto;
 }
 
 .ellipse {
@@ -39,7 +39,7 @@
 }
 
 .ellipse .skill-content .skill-name {
-    color: white;    
+    color: white;
 }
 
 .skill {

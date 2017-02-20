@@ -1,8 +1,11 @@
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     opacity: 0;
     transition: opacity 2s;
-    height: 90em;
+    height: 120em;
+    width: 100%;
+    position: relative;
+    text-align: center;
 }
 
 .visible {
@@ -24,9 +27,10 @@ h1, h2 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 84.5em;
     position: relative;
+    width: 85em;
     height: 100%;
+    text-align: left;
 }
 
 .link::before {
@@ -56,7 +60,7 @@ h1, h2 {
 }
 
 .cv-component {
-    margin: 2em;
+    margin: 5em 2em 0 2em;
     position: relative;
 }
 
@@ -91,14 +95,46 @@ h1, h2 {
     float: right;
 }
 
+.column-1 {
+    width: 50em;
+}
+
 .column-2 {
-    width: 35em;
+    width: 32em;
 }
 
 .clearfix::after {
-    content: '.';
+    content: ' ';
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+.pdf-export-btn {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.custom-btn {
+    display: block;
+    padding: 1em;
+    background-color: #6666ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+    border: 1px solid gray;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+
+.custom-btn:hover {
+    opacity: 1;
+}
+
+.custom-btn:active {
+    border: 1px solid white;
 }
