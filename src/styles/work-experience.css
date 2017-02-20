@@ -1,7 +1,3 @@
-.work-experience-component li {
-    margin: 2em;
-}
-
 .work-experience-title::before {
     background: url('../assets/experience-logo.gif');
     background-size: cover;
@@ -25,11 +21,9 @@
 }
 
 .experiences > li {
-    margin-left: 3em;
     padding: 0.5em;
 }
 
 .experiences .description-highlights li {
-    margin-top: 0.25em;
-    margin-bottom: 0;
+    margin: 0.25em 0 0 2em;
 }

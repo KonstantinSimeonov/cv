@@ -23,6 +23,12 @@
     width: 60em;
 }
 
+@media screen and (max-width: 1360px) {
+    .contacts {
+        width: 30em;
+    }
+}
+
 .contacts .pull-left {
     width: 25em;
     display: inline-block;
@@ -37,15 +43,6 @@
     height: 1.5em;
 }
 
-.experiences li * {
-    margin-top: 0;
-    margin-bottom: 0.25em;
-}
-
-.experiences li {
-    margin-top: 1em;
-}
-
 .date-icon {
     display: inline-block;
     width: 16px;
@@ -56,10 +53,7 @@
     color: #FF5050;
 }
 
-.clearfix::after {
-    content: '.';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.about-me {
+    width: 35em;
+    display: inline-block;
 }

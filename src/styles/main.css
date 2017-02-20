@@ -20,7 +20,8 @@ html * {
 
 #container {
     background: url('../assets/cv-background.png');
-    background-size: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     display: inline-block;
     position: relative;
 }
@@ -81,4 +82,12 @@ html * {
 
 .column-2 {
     width: 35em;
+}
+
+.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
