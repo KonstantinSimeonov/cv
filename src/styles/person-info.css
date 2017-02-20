@@ -6,6 +6,12 @@
     font-size: 32px;
 }
 
+.photo-container {
+    padding: 3em;
+    position: absolute;
+    right: 0;
+}
+
 .photo {
     width: 12.5em;
     border-radius: 50%;
@@ -56,4 +62,9 @@
 .about-me {
     width: 35em;
     display: inline-block;
+}
+
+.about-me p {
+    padding: 1em 1em 1em 0.5em;
+    font-style: italic;
 }

@@ -2,6 +2,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     opacity: 0;
     transition: opacity 2s;
+    height: 90em;
 }
 
 .visible {
@@ -12,7 +13,7 @@ h1, h2 {
     text-transform: uppercase;
 }
 
-html * {
+* {
     margin: 0;
     padding: 0;
     color: #333333;
@@ -20,10 +21,12 @@ html * {
 
 #container {
     background: url('../assets/cv-background.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: inline-block;
+    width: 84.5em;
     position: relative;
+    height: 100%;
 }
 
 .link::before {
@@ -34,6 +37,14 @@ html * {
     display: inline-block;
     background: url('../assets/link-icon.png');
     background-size: cover;
+}
+
+.link.hover-highlight, .hover-highlight {
+    transition: color 2s;
+}
+
+.link.hover-highlight:hover, .hover-highlight:hover {
+    color: #F54F33;
 }
 
 .collapsed {
