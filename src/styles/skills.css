@@ -18,7 +18,6 @@
 
 .skill-content {
     box-sizing: content-box;
-    font-size: 16px;
     text-transform: uppercase;
 }
 
@@ -28,14 +27,14 @@
 }
 
 .ellipse {
-    margin: 0.5em 2em;
+    margin: 0.5em 1em;
     cursor: pointer;
     float: left;
 }
 
 .ellipse .skill-content {
     margin: 0;
-    padding: 2em;
+    padding: 1em;
 }
 
 .ellipse .skill-content .skill-name {

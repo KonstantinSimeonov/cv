@@ -4,12 +4,11 @@
         {{#each projects}}
         <li class="bottom-dashed">
             <strong>{{title}}</strong>
+            {{#each links}}
             <p>
-                <a href="{{url}}" class="link hover-highlight" target="_blank" title="Home page">{{url}}</a>
+                <a href="{{url}}" class="link hover-highlight" target="_blank" title="{{tooltip}}">{{url}}</a>
             </p>
-            <p>
-                <a href="{{repository}}" class="link hover-highlight" target="_blank" title="Source code">{{repository}}</a>
-            </p>
+            {{/each}}
             <p class="description">
                 {{description}}
             </p>

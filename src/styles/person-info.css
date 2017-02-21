@@ -26,7 +26,7 @@
     padding-left: 1em;
     list-style: none;
     text-align: left;
-    width: 60em;
+    width: 40em;
 }
 
 @media screen and (max-width: 1360px) {
@@ -36,7 +36,7 @@
 }
 
 .contacts .pull-left {
-    width: 25em;
+    min-width: 15em;
     display: inline-block;
     margin: 0.5em;
     line-height: 0.5em;

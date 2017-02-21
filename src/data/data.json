@@ -75,14 +75,16 @@
         {
             "title": "fluent-schemer",
             "description": "Small validation library in javascript for fluent and declarative validation",
-            "url": "https://www.npmjs.com/package/fluent-schemer",
-            "repository": "https://github.com/KonstantinSimeonov/fluent-schemer"
+            "links": [
+                { "url": "https://www.npmjs.com/package/fluent-schemer", "tooltip": "npm homepage" }
+            ]
         },
         {
             "title": "horsebin",
             "description": "Web platform for fast & easy paste sharing",
-            "url": "https://horsebin.herokuapp.com/pastes/create",
-            "repository": "https://github.com/KonstantinSimeonov/horsebin"
+            "links": [
+                { "url": "https://horsebin.herokuapp.com/pastes/create", "tooltip": "source code" }
+            ]
         }
     ],
     "strengths": [

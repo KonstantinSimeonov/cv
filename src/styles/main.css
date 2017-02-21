@@ -2,10 +2,11 @@ body {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     opacity: 0;
     transition: opacity 2s;
-    height: 120em;
+    height: 92em;
     width: 100%;
     position: relative;
     text-align: center;
+    background-color: black;
 }
 
 .visible {
@@ -22,13 +23,31 @@ h1, h2 {
     color: #333333;
 }
 
+.paper-clip {
+    position: absolute;
+    width: 3em;
+}
+
+.paper-clip-1 {
+    left: 1em;
+    top: 0.5em;
+}
+
+.paper-clip-2 {
+    left: 1.5em;
+    top: 1em;
+    transform: rotate(65deg);
+}
+
 #container {
     background: url('../assets/cv-background.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
-    width: 85em;
+    margin: 5em 0;
+    box-shadow: 15px 15px 1px #cccccc;
+    width: 65em;
     height: 100%;
     text-align: left;
 }
@@ -96,11 +115,11 @@ h1, h2 {
 }
 
 .column-1 {
-    width: 50em;
+    width: 31em;
 }
 
 .column-2 {
-    width: 32em;
+    width: 31em;
 }
 
 .clearfix::after {
