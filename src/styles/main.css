@@ -39,6 +39,10 @@ h1, h2 {
     transform: rotate(65deg);
 }
 
+.hidden {
+    display: none;
+}
+
 #container {
     background: url('../assets/cv-background.png');
     background-size: 100% 100%;
@@ -130,10 +134,25 @@ h1, h2 {
     visibility: hidden;
 }
 
-.pdf-export-btn {
+.navigation {
     position: absolute;
-    right: 1em;
+    display: inline-block;
     top: 1em;
+    right: 1em;
+    z-index: 999;
+}
+
+.menu-img {
+    height: 2em;
+    width: 2em;
+}
+
+.navigation:hover .menu {
+    display: block;
+}
+
+.navigation:hover .menu-img {
+    display: none;
 }
 
 .custom-btn {
@@ -146,7 +165,7 @@ h1, h2 {
     z-index: 9999;
     border: 1px solid gray;
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity 2s;
 }
 

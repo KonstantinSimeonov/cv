@@ -26,7 +26,7 @@
             const description = dataInfo.skills.find(sk => sk.name === skillName).description;
 
             $skillDescription.html(description);
-            $(document.body).append($container);
+            $('#container').append($container);
         });
     });
 
