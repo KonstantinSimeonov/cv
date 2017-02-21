@@ -6,26 +6,26 @@
             "last": "Simeonov"
         },
         "title": "Full-stack JavaScript developer who loves to dance",
-        "photoUrl": "./assets/kon.jpg",
+        "photoUrl": "/public/assets/photo.jpg",
         "contacts": [
             {
                 "content": "+359 885 032 502",
-                "iconUrl": "./assets/phone-icon.png",
+                "iconUrl": "/public/assets/phone-icon.png",
                 "type": "phone"
             },
             {
                 "content": "kon.simeonov@protonmail.com",
-                "iconUrl": "./assets/email-icon.png",
+                "iconUrl": "/public/assets/email-icon.png",
                 "type": "email"
             },
             {
                 "content": "Sofia, Bulgaria",
-                "iconUrl": "./assets/address-icon.png",
+                "iconUrl": "/public/assets/address-icon.png",
                 "type": "address"
             },
             {
                 "content": "https://github.com/KonstantinSimeonov",
-                "iconUrl": "./assets/github-icon.png",
+                "iconUrl": "/public/assets/github-icon.png",
                 "type": "url"
             }
         ],
@@ -38,8 +38,8 @@
             "jobTitle": "Technical Trainer",
             "location": "Telerik Academy",
             "descriptions": [
-                "i did stuff there",
-                "it was awesome"
+                "Helped hundreds of students make their first steps in programming using C#, HTML, CSS and JavaScript",
+                "Experienced firsthand how important keeping deadlines is, became better at taking responsibilities and honed organizational skills"
             ]
         }
     ],
@@ -51,19 +51,15 @@
         {
             "languageName": "German",
             "level": "Advanced"
-        },
-        {
-            "languageName": "French",
-            "level": "je suis kon"
         }
     ],
     "educations": [
         {
-            "educationTitle": "High School",
-            "location": "91. German High School",
-            "from": "Sep 2008",
-            "to": "May 2013",
-            "certificate": "https://undefinedisnotafunction.com/NaN"
+            "educationTitle": "Web Development",
+            "location": "Telerik Academy",
+            "from": "Jan 2015",
+            "to": "Mar 2016",
+            "certificate": "https://telerikacademy.com/Certificates/View/1980/6b7b6f44"
         },
         {
             "educationTitle": "Bachelor in Software Engineering",
@@ -92,104 +88,74 @@
         {
             "name": "People person",
             "description": "Dancing, working on group projects with fellow students, teaching programming and being part of the trainers team @TelerikAcademy, made team work as natural as breathing to me.",
-            "iconUrl": "./assets/learning-icon.png"
+            "iconUrl": "/public/assets/learning-icon.png"
         },
         {
             "name": "Passionate learner",
             "description": "No matter if it comes to teaching or dancing, learning new things,  skills and concepts has always been a great experience to me.",
-            "iconUrl": "./assets/heart-icon.png"
+            "iconUrl": "/public/assets/heart-icon.png"
         }
     ],
     "skills": [
         {
-            "name": "Git",
-            "description": "Source control",
-            "iconUrl": "./assets/git-logo.png",
-            "type": "tech"
-        },
-        {
             "name": "Algorithms",
             "description": "Dynammic programming, bfs, dfs, sorting algorithms",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
             "name": "HTML5, CSS, JS",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
-            "name": "Node.js",
+            "name": "NodeJS",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
             "name": "Shell scripting",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
-            "name": "Mathematics",
+            "name": "Maths",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
             "name": "C#, ASP.NET",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
         },
         {
             "name": "MongoDB",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "tech"
-        },
-        {
-            "name": "Eating",
-            "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
-            "type": "tech"
-        },
-        {
-            "name": "Functional and OOP",
-            "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
-            "type": "tech"
-        },
-        {
-            "name": "Being Fabulous",
-            "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
-            "type": "soft"
         },
         {
             "name": "Communication",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
-            "type": "soft"
-        },
-        {
-            "name": "Leadership",
-            "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "soft"
         },
         {
             "name": "Organization",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "soft"
+        },
+        {
+            "name": "Git",
+            "description": "Source control",
+            "type": "tech"
         },
         {
             "name": "Creativity",
             "description": "TODO",
-            "iconUrl": "./assets/default.jpg",
             "type": "soft"
+        },
+        {
+            "name": "Object-oriented programming",
+            "description": "TODO",
+            "type": "tech"
         }
     ]
 }

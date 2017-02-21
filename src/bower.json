@@ -1,0 +1,25 @@
+{
+  "name": "cv",
+  "description": "Resume for job application",
+  "main": "index.html",
+  "authors": [
+    "Konstantin Simeonov <kon.simeonov@protonmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cv",
+    "resume"
+  ],
+  "homepage": "https://github.com/KonstantinSimeonov/cv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "handlebars": "^4.0.5"
+  }
+}

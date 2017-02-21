@@ -1,0 +1,26 @@
+<article class="cv-component work-experience-component">
+    <h2 class="section-title work-experience-title">Work experience</h2>
+    <div>
+        <ol class="experiences">
+            {{#each workExperience}}
+            <li class="bottom-dashed">
+                <h4 class="job-title">{{jobTitle}}</h4>
+                <img class="date-icon" src="/public/assets/date-icon.jpg" alt="date-icon">
+                <time class="timespan">
+                    {{from}} - {{to}}
+                </time>
+                <span class="location">@ {{location}}</span>
+                {{#if descriptions}}
+                    <ul class="description-highlights">
+                    {{#each descriptions}}
+                        <li>
+                            {{this}}
+                        </li>
+                    {{/each}}
+                    </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ol>
+    </div>
+</article>

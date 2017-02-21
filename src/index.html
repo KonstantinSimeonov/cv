@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <title>Konstantin Simeonov - Resume</title>
     <!-- build:css /styles/main.min.css -->
-    <link rel="stylesheet" href="./styles/education.css">
-    <link rel="stylesheet" href="./styles/languages.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/person-info.css">
-    <link rel="stylesheet" href="./styles/skills.css">
-    <link rel="stylesheet" href="./styles/work-experience.css">
+    <link rel="stylesheet" href="/public/styles/main.css">
+    <link rel="stylesheet" href="/public/styles/education.css">
+    <link rel="stylesheet" href="/public/styles/languages.css">
+    <link rel="stylesheet" href="/public/styles/person-info.css">
+    <link rel="stylesheet" href="/public/styles/skills.css">
+    <link rel="stylesheet" href="/public/styles/work-experience.css">
+    <link rel="stylesheet" href="/public/styles/strengths.css">
+    <link rel="stylesheet" href="/public/styles/projects.css">
     <!-- endbuild -->
 </head>
 
 <body>
     <nav class="navigation">
-        <img class="menu-img" src="./assets/menu-icon.png" alt="navigation menu button">
+        <img class="menu-img" src="/public/assets/menu-icon.png" alt="navigation menu button">
         <ul class="menu no-bullets">
             <li>
-                <a target="_blank" href="/" class="custom-btn">Home</a>
+                <a href="/" class="custom-btn">Home</a>
             </li>
             <li>
                 <a target="_blank" href="/pdf" class="custom-btn">Download as pdf</a>
@@ -32,29 +34,30 @@
     <div id="container" class="clearfix">
         <div class="personal-info-panel"></div>
         <div class="pull-left column-1">
-            <section class="work-expirience-section"></section>
+            <section class="languages-section"></section>
             <section class="education-section"></section>
             <section class="skills-section"></section>
         </div>
         <div class="pull-left column-2">
-            <section class="languages-section"></section>
+            <section class="work-expirience-section"></section>
             <section class="strengths-section"></section>
             <section class="projects-section"></section>
         </div>
     </div>
     <div class="gray-overlay hidden"></div>
     <!-- vendor scripts -->
-    <!--<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/handlebars/dist/handlebars.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script src="/public/components/jquery/dist/jquery.min.js"></script>
+    <script src="./public/components/handlebars/handlebars.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>-->
 
     <!-- app scripts -->
     <!-- build:js /scripts/app.min.js -->
-    <script src="./scripts/templates.js"></script>
-    <script src="./scripts/handlebars-helpers.js"></script>
-    <script src="./scripts/data.js"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="/public/scripts/templates.js"></script>
+    <script src="/public/scripts/handlebars-helpers.js"></script>
+    <script src="/public/scripts/data.js"></script>
+    <script src="/public/scripts/skills.js"></script>
+    <script src="/public/scripts/main.js"></script>
     <!-- endbuild -->
 </body>
 

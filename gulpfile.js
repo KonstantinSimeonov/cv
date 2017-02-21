@@ -13,5 +13,4 @@ gulp.task('bundle', () => gulp
                             .pipe(gulpif('*.js', babel({ presets: ['es2015'] })))
                             .pipe(gulpif('*.js', uglify()))
                             .pipe(gulpif('*.css', minifyCss()))
-                            .pipe(gulp.dest('../cv-build')));
-                            
+                            .pipe(gulp.dest('../build')));
