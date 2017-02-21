@@ -58,14 +58,23 @@
 .skill-details-container {
     position: fixed;
     z-index: 999;
-    top: 2.5em;
-    right: 2.5em;
     width: 35em;
+    margin-top: -100em;
+    margin-left: 15em;
     min-height: 10em;
     background: white;
     border-radius: 15px;
     padding: 1em;
     box-shadow: 5px 5px 10px #cccccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.skill-details-container.active {
+    margin-top: 0;
 }
 
 .skill-description {
@@ -87,7 +96,7 @@
 }
 
 .skill-details-container.tech {
-    border: 2px dashed #FF5050;    
+    border: 2px dashed #FF5050;
 }
 
 .close-btn.tech:hover {

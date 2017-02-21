@@ -4,11 +4,16 @@
 
 (() => {
 
+    // dialog window widget parts
     const $container = $('<div />').addClass('skill-details-container'),
         $closeBtn = $('<a href="#" />').addClass('close-btn pull-right').text('x').appendTo($container),
         $msgBox = $('<article />').addClass('skill-details').appendTo($container),
         $skillTitle = $('<strong />').addClass('skill-title').appendTo($msgBox),
-        $skillDescription = $('<p />').addClass('skill-description').appendTo($msgBox);
+        $skillDescription = $('<p />').addClass('skill-description').appendTo($msgBox),
+        $overlay = $('.gray-overlay'),
+        $globalContainer = $('#container');
+
+    $globalContainer.prepend($container);
 
     $('.skills-container').on('click', '.ellipse', ev => {
         const $target = $(ev.target),
@@ -26,12 +31,19 @@
             const description = dataInfo.skills.find(sk => sk.name === skillName).description;
 
             $skillDescription.html(description);
-            $('#container').append($container);
+            $overlay.removeClass('hidden');
+            $container.addClass('active');
         });
+    });
+
+    $overlay.on('click', () => {
+        $container.removeClass('active');
+        $overlay.addClass('hidden');
     });
 
     $(document).on('click', '.close-btn', ev => {
         ev.preventDefault();
-        $(ev.target).parent().remove();
+        $container.removeClass('active');
+        $overlay.addClass('hidden');
     });
 })();
