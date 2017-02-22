@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Resume for job application",
   "main": "index.js",
+  "engines": {
+    "node": "7.6.0"
+  },
   "scripts": {
-    "dev": "live-server",
     "start": "node app.js"
   },
   "keywords": [
@@ -12,5 +14,5 @@
     "resume"
   ],
   "author": "Konstantin Simeonov <kon.simeonov@protonmail.com>",
-  "license": "ISC"
+  "license": "MIT"
 }

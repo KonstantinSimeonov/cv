@@ -23,6 +23,7 @@ gulp.task('bundle', () => gulp
 
 gulp.task('copy', () => gulp.src([
     './src/package.json',
+    './src/Procfile',
     './src/app.js',
     './src/resume.pdf',
     './src/data/data.json',

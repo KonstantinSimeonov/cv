@@ -4,8 +4,9 @@
   "description": "My resume build as a Single page app with HTML5, CSS and JavaScript :)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd ./src && live-server"
+    "dev-reload": "cd ./src && live-server",
+    "dev": "cd ./src && nodemon app.js",
+    "build": "gulp clean && gulp default"
   },
   "author": "",
   "license": "ISC",

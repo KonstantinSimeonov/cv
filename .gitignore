@@ -4,4 +4,5 @@ node_modules
 npm-debug.log
 typings
 build
-public/components
+/src/public/components
+.vscode

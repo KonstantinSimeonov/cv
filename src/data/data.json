@@ -46,7 +46,7 @@
     "languages": [
         {
             "languageName": "English",
-            "level": "proficient"
+            "level": "Proficient"
         },
         {
             "languageName": "German",
@@ -99,32 +99,32 @@
     "skills": [
         {
             "name": "Algorithms",
-            "description": "Dynammic programming, bfs, dfs, sorting algorithms",
+            "description": "The time spent in the university and in Telerik Academy really got me interested into Data Structures and Algorithms. I understand and can implement most basic and intermediate data structures, like arrays, lists, stacks, queues, maps, some trees, graphs and heaps. I'm familiar with sorting and searching algorithms, breadth- and depth-first search, topological sorting, rolling hash, dynammic programming problems like the knapsack problem and other.",
             "type": "tech"
         },
         {
             "name": "HTML5, CSS, JS",
-            "description": "TODO",
+            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the DOM API, how to build games using HTML5 canvas and how to develop a single page application.",
             "type": "tech"
         },
         {
             "name": "NodeJS",
-            "description": "TODO",
+            "description": "NodeJS is one of the main reasons I love doing JavaScript! I've passed a course at Telerik Academy and I've been using it for many different purposes ever since - working with files, web crawling, creating RESTful APIs or web applications that do server-side rendering, doing small scripts to automate tasks. The thing I love most about Node is that it promotes simplicity and ease of development, but without forcing the developer to sacrifice code quality or performance.",
             "type": "tech"
         },
         {
             "name": "Shell scripting",
-            "description": "TODO",
+            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under Fedora linux distribution on my personal laptop and I've been using bash to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
             "type": "tech"
         },
         {
             "name": "Maths",
-            "description": "TODO",
+            "description": "I graduated from high school with solid knowledge in the area of algebra, geometry and stereometry. I further developed my skills in that area in university, where I studied linear algebra(vectors, matrices, polynomials), calculus(derivatives, functions, limits, integrals) and discrete mathematics(sets, graphs, regular expressions, combinatorics).",
             "type": "tech"
         },
         {
             "name": "C#, ASP.NET",
-            "description": "TODO",
+            "description": "During the courses I've passed at Telerik Academy and later in my work as a trainer, I developed web applications using ASP.NET(MVC, Webforms and Web API) with C#. I've used C# to create RESTful web services, data service layers that decouple the data layer of an application, write unit tests and implement dependency inversion and dependency injection in back-end web applications.",
             "type": "tech"
         },
         {
@@ -139,7 +139,7 @@
         },
         {
             "name": "Organization",
-            "description": "TODO",
+            "description": "A part of my job @ Telerik Academy was to organize exams, lectures and other events. To manage those tasks successfully, I had to manage not only my time, but other people's time as well, as well as set deadlines, synchronize and oversee tasks, approach and negotiate with different people at different positions. All of that developed and honed my skills at organizing events, planning and managing different tasks and processes.",
             "type": "soft"
         },
         {
