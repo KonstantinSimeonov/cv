@@ -42,9 +42,23 @@ $(() => {
             $('.personal-info-panel').html(personalInfoTemplate(personalData.personalInfo));
             $('.strengths-section').html(strengthsTemplate(personalData));
             $('.projects-section').html(projectsTemplate(personalData));
-            
+
             $('body').addClass('visible');
+
             attachSkillsEvents();
+
+            $('.navigation').tooltip({
+                html: 'Hover the menu icon to open the menu',
+                size: 150,
+                removeOn: { eventName: 'mouseover', selector: '.menu' }
+            });
+
+            $('.skills-title').eq(0).tooltip({
+                html: 'Click on an ellipse to see details',
+                size: 100,
+                removeOn: { eventName: 'click', selector: '.skills-section' },
+                css: { 'margin-left': '1em' }
+            });
         })
         .catch(error => console.log(error));
 });

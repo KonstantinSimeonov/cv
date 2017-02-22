@@ -1,0 +1,36 @@
+.tooltip {
+    position: absolute;
+    background: #FF5050;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    z-index: 9999999;
+    transition: opacity 2s;
+    font-size: 16px;
+    border: 2px solid gray;
+    text-transform: none;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.transparent {
+    opacity: 0.4;
+}
+
+.tooltip p {
+    color: white;    
+}
+
+.tooltip::after {
+    content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+    right: -2em;
+    top: 0.5em;
+	border: 1em solid transparent; /* arrow size */
+    border-left: 1em solid gray;
+    z-index: 9999999;
+}

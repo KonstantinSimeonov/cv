@@ -129,12 +129,14 @@
         },
         {
             "name": "MongoDB",
-            "description": "TODO",
+            "description": "",
+            "code": "db.skills.find({\n    $and: {\n        name: { $regex: /^mongos?db$/i },\n        level: { $gt: 'basic', $lte: 'intermediate' },\n        acquiredBy: {\n            $in: [\n                'studying in Telerik Academy',\n                'working on my own projects',\n                'preparing to present on the topic'\n            ]\n        }\n    }\n});"
+,
             "type": "tech"
         },
         {
             "name": "Communication",
-            "description": "TODO",
+            "description": "My work as a technical trainer required cooperating and communicating with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a better listener, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me how to reduce the tension in a conversation, how to look for and address the concerns of other and how to give constructive feedback without offending others.",
             "type": "soft"
         },
         {
@@ -144,18 +146,23 @@
         },
         {
             "name": "Git",
-            "description": "Source control",
+            "description": "I started using Git since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub, BitBucket or GitLab, which had me using git while studying and working. This in turn helped me understand the concept of distributed source control and get comfortable with branches, merging, committing, pulling, checking out git repositories at different commits, rewriting commits, looking at diffs and other great git features.",
             "type": "tech"
         },
         {
             "name": "Creativity",
-            "description": "TODO",
+            "description": "Creating exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating demos, writing code live during presentations and working around legacy systems were a huge part of my tasks as a technical trainer - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me elevate those skills to a whole new level during my time in Telerik Academy.",
             "type": "soft"
         },
         {
             "name": "Object-oriented programming",
-            "description": "TODO",
+            "description": "In the course of studying and working with C#, ASP.NET and JavaScript I often had contact with different object-oriented patterns and practices, which in turn made me familiar with using object-oriented techniques that help developers to write reusable, clear, concise and maintainable code. While I don't always prefer the object-oriented approach as opposed to other techniques, such as functional or data-oriented approach, I certainly enjoy using it when the situation is appropriate - polymorphism, abstraction and encapsulation make building intuitive, reusable and decoupled components of a software system much easier.",
             "type": "tech"
+        },
+        {
+            "name": "Dancing",
+            "description": "Starting from 9-th grade, I went to dancing courses for 6 years - there I danced waltz, tango, cha-cha, samba, rumba, jive and other dances. Together with programming, dancing is one of the things that I am most passionate about :)",
+            "type": "soft"
         }
     ]
 }

@@ -2,7 +2,7 @@
 
 'use strict';
 
-function attachSkillsEvents (){
+function attachSkillsEvents() {
 
     // dialog window widget parts
     const $container = $('<div />').addClass('skill-details-container'),
@@ -10,6 +10,7 @@ function attachSkillsEvents (){
         $msgBox = $('<article />').addClass('skill-details').appendTo($container),
         $skillTitle = $('<strong />').addClass('skill-title').appendTo($msgBox),
         $skillDescription = $('<p />').addClass('skill-description').appendTo($msgBox),
+        $code = $('<pre />').appendTo($msgBox),
         $overlay = $('.gray-overlay'),
         $globalContainer = $('#container');
 
@@ -28,22 +29,23 @@ function attachSkillsEvents (){
         $skillTitle.html(skillName);
 
         data.get().then(dataInfo => {
-            const description = dataInfo.skills.find(sk => sk.name === skillName).description;
+            const { description, code } = dataInfo.skills.find(sk => sk.name === skillName);
 
             $skillDescription.html(description);
+            if (code) {
+                $code.html(code);
+            }
             $overlay.removeClass('hidden');
             $container.addClass('active');
         });
     });
 
-    $overlay.on('click', () => {
+    function closeMsgBox() {
         $container.removeClass('active');
         $overlay.addClass('hidden');
-    });
+        $code.html('');
+    }
 
-    $(document).on('click', '.close-btn', ev => {
-        ev.preventDefault();
-        $container.removeClass('active');
-        $overlay.addClass('hidden');
-    });
+    $overlay.on('click', closeMsgBox);
+    $msgBox.on('click', '.close-btn', closeMsgBox);
 }
