@@ -59,6 +59,12 @@ $(() => {
                 removeOn: { eventName: 'click', selector: '.skills-section' },
                 css: { 'margin-left': '1em' }
             });
+
+            $('#btn-print').on('click', () => {
+                alert(`Please tick the options for background colors, images and graphics from page setup/options`);
+                window.print();
+            });
+
         })
         .catch(error => console.log(error));
 });

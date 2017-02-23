@@ -150,7 +150,7 @@ h1, h2 {
 
 .menu {
     position: relative;
-    top: -15em;
+    top: -20em;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -159,11 +159,11 @@ h1, h2 {
 }
 
 .navigation:hover .menu {
-    -webkit-transform: translate(0, 15em);
-    -moz-transform: translate(0, 15em);
-    -ms-transform: translate(0, 15em);
-    -o-transform: translate(0, 15em);
-    transform: translate(0, 15em);
+    -webkit-transform: translate(0, 20em);
+    -moz-transform: translate(0, 20em);
+    -ms-transform: translate(0, 20em);
+    -o-transform: translate(0, 20em);
+    transform: translate(0, 20em);
 }
 
 .navigation:hover .menu-img {
