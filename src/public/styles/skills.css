@@ -4,16 +4,13 @@
 }
 
 .soft .skill-content {
-    background: #6666ff;
+    background: #0068A9;
     border-radius: 50%;
 }
 
-.tech:hover .skill-content {
-    background: #ff9999;
-}
-
-.soft:hover .skill-content {
-    background: #9999ff;
+.skill-content:hover {
+    opacity: 0.75;
+    text-shadow: 2px 2px 10px black;
 }
 
 .skill-content {
@@ -77,6 +74,10 @@
     margin-top: 0;
 }
 
+.skill-title {
+    text-transform: uppercase;
+}
+
 .skill-description {
     margin-top: 1em;
 }
@@ -104,9 +105,9 @@
 }
 
 .skill-details-container.soft {
-    border: 2px dashed #6666ff;
+    border: 2px dashed #0068A9;
 }
 
 .close-btn.soft:hover {
-    background-color: #9999ff;
+    background-color: #0098f9;
 }

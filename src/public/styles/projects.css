@@ -12,7 +12,7 @@
     display: inline-block;
     font-size: 24px;
     font-weight: normal;
-    color: #F54F33;
+    color: #FF5050;
 }
 
 .projects-component .projects .description {
@@ -20,5 +20,5 @@
 }
 
 .projects-component .link {
-    color: #53899F;
+    color: #0068A9;
 }

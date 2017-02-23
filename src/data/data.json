@@ -38,7 +38,7 @@
             "jobTitle": "Technical Trainer",
             "location": "Telerik Academy",
             "descriptions": [
-                "Helped hundreds of students make their first steps in programming using C#, HTML, CSS and JavaScript",
+                "Helped more than 2000 students make their first web applications and dive into web development with C#, HTML, CSS and JavaScript",
                 "Experienced firsthand how important keeping deadlines is, became better at taking responsibilities and honed organizational skills"
             ]
         }
@@ -99,7 +99,7 @@
     "skills": [
         {
             "name": "Algorithms",
-            "description": "The time spent in the university and in Telerik Academy really got me interested into Data Structures and Algorithms. I understand and can implement most basic and intermediate data structures, like arrays, lists, stacks, queues, maps, some trees, graphs and heaps. I'm familiar with sorting and searching algorithms, breadth- and depth-first search, topological sorting, rolling hash, dynammic programming problems like the knapsack problem and other.",
+            "description": "The time spent in the university and in Telerik Academy really got me interested into data structures and algorithms. I understand and can implement most basic and intermediate data structures, like <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting and searching algorithms, breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and other.",
             "type": "tech"
         },
         {
@@ -114,7 +114,7 @@
         },
         {
             "name": "Shell scripting",
-            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under Fedora linux distribution on my personal laptop and I've been using bash to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
+            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I've been using <strong>bash</strong> to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
             "type": "tech"
         },
         {

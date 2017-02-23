@@ -141,6 +141,7 @@ h1, h2 {
     top: 1em;
     right: 1em;
     z-index: 999;
+    transition: visibility 1s ease-in-out;
 }
 
 .menu-img {
@@ -151,11 +152,11 @@ h1, h2 {
 .menu {
     position: relative;
     top: -20em;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s .25s ease-in-out;
+    -moz-transition: all 0.5s .25s ease-in-out;
+    -o-transition: all 0.5s .25s ease-in-out;
+    -ms-transition: all 0.5s .25s ease-in-out;
+    transition: all 0.5s .25s ease-in-out;
 }
 
 .navigation:hover .menu {
@@ -167,13 +168,13 @@ h1, h2 {
 }
 
 .navigation:hover .menu-img {
-    display: none;
+    visibility: hidden;
 }
 
 .custom-btn {
     display: block;
     padding: 1em;
-    background-color: #6666ff;
+    background-color: #0068A9;
     color: white;
     font-weight: bold;
     cursor: pointer;

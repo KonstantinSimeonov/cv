@@ -40,12 +40,13 @@ function attachSkillsEvents() {
         });
     });
 
-    function closeMsgBox() {
+    function closeMsgBox(event) {
+        event.preventDefault();
         $container.removeClass('active');
         $overlay.addClass('hidden');
         $code.html('');
     }
 
     $overlay.on('click', closeMsgBox);
-    $msgBox.on('click', '.close-btn', closeMsgBox);
+    $container.on('click', '.close-btn', closeMsgBox);
 }
