@@ -8,3 +8,4 @@ build
 .vscode
 deploy.sh
 clean.sh
+jsconfig.json
