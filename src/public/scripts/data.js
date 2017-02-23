@@ -13,7 +13,7 @@ const data = (() => {
             return new Promise((resolve, reject) => {
                 $.ajax({
                     method: 'GET',
-                    url: '/data',
+                    url: '/public/data/data.json',
                     contentType: 'application/json',
                     success: jsonData => {
                         CACHE = jsonData;

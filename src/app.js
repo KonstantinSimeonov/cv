@@ -22,8 +22,7 @@ const fs = require('fs'),
     http = require('http');
 
 /* startup setup */
-const data = fs.readFileSync('./data/data.json', 'utf8'),
-    html = fs.readFileSync('./index.html', 'utf8'),
+const html = fs.readFileSync('./index.html', 'utf8'),
     pdfStats = fs.statSync('./resume.pdf'),
     pdfResume = fs.readFileSync('./resume.pdf');
 
@@ -62,11 +61,6 @@ const server = http.createServer((request, response) => {
         response.write(pdfResume, 'binary');
         response.end();
     /* serve the data for the handlebars templates */
-    } else if (cleanUrl === '/data') {
-        response.writeHead(200, { 'Content-Type': 'application/json' });
-        response.write(data);
-        response.end();
-    /* home */
     } else if (cleanUrl === '/') {
         response.writeHead(200, { 'Content-Type': 'text/html' });
         response.write(html);
@@ -84,4 +78,4 @@ const server = http.createServer((request, response) => {
     }
 });
 
-server.listen(PORT || 3334, 'pckon', () => console.log(`Server running on ${PORT}`));
+server.listen(PORT || 3334, () => console.log(`Server running on ${PORT}`));
