@@ -5,9 +5,12 @@
         <div class="contacts clearfix">
             {{#each contacts}}
             <div class="pull-left">
-                <img class="img-contact" src="{{iconUrl}}"> {{#ifEqual type "email"}}
-                <a href="mailto:{{content}}" class="hover-highlight">{{this.content}}</a> {{else}}
-                <em class="content">{{content}}</em> {{/ifEqual}}
+                <img class="img-contact" src="{{iconUrl}}">
+                {{#ifEqual type "url"}}
+                <a href="{{#ifEqual urlType "email"}}mailto:{{/ifEqual}}{{content}}" class="hover-highlight">{{this.content}}</a>
+                {{else}}
+                <em class="content">{{content}}</em>
+                {{/ifEqual}}
             </div>
             {{/each}}
         </div>

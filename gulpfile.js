@@ -26,7 +26,7 @@ gulp.task('copy', () => gulp.src([
     './src/Procfile',
     './src/app.js',
     './src/resume.pdf',
-    './src/data/data.json',
+    './src/public/data/data.json',
     './src/public/assets/*',
     './src/public/templates/*.handlebars',
     './src/public/components/handlebars/handlebars.min.js',

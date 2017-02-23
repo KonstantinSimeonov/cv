@@ -1,7 +1,7 @@
 .tooltip {
     position: absolute;
-    background: #FF5050;
-    padding: 1em;
+    background: #0068A9;
+    padding: 1em 1em 1em 5em;
     text-align: center;
     font-weight: bold;
     z-index: 9999999;
@@ -33,4 +33,21 @@
 	border: 1em solid transparent; /* arrow size */
     border-left: 1em solid gray;
     z-index: 9999999;
+}
+
+.tooltip::before {
+    content: 'i';
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    left: 1em;
+    top: 1em;
+    padding: 0.2em;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 24px;
 }

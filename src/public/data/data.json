@@ -16,7 +16,8 @@
             {
                 "content": "kon.simeonov@protonmail.com",
                 "iconUrl": "/public/assets/email-icon.png",
-                "type": "email"
+                "type": "url",
+                "urlType": "email"
             },
             {
                 "content": "Sofia, Bulgaria",
@@ -136,7 +137,7 @@
         },
         {
             "name": "Communication",
-            "description": "My work as a technical trainer required cooperating and communicating with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a better listener, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me how to reduce the tension in a conversation, how to look for and address the concerns of other and how to give constructive feedback without offending others.",
+            "description": "My work as a technical trainer required cooperating and communicating with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>better listener</strong>, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
             "type": "soft"
         },
         {

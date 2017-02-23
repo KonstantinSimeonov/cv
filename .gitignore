@@ -6,3 +6,5 @@ typings
 build
 /src/public/components
 .vscode
+deploy.sh
+clean.sh
