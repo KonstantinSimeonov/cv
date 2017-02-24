@@ -1,9 +1,11 @@
+@import 'variables.styl'
+
 .tech .skill-content {
-    background: #FF5050;
+    background: custom-red;
 }
 
 .soft .skill-content {
-    background: #0068A9;
+    background: custom-blue;
 }
 
 .skill-content:hover {
@@ -58,7 +60,6 @@
     margin-left: 15em;
     min-height: 10em;
     background: white;
-    border-radius: 15px;
     padding: 1em;
     box-shadow: 5px 5px 10px #cccccc;
     -webkit-transition: all 0.5s ease-in-out;
@@ -95,25 +96,25 @@
 }
 
 .skill-details-container.tech {
-    border: 2px solid #FF5050;
+    border: 2px solid custom-red;
 }
 
 .skill-details-container.tech p strong {
-    color: #FF5050;
+    color: custom-red;
 }
 
 .skill-details-container.soft p strong {
-    color: #0068A9;
+    color: custom-blue;
 }
 
 .close-btn.tech:hover {
-    background-color: #ff9999;
+    background-color: lighten(custom-red, 10);
 }
 
 .skill-details-container.soft {
-    border: 2px solid #0068A9;
+    border: 2px solid custom-blue;
 }
 
 .close-btn.soft:hover {
-    background-color: #0098f9;
+    background-color: lighten(custom-blue, 20);
 }
