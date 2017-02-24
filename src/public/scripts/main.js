@@ -43,7 +43,7 @@ $(() => {
             $('.strengths-section').html(strengthsTemplate(personalData));
             $('.projects-section').html(projectsTemplate(personalData));
 
-            $('body').addClass('visible');
+            $('body').addClass('opaque');
 
             attachSkillsEvents();
 

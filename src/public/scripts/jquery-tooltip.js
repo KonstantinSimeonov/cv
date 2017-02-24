@@ -10,7 +10,7 @@ $.fn.tooltip = function (options) {
     } = options;
 
     const tooltipHtml =
-`<div class="tooltip opaque">
+`<div class="tooltip tooltip-opaque">
     <p>${html}</p>
 </div>`,
         $tooltip = $(tooltipHtml),

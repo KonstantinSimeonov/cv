@@ -12,23 +12,22 @@
     text-shadow: 2px 2px 10px black
 
 .skill-content
-    box-sizing: content-box
     text-transform: uppercase
 
 .skill-content strong
     display: inline-block
     margin: 0.25em auto
 
-.ellipse
+.rectangle
     margin: 0.5em 1em
     cursor: pointer
     float: left
 
-.ellipse .skill-content
+.rectangle .skill-content
     margin: 0
     padding: 2em
 
-.ellipse .skill-content .skill-name
+.rectangle .skill-content .skill-name
     color: white
 
 .skill
@@ -42,15 +41,15 @@
     margin-top: 2em
 
 .skill-details-container
-    position: fixed
-    z-index: 999
-    width: 35em
+    background: white
+    box-shadow: 5px 5px 10px #cccccc
     margin-top: -100em
     margin-left: 15em
     min-height: 10em
-    background: white
     padding: 1em
-    box-shadow: 5px 5px 10px #cccccc
+    position: fixed
+    width: 35em
+    z-index: 999
     transition(all 0.5s ease-in-out)
 
 .skill-details-container.active

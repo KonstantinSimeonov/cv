@@ -16,12 +16,12 @@ function attachSkillsEvents() {
 
     $globalContainer.prepend($container);
 
-    $('.skills-container').on('click', '.ellipse', ev => {
+    $('.skills-container').on('click', '.rectangle', ev => {
         const $target = $(ev.target),
-            $ellipse = $target.hasClass('ellipse') ? $target : $target.parents('.ellipse'),
-            classToAdd = $ellipse.hasClass('tech') ? 'tech' : 'soft',
+            $rectangle = $target.hasClass('rectangle') ? $target : $target.parents('.rectangle'),
+            classToAdd = $rectangle.hasClass('tech') ? 'tech' : 'soft',
             classToRemove = classToAdd === 'tech' ? 'soft' : 'tech',
-            skillName = $ellipse.find('.skill-name').html();
+            skillName = $rectangle.find('.skill-name').html();
 
         $closeBtn.removeClass(classToRemove).addClass(classToAdd);
         $container.removeClass(classToRemove).addClass(classToAdd);
