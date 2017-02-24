@@ -6,14 +6,17 @@ const gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     babel = require('gulp-babel'),
     minifyCss = require('gulp-clean-css'),
-    gulpCopy = require('gulp-copy'),
-    gulpClean = require('gulp-clean'),
-    imageResize = require('gulp-image-resize');
+    copy = require('gulp-copy'),
+    clean = require('gulp-clean'),
+    imageResize = require('gulp-image-resize'),
+    stylus = require('gulp-stylus'),
+    watch = require('gulp-watch'),
+    nib = require('nib');
 
 const BUILD_DIR = './build',
     IMG_SIZE = 128; // px
 
-gulp.task('clean', () => gulp.src(BUILD_DIR, { read: false }).pipe(gulpClean()));
+gulp.task('clean', () => gulp.src(BUILD_DIR, { read: false }).pipe(clean()));
 
 gulp.task('bundle', () => gulp
     .src('./src/*.html')
@@ -33,6 +36,21 @@ gulp.task('resize', () => gulp
                             }))
                             .pipe(gulp.dest(`${BUILD_DIR}/public/assets/`)));
 
+gulp.task('styles', () => gulp
+                            .src('./src/public/styles/*.styl')
+                            .pipe(stylus({
+                                compress: true,
+                                use: nib()
+                            }))
+                            .pipe(gulp.dest('./src/public/styles/')));
+
+gulp.task('watch-styles', () => watch('./src/public/styles/*.styl')
+                                    .pipe(stylus({
+                                        compress: true,
+                                        use: nib()
+                                    }))
+                                    .pipe(gulp.dest('./src/public/styles/')));
+
 gulp.task('copy', () => gulp.src([
     './src/package.json',
     './src/Procfile',
@@ -45,6 +63,6 @@ gulp.task('copy', () => gulp.src([
     './src/public/templates/*.handlebars',
     './src/public/components/handlebars/handlebars.min.js',
     './src/public/components/jquery/dist/jquery.min.js'
-]).pipe(gulpCopy(BUILD_DIR, { prefix: 1 })));
+]).pipe(copy(BUILD_DIR, { prefix: 1 })));
 
-gulp.task('default', ['bundle', 'resize', 'copy']);
+gulp.task('default', ['styles' ,'bundle', 'resize', 'copy']);
