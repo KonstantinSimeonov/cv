@@ -1,19 +1,16 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.languages-component strong {
+.languages-component strong
     text-transform: uppercase;
     color: custom-blue;
-}
 
-.languages-component em {
+.languages-component em
     text-transform: capitalize;
-}
-.languages-component li {
+
+.languages-component li
     margin-top: 1em;
     padding: 0.5em 1em;
-}
 
-.languages-title::before {
-    background: url('../assets/languages-icon.png');
-    background-size: cover;
-}
+.languages-title::before
+    background-cover('../assets/languages-icon.png')

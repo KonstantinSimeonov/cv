@@ -1,55 +1,50 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.tooltip {
-    position: absolute;
-    background: custom-blue;
-    padding: 1em 1em 1em 5em;
-    text-align: center;
-    font-weight: bold;
-    z-index: 9999999;
-    transition: opacity 2s;
-    font-size: 16px;
-    border: 2px solid gray;
-    text-transform: none;
-}
+.tooltip
+    position: absolute
+    background: custom-blue
+    padding: 1em 1em 1em 5em
+    text-align: center
+    font-weight: bold
+    z-index: 9999999
+    font-size: 16px
+    border: 2px solid gray
+    text-transform: none
+    transition(opacity 2s)
 
-.opaque {
-    opacity: 1;
-}
+.opaque
+    opacity: 1
 
-.transparent {
-    opacity: 0.4;
-}
+.transparent
+    opacity: 0.4
 
-.tooltip p {
-    color: white;    
-}
+.tooltip p
+    color: white
 
-.tooltip::after {
-    content: ' ';
-	height: 0;
-	position: absolute;
-	width: 0;
-    right: -2em;
-    top: 0.5em;
-	border: 1em solid transparent; /* arrow size */
-    border-left: 1em solid gray;
-    z-index: 9999999;
-}
+.tooltip::after
+    content: ' '
+    height: 0
+    position: absolute
+    width: 0
+    right: -2em
+    top: 0.5em
+    border: 1em solid transparent
+    border-left: 1em solid gray
+    z-index: 9999999
 
-.tooltip::before {
-    content: 'i';
-    color: white;
-    border: 2px solid white;
-    border-radius: 50%;
-    position: absolute;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    left: 1em;
-    top: 1em;
-    padding: 0.2em;
-    line-height: 1.2;
-    text-align: center;
-    font-size: 24px;
-}
+.tooltip::before
+    content: 'i'
+    color: white
+    border: 2px solid white
+    border-radius: 50%
+    position: absolute
+    display: inline-block
+    width: 1em
+    height: 1em
+    left: 1em
+    top: 1em
+    padding: 0.2em
+    line-height: 1.2
+    text-align: center
+    font-size: 24px

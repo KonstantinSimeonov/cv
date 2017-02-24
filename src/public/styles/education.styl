@@ -1,15 +1,12 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.education-component .section-title::before {
-    background: url('../assets/education-icon.png');
-    background-size: cover;
-}
+.education-component .section-title::before
+    background-cover('../assets/education-icon.png')
 
-.education-component .location {
+.education-component .location
     color: custom-blue;
-}
 
-.education-component li {
+.education-component li
     margin-top: 1em;
     padding: 0.5em 1em;
-}
