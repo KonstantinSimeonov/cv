@@ -1,31 +1,24 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.work-experience-title::before {
-    background: url('../assets/experience-icon.gif');
-    background-size: cover;
-}
+.work-experience-title::before
+    background('../assets/experience-icon.gif')
 
-.experiences {
-    margin-top: 1em;
-}
+.experiences
+    margin-top: 1em
 
-.experience-description {
-    display: inline-block;
-}
+.experience-description
+    display: inline-block
 
-.job-title {
-    font-size: 20px;
-}
+.job-title
+    font-size: 20px
 
-.location {
-    color: custom-blue;
-    font-weight: bold;
-}
+.location
+    color: custom-blue
+    font-weight: bold
 
-.experiences > li {
-    padding: 0.5em;
-}
+.experiences > li
+    padding: 0.5em
 
-.experiences .description-highlights li {
-    margin: 0.25em 1em 1em 2em;
-}
+.experiences .description-highlights li
+    margin: 0.25em 1em 1em 2em

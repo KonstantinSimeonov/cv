@@ -1,26 +1,20 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.strengths-title::before {
-    background: url('../assets/strengths-icon.png');
-    background-size: cover;
-}
+.strengths-title::before
+    background-cover('../assets/strengths-icon.png')
 
-.strengths-component strong {
-    color: custom-red;
-    text-transform: uppercase;
-}
+.strengths-component strong
+    color: custom-red
+    text-transform: uppercase
 
-.strengths li {
-    margin: 1em 0;
-    padding: 0.25em;
-}
+.strengths li
+    margin: 1em 0
+    padding: 0.25em
 
-.img-strength {
-    width: 1.5em;
-}
+.img-strength
+    width: 1.5em
 
-.strengths p {
-    margin-left: 2.5em;
-    margin-bottom: 0.5em;
-}
-
+.strengths p
+    margin-left: 2.5em
+    margin-bottom: 0.5em

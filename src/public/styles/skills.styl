@@ -1,120 +1,94 @@
 @import 'variables.styl'
+@import 'mixins.styl'
 
-.tech .skill-content {
-    background: custom-red;
-}
+.tech .skill-content
+    background: custom-red
 
-.soft .skill-content {
-    background: custom-blue;
-}
+.soft .skill-content
+    background: custom-blue
 
-.skill-content:hover {
-    opacity: 0.75;
-    text-shadow: 2px 2px 10px black;
-}
+.skill-content:hover
+    opacity: 0.75
+    text-shadow: 2px 2px 10px black
 
-.skill-content {
-    box-sizing: content-box;
-    text-transform: uppercase;
-}
+.skill-content
+    box-sizing: content-box
+    text-transform: uppercase
 
-.skill-content strong {
-    display: inline-block;
-    margin: 0.25em auto;
-}
+.skill-content strong
+    display: inline-block
+    margin: 0.25em auto
 
-.ellipse {
-    margin: 0.5em 1em;;
-    cursor: pointer;
-    float: left;
-}
+.ellipse
+    margin: 0.5em 1em
+    cursor: pointer
+    float: left
 
-.ellipse .skill-content {
-    margin: 0;
-    padding: 2em;
-}
+.ellipse .skill-content
+    margin: 0
+    padding: 2em
 
-.ellipse .skill-content .skill-name {
-    color: white;
-}
+.ellipse .skill-content .skill-name
+    color: white
 
-.skill {
-    font-size: 12px;
-    text-align: center;
-}
+.skill
+    font-size: 12px
+    text-align: center
 
-.skills-title::before {
-    background: url('../assets/skills-icon.png');
-    background-size: cover;
-}
+.skills-title::before
+    background-cover('../assets/skills-icon.png')
 
-.skills-container {
-    margin-top: 2em;
-}
+.skills-container
+    margin-top: 2em
 
-.skill-details-container {
-    position: fixed;
-    z-index: 999;
-    width: 35em;
-    margin-top: -100em;
-    margin-left: 15em;
-    min-height: 10em;
-    background: white;
-    padding: 1em;
-    box-shadow: 5px 5px 10px #cccccc;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
+.skill-details-container
+    position: fixed
+    z-index: 999
+    width: 35em
+    margin-top: -100em
+    margin-left: 15em
+    min-height: 10em
+    background: white
+    padding: 1em
+    box-shadow: 5px 5px 10px #cccccc
+    transition(all 0.5s ease-in-out)
 
-.skill-details-container.active {
-    margin-top: 0;
-}
+.skill-details-container.active
+    margin-top: 0
 
-.skill-title {
-    text-transform: uppercase;
-}
+.skill-title
+    text-transform: uppercase
 
-.skill-description {
-    margin-top: 1em;
-}
+.skill-description
+    margin-top: 1em
 
-.close-btn {
-    border: 2px solid lightgray;
-    color: gray;
-    text-align: center;
-    line-height: 1.4em;
-    vertical-align: middle;
-    text-decoration: none;
-    font-weight: bold;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    display: inline-block;
-}
+.close-btn
+    border: 2px solid lightgray
+    color: gray
+    text-align: center
+    line-height: 1.4em
+    vertical-align: middle
+    text-decoration: none
+    font-weight: bold
+    width: 1.5em
+    height: 1.5em
+    border-radius: 50%
+    display: inline-block
 
-.skill-details-container.tech {
-    border: 2px solid custom-red;
-}
+.skill-details-container.tech
+    border: 2px solid custom-red
 
-.skill-details-container.tech p strong {
-    color: custom-red;
-}
+.skill-details-container.tech p strong
+    color: custom-red
 
-.skill-details-container.soft p strong {
-    color: custom-blue;
-}
+.skill-details-container.soft p strong
+    color: custom-blue
 
-.close-btn.tech:hover {
-    background-color: lighten(custom-red, 10);
-}
+.close-btn.tech:hover
+    background-color: lighten(custom-red, 10)
 
-.skill-details-container.soft {
-    border: 2px solid custom-blue;
-}
+.skill-details-container.soft
+    border: 2px solid custom-blue
 
-.close-btn.soft:hover {
-    background-color: lighten(custom-blue, 20);
-}
+.close-btn.soft:hover
+    background-color: lighten(custom-blue, 20)
