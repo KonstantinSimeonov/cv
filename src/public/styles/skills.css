@@ -1,11 +1,9 @@
 .tech .skill-content {
     background: #FF5050;
-    border-radius: 50%;
 }
 
 .soft .skill-content {
     background: #0068A9;
-    border-radius: 50%;
 }
 
 .skill-content:hover {
@@ -83,7 +81,7 @@
 }
 
 .close-btn {
-    border: 2px dashed lightgray;
+    border: 2px solid lightgray;
     color: gray;
     text-align: center;
     line-height: 1.4em;
@@ -97,7 +95,7 @@
 }
 
 .skill-details-container.tech {
-    border: 2px dashed #FF5050;
+    border: 2px solid #FF5050;
 }
 
 .skill-details-container.tech p strong {
@@ -113,7 +111,7 @@
 }
 
 .skill-details-container.soft {
-    border: 2px dashed #0068A9;
+    border: 2px solid #0068A9;
 }
 
 .close-btn.soft:hover {

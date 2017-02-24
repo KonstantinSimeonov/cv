@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev-reload": "cd ./src && live-server",
-    "dev-server": "nodemon ./src/app.js",
+    "dev-server": "cd ./src && nodemon app.js",
     "start": "node ./src/app.js",
     "build": "gulp clean && gulp default",
     "postinstall": "cd ./src && bower install"
@@ -21,6 +21,7 @@
     "gulp-cli": "^1.2.2",
     "gulp-copy": "^1.0.0",
     "gulp-if": "^2.0.2",
+    "gulp-image-resize": "^0.12.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
     "live-server": "^1.2.0",

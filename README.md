@@ -29,8 +29,8 @@ This will output a `./build` folder, which contains the built client.
 - Remove placeholders and fill in meaningful content
 - Rewrite styles using a preprocessor
 - Setup compile step for preprocessor css
-- Setup build step for assets
+- ~~Setup build step for assets~~
 - Refactor `skill.js`
     - extract the dialog window in a jquery widget so it can be reused
-- Make margins and paddings of different components consisten
-- Reorder the skill ellipses in a more fashionable way
+- ~~Make margins and paddings of different components consistent~~
+- ~~Reorder the skill ellipses in a more fashionable way~~

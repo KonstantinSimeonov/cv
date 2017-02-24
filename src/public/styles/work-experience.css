@@ -1,10 +1,10 @@
 .work-experience-title::before {
-    background: url('../assets/experience-logo.gif');
+    background: url('../assets/experience-icon.gif');
     background-size: cover;
 }
 
 .experiences {
-    list-style: none;
+    margin-top: 1em;
 }
 
 .experience-description {
