@@ -23,19 +23,9 @@ $(() => {
                 strengthsTemplate,
                 projectsTemplate,
                 personalData
-            ] = resolved,
-                skillsLayout = [
-                    [1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4]
-                ];
+            ] = resolved;
 
-            let next = 0;
-            for (let i = 0, len = skillsLayout.length; i < len; i += 1) {
-                for (let j = 0, len2 = skillsLayout[i].length; j < len2; j += 1) {
-                    skillsLayout[i][j] = personalData.skills[next++];
-                }
-            }
-
-            $('.skills-section').html(skillsTemplate({ rows: skillsLayout }));
+            $('.skills-section').html(skillsTemplate(personalData));
             $('.education-section').html(educationTemplate(personalData));
             $('.languages-section').html(languagesTemplate(personalData));
             $('.work-expirience-section').html(workExpTemplate(personalData));

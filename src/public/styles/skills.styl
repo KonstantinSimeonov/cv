@@ -1,11 +1,8 @@
 @import 'variables.styl'
 @import 'mixins.styl'
 
-.tech .skill-content
-    background: custom-red
-
-.soft .skill-content
-    background: custom-blue
+.skill-content
+    background: main-color
 
 .skill-content:hover
     opacity: 0.75
@@ -75,22 +72,19 @@
     transition(opacity 2s)
 
 .skill-details-container.tech p strong
-    color: custom-red
+    color: main-color
 
 .close-btn.soft
-    background-color: custom-blue
+    background-color: main-color
 
 .close-btn:hover
     opacity: 1
 
 .skill-details-container.soft p strong
-    color: custom-blue
+    color: main-color
 
 .close-btn.tech
-    background-color: custom-red
+    background-color: main-color
 
-.skill-details-container.soft
-    border: 2px solid custom-blue
-
-.skill-details-container.tech
-    border: 2px solid custom-red
+.skill-details-container
+    border: 2px solid main-color

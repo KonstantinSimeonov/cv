@@ -6,7 +6,7 @@ $.fn.tooltip = function (options) {
         html,
         size,
         css = {},
-        removeOn: { selector, eventName },
+        removeOn: { selector, eventName }
     } = options;
 
     const tooltipHtml =
@@ -40,4 +40,4 @@ $.fn.tooltip = function (options) {
         console.log('zdrkp');
         $tooltip.remove();
     });
-}
+};
