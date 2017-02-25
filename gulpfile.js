@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     nib = require('nib');
 
 const BUILD_DIR = './build',
-    IMG_SIZE = 128; // px
+    IMG_SIZE = 80; // px
 
 gulp.task('clean', () => gulp.src(BUILD_DIR, { read: false }).pipe(clean()));
 
