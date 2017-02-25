@@ -37,15 +37,17 @@ h1, h2
     text-align: left
     padding-bottom: 3em
 
-.link::before {
-    content: ''
+.link
+    word-wrap: break-word
+
+.link::before
+    content: ' '
     height: 14px
     width: 14px
     margin-right: 2px
     display: inline-block
     background: url('../assets/link-icon.png')
     background-size: cover
-}
 
 .link.hover-highlight, .hover-highlight
     transition(color 2s)

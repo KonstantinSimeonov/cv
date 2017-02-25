@@ -60,7 +60,8 @@
             "location": "Telerik Academy",
             "from": "Jan 2015",
             "to": "Mar 2016",
-            "certificate": "https://telerikacademy.com/Certificates/View/1980/6b7b6f44"
+            "certificateUrl": "https://telerikacademy.com/Certificates/View/1980/6b7b6f44",
+            "linkText": "telerikacademy.com/1980/6b7b6f44"
         },
         {
             "educationTitle": "Bachelor in Software Engineering",
@@ -136,7 +137,7 @@
         {
             "name": "MongoDB",
             "description": "",
-            "code": "db.skills.find({\n    $and: {\n        name: { $regex: /^mongos?db$/i },\n        level: { $gt: 'basic', $lte: 'intermediate' },\n        acquiredBy: {\n            $in: [\n                'studying in Telerik Academy',\n                'working on my own projects',\n                'preparing to present on the topic'\n            ]\n        }\n    }\n});"
+            "code": "db.skills.find({\n    $and: [\n        { name: { $regex: /^mongos?db$/i } },\n        { level: { $gt: 'basic', $lte: 'intermediate' } },\n        { acquiredBy: {\n            $in: [\n                'studying in Telerik Academy',\n                'working on my own projects',\n                'preparing to present on the topic'\n            ]\n        }\n    ] \n});"
 ,
             "type": "tech"
         },
@@ -146,8 +147,8 @@
             "type": "soft"
         },
         {
-            "name": "Git",
-            "description": "I started using Git since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub, BitBucket or GitLab, which had me using git while studying and working. This in turn helped me understand the concept of distributed source control and get comfortable with branches, merging, committing, pulling, checking out git repositories at different commits, rewriting commits, looking at diffs and other great git features.",
+            "name": "git",
+            "description": "I started using <strong>git</strong> since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub, BitBucket or GitLab, which had me using git while studying and working. This in turn helped me understand the concept of <strong>distributed source control</strong> and get comfortable with <strong>branches, merging, committing, pulling, checking out git repositories at different commits, rewriting commits, looking at diffs and other great git features</strong>.",
             "type": "tech"
         },
         {
@@ -162,7 +163,7 @@
         },
         {
             "name": "Object-oriented programming",
-            "description": "In the course of studying and working with C#, ASP.NET and JavaScript I often had contact with different object-oriented patterns and practices, which in turn made me familiar with using object-oriented techniques that help developers to write reusable, clear, concise and maintainable code. While I don't always prefer the object-oriented approach as opposed to other techniques, such as functional or data-oriented approach, I certainly enjoy using it when the situation is appropriate - polymorphism, abstraction and encapsulation make building intuitive, reusable and decoupled components of a software system much easier.",
+            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I often had contact with different object-oriented patterns and features, such as interfaces, inheritance, composition and encapsulation, which in turn made me familiar with using object-oriented techniques that help developers to write reusable, clear, concise and maintainable code. While I don't always prefer the object-oriented approach as opposed to other techniques, such as functional or data-oriented approach, I certainly enjoy using it when the situation is appropriate - polymorphism, abstraction and encapsulation make building intuitive, reusable and decoupled components of a software system much easier.",
             "type": "tech"
         }
     ]
