@@ -106,38 +106,38 @@
         },
         {
             "name": "HTML5, CSS, JS",
-            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the DOM API, how to build games using HTML5 canvas and how to develop a single page application.",
+            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM perfomance, building games using HTML5 canvas and developing single page applications.</strong>",
             "type": "tech"
         },
         {
             "name": "NodeJS",
-            "description": "NodeJS is one of the main reasons I love doing JavaScript! I've passed a course at Telerik Academy and I've been using it for many different purposes ever since - working with files, web crawling, creating RESTful APIs or web applications that do server-side rendering, doing small scripts to automate tasks. The thing I love most about Node is that it promotes simplicity and ease of development, but without forcing the developer to sacrifice code quality or performance.",
+            "description": "NodeJS is one of the main reasons I love doing JavaScript! I've passed a course at Telerik Academy and I've been using it for many different purposes ever since - <strong>working with files, web crawling, creating RESTful APIs or web applications that do server-side rendering, doing small scripts to automate tasks</strong>. In the process I also became familiar with <strong>asynchronous programming</strong>, as well as parts of the JavaScript ecosystem such as <strong>npm, bower, testing, build process, continuos integration and deployment</strong> The thing I love most about Node is that it promotes simplicity and ease of development, but without forcing the developer to sacrifice code quality or performance.",
             "type": "tech"
         },
         {
             "name": "Maths",
-            "description": "I graduated from high school with solid knowledge in the area of algebra, geometry and stereometry. I further developed my skills in that area in university, where I studied linear algebra(vectors, matrices, polynomials), calculus(derivatives, functions, limits, integrals) and discrete mathematics(sets, graphs, regular expressions, combinatorics).",
+            "description": "I graduated from high school with solid knowledge in the area of <strong>algebra, geometry and stereometry</strong>. I further developed my skills in that area in university, where I studied <strong>linear algebra (vectors, matrices, polynomials), calculus (derivatives, functions, limits, integrals) and discrete mathematics (sets, graphs, regular expressions, combinatorics)</strong>.",
             "type": "tech"
         },
         {
             "name": "Communication",
-            "description": "My work as a technical trainer required cooperating and communicating with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>better listener</strong>, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
+            "description": "My work as a technical trainer required cooperation and communication with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>good listener</strong>, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
             "type": "soft"
         },
         {
             "name": "Shell scripting",
-            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I've been using <strong>bash</strong> to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
+            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I've been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
             "type": "tech"
         },
         {
             "name": "C#, ASP.NET",
-            "description": "During the courses I've passed at Telerik Academy and later in my work as a trainer, I developed web applications using ASP.NET(MVC, Webforms and Web API) with C#. I've used C# to create RESTful web services, data service layers that decouple the data layer of an application, write unit tests and implement dependency inversion and dependency injection in back-end web applications.",
+            "description": "During the courses I've passed at Telerik Academy and later in my work as a trainer, I developed web applications using <strong>ASP.NET (MVC, Webforms and Web API) with C#</strong> - as a part of the education program, later as demos in lectures and while maintaining and extending www.telerikacademy.com. I've used C# to create <strong>RESTful web services, data service layers</strong> that decouple the data layer of an application, write <strong>unit tests</strong> and implement <strong>dependency inversion</strong> and <strong>dependency injection</strong> in back-end web applications.",
             "type": "tech"
         },
         {
             "name": "MongoDB",
             "description": "",
-            "code": "db.skills.find({\n    $and: [\n        { name: { $regex: /^mongos?db$/i } },\n        { level: { $gt: 'basic', $lte: 'intermediate' } },\n        { acquiredBy: {\n            $in: [\n                'studying in Telerik Academy',\n                'working on my own projects',\n                'preparing to present on the topic'\n            ]\n        }\n    ] \n});"
+            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n            $in: [\n                \"studying in Telerik Academy\",\n                \"working on my own projects\",\n                \"preparing to present on the topic\"\n            ]\n        }\n    ] \n});"
 ,
             "type": "tech"
         },

@@ -6,7 +6,7 @@ function attachSkillsEvents() {
 
     // dialog window widget parts
     const $container = $('<div />').addClass('skill-details-container'),
-        $closeBtn = $('<a href="#" />').addClass('close-btn pull-right').text('x').appendTo($container),
+        $closeBtn = $('<a href="#" />').addClass('close-btn').text('close').appendTo($container),
         $msgBox = $('<article />').addClass('skill-details').appendTo($container),
         $skillTitle = $('<strong />').addClass('skill-title').appendTo($msgBox),
         $skillDescription = $('<p />').addClass('skill-description').appendTo($msgBox),

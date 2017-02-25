@@ -34,3 +34,4 @@ This will output a `./build` folder, which contains the built client.
     - extract the dialog window in a jquery widget so it can be reused
 - ~~Make margins and paddings of different components consistent~~
 - ~~Reorder the skill rectangles in a more fashionable way~~
+- Add `about` in the menu and in the app
