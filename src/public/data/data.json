@@ -89,7 +89,7 @@
     "strengths": [
         {
             "name": "People person",
-            "description": "Dancing, working on group projects with fellow students, teaching programming and being part of the trainers team @TelerikAcademy, made team work as natural as breathing to me.",
+            "description": "Dancing, working on group projects with fellow students, teaching programming and being part of the trainers team @ Telerik Academy, made team work as natural as breathing to me.",
             "iconUrl": "/public/assets/learning-icon.png"
         },
         {
@@ -101,12 +101,12 @@
     "skills": [
         {
             "name": "Algorithms",
-            "description": "The time spent in the university and in Telerik Academy really got me interested into data structures and algorithms. I understand and can implement most basic and intermediate data structures, like <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting and searching algorithms, breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and other.",
+            "description": "The time spent in the university and Telerik Academy really got me interested into data structures and algorithms. I understand and can implement most basic and intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
             "type": "tech"
         },
         {
             "name": "HTML5, CSS, JS",
-            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM perfomance, building games using HTML5 canvas and developing single page applications.</strong>",
+            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM performance, building games using HTML5 canvas and developing single page applications.</strong>",
             "type": "tech"
         },
         {
@@ -121,12 +121,12 @@
         },
         {
             "name": "Communication",
-            "description": "My work as a technical trainer required cooperation and communication with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>good listener</strong>, explain and express my ideas better, more clear and concise. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
+            "description": "My work as a technical trainer required cooperation and communication with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>good listener</strong>, taught me to <strong>explain and express my ideas clear and concise</strong>. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
             "type": "soft"
         },
         {
             "name": "Shell scripting",
-            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I've been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity, which bash gives me, motivates me to keep learning and practicing bash features.",
+            "description": "Ever since I graduated from Telerik Academy, I've worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I've been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux.",
             "type": "tech"
         },
         {
@@ -137,13 +137,12 @@
         {
             "name": "MongoDB",
             "description": "",
-            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n            $in: [\n                \"studying in Telerik Academy\",\n                \"working on my own projects\",\n                \"preparing to present on the topic\"\n            ]\n        }\n    ] \n});"
-,
+            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n            $in: [\n                \"studying in Telerik Academy\",\n                \"working on my own projects\",\n                \"preparing to present on the topic\"\n            ]\n        }\n    ] \n});",
             "type": "tech"
         },
         {
             "name": "Organization",
-            "description": "A part of my job @ Telerik Academy was to organize exams, lectures and other events. To manage those tasks successfully, I had to manage not only my time, but other people's time as well, as well as set deadlines, synchronize and oversee tasks, approach and negotiate with different people at different positions. All of that developed and honed my skills at organizing events, planning and managing different tasks and processes.",
+            "description": "A part of my job @ Telerik Academy was the organization of exams, lectures and other events. <strong>To succeed in those tasks, I had to manage my and other people's time, set deadlines for activities, synchronize and oversee tasks, approach and negotiate with different people at different positions</strong>, like colleagues, students and parents. All of that developed and honed my skills at organizing events, planning and managing tasks and processes.",
             "type": "soft"
         },
         {
@@ -153,7 +152,7 @@
         },
         {
             "name": "Creativity",
-            "description": "Creating exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating demos, writing code live during presentations and working around legacy systems were a huge part of my tasks as a technical trainer - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me elevate those skills to a whole new level during my time in Telerik Academy.",
+            "description": "<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me elevate those skills to a whole new level during my time in Telerik Academy.",
             "type": "soft"
         },
         {
@@ -163,7 +162,7 @@
         },
         {
             "name": "Object-oriented programming",
-            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I often had contact with different object-oriented patterns and features, such as interfaces, inheritance, composition and encapsulation, which in turn made me familiar with using object-oriented techniques that help developers to write reusable, clear, concise and maintainable code. While I don't always prefer the object-oriented approach as opposed to other techniques, such as functional or data-oriented approach, I certainly enjoy using it when the situation is appropriate - polymorphism, abstraction and encapsulation make building intuitive, reusable and decoupled components of a software system much easier.",
+            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction and polymorphism, encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects and mediators. Those techniques helped me write more <strong>maintaible, flexible, testable and reusable code</strong>.",
             "type": "tech"
         }
     ]

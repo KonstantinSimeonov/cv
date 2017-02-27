@@ -10,7 +10,10 @@
                 {{from}} - {{to}}
             </time>
             {{#if certificateUrl}}
-            <p>Certificate link: <em><a href="{{certificateUrl}}" class="link hover-highlight" target="_blank">{{linkText}}</a></em></p>
+            <p>
+                <span>Certificate link:</span>
+                <a href="{{certificateUrl}}" class="link hover-highlight" target="_blank">{{certificateUrl}}</a>
+            </p>
             {{/if}}
         </li>
         {{/each}}

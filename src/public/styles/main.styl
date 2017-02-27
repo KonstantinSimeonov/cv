@@ -2,7 +2,7 @@
 @import 'mixins.styl'
 
 body
-    font-family: Impact, 'Arial Narrow Bold', sans-serif
+    font-family: 'Arial Narrow Bold', sans-serif
     opacity: 0
     min-height: 89em
     width: 100%
@@ -39,15 +39,17 @@ h1, h2
 
 .link
     word-wrap: break-word
+    padding-left: 16px
 
 .link::before
     content: ' '
     height: 14px
     width: 14px
-    margin-right: 2px
     display: inline-block
+    margin-left: -16px
     background: url('../assets/link-icon.png')
     background-size: cover
+    position: absolute
 
 .link.hover-highlight, .hover-highlight
     transition(color 2s)
@@ -111,11 +113,15 @@ h1, h2
 
 .menu
     position: relative
-    top: -20em
+    top: -35em
     transition(all 0.5s .25s ease-in-out)
 
+@media screen and (max-width: 1346px)
+    .menu .custom-btn
+        font-size: 3em
+
 .navigation:hover .menu
-    transform(translate(0, 20em))
+    transform(translate(0, 35em))
 
 .navigation:hover .menu-img
     visibility: hidden
