@@ -30,7 +30,7 @@
                 "type": "url"
             }
         ],
-        "aboutMe": "I'm a 22 years old JavaScript developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I'm currently unemployed and looking for a job that will help me take my JavaScript skills and programming knowledge to the next level."
+        "aboutMe": "I'm a 22 years old JavaScript developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I'm currently looking for a job that will help me take my JavaScript skills and programming knowledge to the next level."
     },
     "workExperience": [
         {
@@ -39,7 +39,7 @@
             "jobTitle": "Technical Trainer",
             "location": "Telerik Academy",
             "descriptions": [
-                "Helped more than 2000 students make their first web applications and dive into web development with C#, HTML, CSS and JavaScript",
+                "Delivered lectures that reached more than 2000 students and helped them create their first web applications and dive into web development with C#, HTML, CSS and JavaScript",
                 "Experienced firsthand how important keeping deadlines is, became better at taking responsibilities and honed organizational skills"
             ]
         }
@@ -101,12 +101,12 @@
     "skills": [
         {
             "name": "Algorithms",
-            "description": "The time spent in the university and Telerik Academy really got me interested into data structures and algorithms. I understand and can implement most basic and intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
+            "description": "The time spent at university and Telerik Academy really got me interested into data structures and algorithms. I understand and can implement most basic and intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
             "type": "tech"
         },
         {
             "name": "HTML5, CSS, JS",
-            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time in Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM performance, building games using HTML5 canvas and developing single page applications.</strong>",
+            "description": "Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time at Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM performance, building games using HTML5 canvas and developing single page applications.</strong>",
             "type": "tech"
         },
         {
@@ -116,7 +116,7 @@
         },
         {
             "name": "Maths",
-            "description": "I graduated from high school with solid knowledge in the area of <strong>algebra, geometry and stereometry</strong>. I further developed my skills in that area in university, where I studied <strong>linear algebra (vectors, matrices, polynomials), calculus (derivatives, functions, limits, integrals) and discrete mathematics (sets, graphs, regular expressions, combinatorics)</strong>.",
+            "description": "I graduated from high school with solid knowledge in the area of <strong>algebra, geometry and stereometry</strong>. I further developed my skills in that area at university, where I studied <strong>linear algebra (vectors, matrices, polynomials), calculus (derivatives, functions, limits, integrals) and discrete mathematics (sets, graphs, regular expressions, combinatorics)</strong>.",
             "type": "tech"
         },
         {
@@ -137,12 +137,12 @@
         {
             "name": "MongoDB",
             "description": "",
-            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n               $in: [\n                    \"MEAN stack course in Telerik Academy\",\n                 \"working on my own web projects\",\n                   \"using it as a part of NodeJS presentations I've led\"\n               ]\n           }\n        }\n    ] \n});",
+            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n               $in: [\n                    \"MEAN stack course at Telerik Academy\",\n                 \"working on my own web projects\",\n                   \"using it as part of NodeJS presentations I've led\"\n               ]\n           }\n        }\n    ] \n});",
             "type": "tech"
         },
         {
             "name": "Organization",
-            "description": "A part of my job @ Telerik Academy was the organization of exams, lectures and other events. <strong>To succeed in those tasks, I had to manage my and other people's time, set deadlines for activities, synchronize and oversee tasks, approach and negotiate with different people at different positions</strong>, like colleagues, students and parents. All of that developed and honed my skills at organizing events, planning and managing tasks and processes.",
+            "description": "Part of my job @ Telerik Academy was the organization of exams, lectures and other events. <strong>To succeed in those tasks, I had to manage my and other people's time, set deadlines for activities, synchronize and oversee tasks, approach and negotiate with different people at different positions</strong>, like colleagues, students and parents. All of that developed and honed my skills at organizing events, planning and managing tasks and processes.",
             "type": "soft"
         },
         {
@@ -152,7 +152,7 @@
         },
         {
             "name": "Creativity",
-            "description": "<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me elevate those skills to a whole new level during my time in Telerik Academy.",
+            "description": "<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me improve those skills immensely during my time at Telerik Academy.",
             "type": "soft"
         },
         {
@@ -162,7 +162,7 @@
         },
         {
             "name": "Object-oriented programming",
-            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction and polymorphism, encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects and mediators. Those techniques helped me write more <strong>maintaible, flexible, testable and reusable code</strong>.",
+            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction and polymorphism, encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects and mediators. Those techniques helped me write more <strong>maintainable, flexible, testable and reusable code</strong>.",
             "type": "tech"
         }
     ]
