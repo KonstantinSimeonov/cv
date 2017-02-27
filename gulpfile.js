@@ -9,6 +9,7 @@ const gulp = require('gulp'),
     copy = require('gulp-copy'),
     clean = require('gulp-clean'),
     imageResize = require('gulp-image-resize'),
+    jsonminify = require('gulp-jsonminify'),
     stylus = require('gulp-stylus'),
     watch = require('gulp-watch'),
     nib = require('nib');
@@ -51,12 +52,16 @@ gulp.task('watch-styles', () => watch('./src/public/styles/*.styl')
                                     }))
                                     .pipe(gulp.dest('./src/public/styles/')));
 
+gulp.task('json', () => gulp
+                            .src('./src/public/data/data.json')
+                            .pipe(jsonminify())
+                            .pipe(gulp.dest(`${BUILD_DIR}/public/data/`)));
+
 gulp.task('copy', () => gulp.src([
     './src/package.json',
     './src/Procfile',
     './src/app.js',
     './src/resume.pdf',
-    './src/public/data/data.json',
     './src/public/assets/photo.jpg',
     './src/public/assets/favicon.ico',
     './src/public/assets/cv-background.png',
@@ -65,4 +70,4 @@ gulp.task('copy', () => gulp.src([
     './src/public/components/jquery/dist/jquery.min.js'
 ]).pipe(copy(BUILD_DIR, { prefix: 1 })));
 
-gulp.task('default', ['styles' ,'bundle', 'resize', 'copy']);
+gulp.task('default', ['styles' ,'bundle', 'resize', 'json', 'copy']);

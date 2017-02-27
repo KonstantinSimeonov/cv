@@ -137,7 +137,7 @@
         {
             "name": "MongoDB",
             "description": "",
-            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n            $in: [\n                \"studying in Telerik Academy\",\n                \"working on my own projects\",\n                \"preparing to present on the topic\"\n            ]\n        }\n    ] \n});",
+            "code": "db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \"basic\", $lte: \"intermediate\" } },\n        { acquiredBy: {\n               $in: [\n                    \"MEAN stack course in Telerik Academy\",\n                 \"working on my own web projects\",\n                   \"using it as a part of NodeJS presentations I've led\"\n               ]\n           }\n        }\n    ] \n});",
             "type": "tech"
         },
         {
