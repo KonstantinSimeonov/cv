@@ -33,7 +33,6 @@ const server = http.createServer((request, response) => {
     /* static files */
     if (cleanUrl.startsWith(PUBLIC_ROUTE)) {
         const staticFilePath = path.join(__dirname, cleanUrl);
-        console.log(staticFilePath);
 
         if (!fs.existsSync(staticFilePath)) {
             response.writeHead(404);

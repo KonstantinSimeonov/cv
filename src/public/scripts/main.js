@@ -51,7 +51,7 @@ $(() => {
             });
 
             $('#btn-print').on('click', () => {
-                alert(`Please tick the options for background colors, images and graphics from page setup/options`);
+                alert('Please tick the options for background colors, images and graphics from page setup/options');
                 window.print();
             });
         })

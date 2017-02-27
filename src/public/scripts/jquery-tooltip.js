@@ -2,7 +2,7 @@
 
 $.fn.tooltip = function (options) {
 
-    const { 
+    const {
         html,
         size,
         css = {},
@@ -10,7 +10,7 @@ $.fn.tooltip = function (options) {
     } = options;
 
     const tooltipHtml =
-`<div class="tooltip tooltip-opaque">
+        `<div class="tooltip tooltip-opaque">
     <p>${html}</p>
 </div>`,
         $tooltip = $(tooltipHtml),
@@ -34,10 +34,5 @@ $.fn.tooltip = function (options) {
 
     $tooltip.removeClass(add).addClass(remove);
 
-    console.log(selector, eventName);
-
-    $(selector).one(eventName, () => {
-        console.log('zdrkp');
-        $tooltip.remove();
-    });
+    $(selector).one(eventName, () => $tooltip.remove());
 };
