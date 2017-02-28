@@ -2,7 +2,7 @@
 
 'use strict';
 
-$(() => {
+$(window).on('load', () => {
     Promise.all([
         templates.get('skills'),
         templates.get('work-experience'),
