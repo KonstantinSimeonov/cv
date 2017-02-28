@@ -25,6 +25,8 @@ $(() => {
                 personalData
             ] = resolved;
 
+            personalData.skills.sort((first, second) => (first.priority || 9999) - (second.priority || 9999));
+
             $('.skills-section').html(skillsTemplate(personalData));
             $('.education-section').html(educationTemplate(personalData));
             $('.languages-section').html(languagesTemplate(personalData));

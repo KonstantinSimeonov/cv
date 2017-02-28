@@ -19,7 +19,7 @@ const BUILD_DIR = './build',
 
 gulp.task('clean', () => gulp.src(BUILD_DIR, { read: false }).pipe(clean()));
 
-gulp.task('bundle', () => gulp
+gulp.task('bundle', ['styles'], () => gulp
     .src('./src/*.html')
     .pipe(useref())
     .pipe(gulpif('*.js', babel({ presets: ['es2015'] })))
@@ -70,4 +70,4 @@ gulp.task('copy', () => gulp.src([
     './src/public/components/jquery/dist/jquery.min.js'
 ]).pipe(copy(BUILD_DIR, { prefix: 1 })));
 
-gulp.task('default', ['styles' ,'bundle', 'resize', 'json', 'copy']);
+gulp.task('default', ['bundle', 'resize', 'json', 'copy']);
