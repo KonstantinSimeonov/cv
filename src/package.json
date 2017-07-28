@@ -1,41 +1,7 @@
 {
-  "name": "cv",
+  "name": "src",
   "version": "1.0.0",
-  "description": "Resume for job application",
-  "main": "index.js",
-  "engines": {
-    "node": "7.6.0"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "build": "webpack --progress --color --config webpack.config.js",
-    "watch": "webpack --progress --color --watch --config webpack.config.js",
-    "server": "webpack-dev-server --progress --color --config webpack.config.js"
-  },
-  "keywords": [
-    "cv",
-    "resume"
-  ],
-  "author": "Konstantin Simeonov <kon.simeonov@protonmail.com>",
+  "main": "server.js",
   "license": "MIT",
-  "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-es2015": "^6.24.1",
-    "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "handlebars-loader": "^1.5.0",
-    "html-webpack-plugin": "^2.29.0",
-    "image-webpack-loader": "^3.3.1",
-    "stylus-loader": "^3.0.1",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.4.0",
-    "webpack-dev-server": "^2.6.1"
-  },
-  "dependencies": {
-    "handlebars": "^4.0.10",
-    "jquery": "^3.2.1"
-  }
+  "start": "node server.js"
 }

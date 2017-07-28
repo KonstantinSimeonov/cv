@@ -7,23 +7,24 @@ const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     resolve: {
         extensions: ['.styl', '.js', '.png', '.jpg', '.ico', '.gif'],
         alias: {
-            'handlebars': './node_modules/handlebars/dist/handlebars.js',
-            'assets': path.resolve(__dirname, 'public', 'assets'),
-            'styles': path.resolve(__dirname, 'public', 'styles')
+            'handlebars': path.resolve('node_modules', 'handlebars', 'dist', 'handlebars.js'),
+            'assets': path.resolve(__dirname, 'src', 'public', 'assets'),
+            'styles': path.resolve(__dirname, 'src', 'public', 'styles')
         }
     },
     entry: {
-        main: path.resolve(__dirname, 'public', 'main.js')
+        app: path.resolve(__dirname, 'src', 'public', 'app.js')
     },
     output: {
-        path: path.resolve(__dirname, '..', 'build'),
+        path: path.resolve(__dirname, 'build', 'public'),
         filename: '[name].[hash].js',
-        publicPath: '/'
+        publicPath: '/public/'
     },
     module: {
         loaders: [
@@ -31,7 +32,7 @@ module.exports = {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader',
                 options: {
-                    helperDirs: [__dirname + '/public/handlebars-helpers']
+                    helperDirs: [__dirname + '/src/public/handlebars-helpers']
                 }
             },
             {
@@ -40,12 +41,7 @@ module.exports = {
             },
             {
                 test: /\.styl$/,
-                use: ExtractTextPlugin.extract(['css-loader', {
-                    loader: 'stylus-loader',
-                    options: {
-
-                    }
-                }])
+                use: ExtractTextPlugin.extract(['css-loader', 'stylus-loader'])
             },
             {
                 test: /\.(png|gif|ico|jpe?g)/,
@@ -64,17 +60,24 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['build/*.*'], { root: path.resolve(__dirname, '..') }),
+        new CleanWebpackPlugin(['build/public/*.*'], { root: __dirname }),
         new webpack.LoaderOptionsPlugin({
             stylus: {
                 preferPathResolver: 'webpack'
             }
         }),
-        new ExtractTextPlugin('./[name].css'),
+        new ExtractTextPlugin('[name].css'),
         new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, 'public', 'index.template.html'),
+            template: path.resolve(__dirname, 'src', 'public', 'index.template.html'),
             filename: 'index.html',
             title: 'Konstantin Simeonov - Resume'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: path.resolve(__dirname, 'src', 'public', 'static'), to: path.resolve(__dirname, 'build', 'public', 'static') },
+            { from: path.resolve(__dirname, 'src', 'public', 'assets'), to: path.resolve(__dirname, 'build', 'public', 'assets') },
+            { from: path.resolve(__dirname, 'Procfile'), to: path.resolve(__dirname, 'build') },
+            { from: path.resolve(__dirname, 'src', 'package.json'), to: path.resolve(__dirname, 'build') },
+            { from: path.resolve(__dirname, 'src', 'server.js'), to: path.resolve(__dirname, 'build') }
+        ])
     ]
 };

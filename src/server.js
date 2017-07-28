@@ -22,9 +22,9 @@ const fs = require('fs'),
     http = require('http');
 
 /* startup setup */
-const html = fs.readFileSync(path.join(__dirname, './index.html'), 'utf8'),
-    pdfStats = fs.statSync(path.join(__dirname, './resume.pdf')),
-    pdfResume = fs.readFileSync(path.join(__dirname, './resume.pdf'));
+const html = fs.readFileSync(path.join(__dirname, './public/index.html'), 'utf8'),
+    pdfStats = fs.statSync(path.join(__dirname, './public/static/resume.pdf')),
+    pdfResume = fs.readFileSync(path.join(__dirname, './public/static/resume.pdf'));
 
 const server = http.createServer((request, response) => {
     const cleanUrl = request.url.split('?')[0];
