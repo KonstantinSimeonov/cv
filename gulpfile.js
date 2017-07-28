@@ -1,18 +1,18 @@
 'use strict';
 
-const gulp = require('gulp'),
-    useref = require('gulp-useref'),
-    gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    babel = require('gulp-babel'),
-    minifyCss = require('gulp-clean-css'),
-    copy = require('gulp-copy'),
-    clean = require('gulp-clean'),
-    imageResize = require('gulp-image-resize'),
-    jsonminify = require('gulp-jsonminify'),
-    stylus = require('gulp-stylus'),
-    watch = require('gulp-watch'),
-    nib = require('nib');
+const gulp = require('gulp');
+const useref = require('gulp-useref');
+const gulpif = require('gulp-if');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+const minifyCss = require('gulp-clean-css');
+const copy = require('gulp-copy');
+const clean = require('gulp-clean');
+const imageResize = require('gulp-image-resize');
+const jsonminify = require('gulp-jsonminify');
+const stylus = require('gulp-stylus');
+const watch = require('gulp-watch');
+const nib = require('nib');
 
 const BUILD_DIR = './build',
     IMG_SIZE = 80; // px
@@ -20,7 +20,7 @@ const BUILD_DIR = './build',
 gulp.task('clean', () => gulp.src(BUILD_DIR, { read: false }).pipe(clean()));
 
 gulp.task('bundle', ['styles'], () => gulp
-    .src('./src/*.html')
+    .src('./src/public/*.html')
     .pipe(useref())
     .pipe(gulpif('*.js', babel({ presets: ['es2015'] })))
     .pipe(gulpif('*.js', uglify()))
@@ -28,34 +28,34 @@ gulp.task('bundle', ['styles'], () => gulp
     .pipe(gulp.dest(BUILD_DIR)));
 
 gulp.task('resize', () => gulp
-                            .src('./src/public/assets/*-icon*')
-                            .pipe(imageResize({
-                                height: IMG_SIZE,
-                                width: IMG_SIZE,
-                                crop: false,
-                                upscale: false
-                            }))
-                            .pipe(gulp.dest(`${BUILD_DIR}/public/assets/`)));
+    .src('./src/public/assets/*-icon*')
+    .pipe(imageResize({
+        height: IMG_SIZE,
+        width: IMG_SIZE,
+        crop: false,
+        upscale: false
+    }))
+    .pipe(gulp.dest(`${BUILD_DIR}/public/assets/`)));
 
 gulp.task('styles', () => gulp
-                            .src('./src/public/styles/*.styl')
-                            .pipe(stylus({
-                                compress: true,
-                                use: nib()
-                            }))
-                            .pipe(gulp.dest('./src/public/styles/')));
+    .src('./src/public/styles/*.styl')
+    .pipe(stylus({
+        compress: true,
+        use: nib()
+    }))
+    .pipe(gulp.dest('./src/public/styles/')));
 
 gulp.task('watch-styles', () => watch('./src/public/styles/*.styl')
-                                    .pipe(stylus({
-                                        compress: true,
-                                        use: nib()
-                                    }))
-                                    .pipe(gulp.dest('./src/public/styles/')));
-
+    .pipe(stylus({
+        compress: true,
+        use: nib()
+    }))
+    .pipe(gulp.dest('./src/public/styles/')));
+// 
 gulp.task('json', () => gulp
-                            .src('./src/public/data/data.json')
-                            .pipe(jsonminify())
-                            .pipe(gulp.dest(`${BUILD_DIR}/public/data/`)));
+    .src('./src/public/data/data.json')
+    .pipe(jsonminify())
+    .pipe(gulp.dest(`${BUILD_DIR}/public/data/`)));
 
 gulp.task('copy', () => gulp.src([
     './src/package.json',

@@ -79,9 +79,18 @@ h1, h2
     left: 0
 
 .timespan
+    display: inline-block
     color: gray
     font-weight: bold
     font-size: 14px
+
+.timespan::before
+    content: ' '
+    display: inline-block
+    width: 16px
+    height: 16px
+    background: url('~assets/date-icon.jpg')
+    background-size: 16px
 
 .pull-left
     float: left

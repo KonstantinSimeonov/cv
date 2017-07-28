@@ -1,6 +1,0 @@
-{
-    "files.exclude": {
-        "**/*.css": true
-    },
-    "vsicons.presets.angular": false
-}
