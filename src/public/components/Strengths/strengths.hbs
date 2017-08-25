@@ -1,0 +1,12 @@
+<section class="cv-component strengths-component">
+    <h2 class="section-title strengths-title">Strengths</h2>
+    <ul class="no-bullets strengths">
+        {{#each strengths}}
+        <li class="bottom-dashed">
+            <img class="img-strength" src="{{iconUrl}}">
+            <strong>{{name}}</strong>
+            <p>{{description}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</section>

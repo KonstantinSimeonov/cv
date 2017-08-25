@@ -1,0 +1,14 @@
+<section class="cv-component skills-component">
+    <h2 class="section-title skills-title">Skills</h2>
+    <div class="skills-container">
+        <ul class="no-bullets">
+            {{#each skills}}
+            <li class="skill rectangle {{type}}">
+                <div class="skill-content">
+                    <strong class="skill-name">{{name}}</strong>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</section>

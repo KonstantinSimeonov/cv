@@ -1,0 +1,26 @@
+<section class="cv-component personal-info-component clearfix">
+    <div class="pull-left">
+        <h1 class="cv-name">{{names.first}} {{names.last}}</h1>
+        <h3 class="cv-title">{{title}}</h3>
+        <div class="contacts clearfix">
+            {{#each contacts}}
+            <div class="pull-left">
+                <img class="img-contact" src="{{iconUrl}}">
+                {{#ifEqual type "url"}}
+                <a href="{{#ifEqual urlType "email"}}mailto:{{/ifEqual}}{{content}}" class="hover-highlight">{{this.content}}</a>
+                {{else}}
+                <em class="content">{{content}}</em>
+                {{/ifEqual}}
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="about-me">
+            <h3>A few words about me</h3>
+            <p>{{aboutMe}}</p>
+        </div>
+    </div>
+    <div class="photo-container pull-right">
+        <img class="photo" src="{{photoUrl}}" alt="photo of me">
+    </div>
+</section>

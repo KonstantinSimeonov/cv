@@ -4,6 +4,5 @@ node_modules
 npm-debug.log
 typings
 build
-/src/public/components
 .vscode
 jsconfig.json

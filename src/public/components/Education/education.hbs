@@ -1,0 +1,20 @@
+<section class="cv-component education-component">
+    <h2 class="section-title">Education</h2>
+    <ul>
+        {{#each educations}}
+        <li class="bottom-dashed no-bullets">
+            <h4 class="education-title">{{educationTitle}}</h4>
+            <p class="location">@ {{location}}</p>
+            <time class="timespan">
+                {{from}} - {{to}}
+            </time>
+            {{#if certificateUrl}}
+            <p>
+                <span>Certificate link:</span>
+                <a href="{{certificateUrl}}" class="link hover-highlight" target="_blank">{{certificateUrl}}</a>
+            </p>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+</section>
