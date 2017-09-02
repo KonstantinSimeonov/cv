@@ -8,9 +8,6 @@
     "parserOptions": {
         "sourceType": "module"
     },
-    "ignore": [
-        "./src/app.js"
-    ],
     "rules": {
         "indent": [ "error", 4],
         "linebreak-style": [ "error", "unix"],

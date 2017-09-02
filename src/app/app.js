@@ -36,13 +36,6 @@ $('.navigation').prepend(Tooltip.render({
     removeOn: { eventName: 'mouseover', selector: '.menu' }
 }));
 
-$('.skills-title').eq(0).prepend(Tooltip.render({
-    html: 'Click on a skill to see details',
-    size: 100,
-    removeOn: { eventName: 'click', selector: '.skills-section' },
-    css: { 'margin-left': '1em' }
-}));
-
 $('#btn-print').on('click', () => {
     alert('Please tick the options for background colors, images and graphics from page setup/options');
     window.print();

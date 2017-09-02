@@ -3,7 +3,7 @@ import './education.styl';
 import $ from 'jquery';
 
 export default {
-    render(data) {
-        return $(educationTemplate(data));
-    }
+	render(data) {
+		return $(educationTemplate(data));
+	}
 };
