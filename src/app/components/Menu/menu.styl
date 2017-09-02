@@ -1,0 +1,28 @@
+@import '~styles/mixins.styl';
+
+.navigation
+    position: absolute
+    display: inline-block
+    top: 1em
+    right: 1em
+    z-index: 999
+    transition(visibility 1s ease-in-out)
+
+.menu-img
+    height: 2em
+    width: 2em
+
+.menu
+    position: relative
+    top: -35em
+    transition(all 0.5s .25s ease-in-out)
+
+@media screen and (max-width: 1346px)
+    .menu .custom-btn
+        font-size: 3em
+
+.navigation:hover .menu
+    transform(translate(0, 35em))
+
+.navigation:hover .menu-img
+    visibility: hidden

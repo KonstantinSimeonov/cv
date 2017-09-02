@@ -13,6 +13,7 @@ import PersonalInfo from './components/PersonalInfo';
 import Strengths from './components/Strengths';
 import WorkExperience from './components/WorkExperience';
 import Tooltip from './components/Tooltip';
+import Menu from './components/Menu';
 
 data.skills.sort((first, second) => (first.priority || 9999) - (second.priority || 9999));
 
@@ -28,13 +29,9 @@ const selectors = [
 
 selectors.forEach(([s, component]) => $(s).append(component.render(data)));
 
-$('body').addClass('opaque');
+$('body').prepend(Menu.render());
 
-$('.navigation').prepend(Tooltip.render({
-    html: 'Hover the menu icon to open the menu',
-    size: 150,
-    removeOn: { eventName: 'mouseover', selector: '.menu' }
-}));
+$('body').addClass('opaque');
 
 $('#btn-print').on('click', () => {
     alert('Please tick the options for background colors, images and graphics from page setup/options');
