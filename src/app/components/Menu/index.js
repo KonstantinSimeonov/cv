@@ -15,6 +15,11 @@ export default {
 		const $menu = $(menuTemplate({ menuIcon }));
 		$menu.prepend($tooltip);
 
+		$menu.find('#btn-print').on('click', () => {
+			alert('Please tick the options for background colors, images and graphics from page setup/options');
+			window.print();
+		});
+
 		return $menu;
 	}
 }

@@ -14,11 +14,13 @@ export default {
 			css: { 'margin-left': '1em' }
 		});
 
-		const $renderedTemplate = $(skillsTemplate(skills));
+		const sortedSkils = skills.sort((first, second) => (first.priority || 9999) - (second.priority || 9999));
+
+		const $renderedTemplate = $(skillsTemplate(sortedSkils));
 		$renderedTemplate.eq(0).prepend($tooltip);
 		$renderedTemplate
 			.find('.skill-list')
-			.append(...skills.map(d => {
+			.append(...sortedSkils.map(d => {
 				return $('<li class="skill rectangle" />').append(Skill.render(d))
 			}))
 

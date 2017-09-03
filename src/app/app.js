@@ -15,9 +15,8 @@ import WorkExperience from './components/WorkExperience';
 import Tooltip from './components/Tooltip';
 import Menu from './components/Menu';
 
-data.skills.sort((first, second) => (first.priority || 9999) - (second.priority || 9999));
-
 const selectors = [
+	['body', Menu],
     ['.skills-section', Skills],
     ['.education-section', Education],
     ['.languages-section', Languages],
@@ -29,11 +28,4 @@ const selectors = [
 
 selectors.forEach(([s, component]) => $(s).append(component.render(data)));
 
-$('body').prepend(Menu.render());
-
 $('body').addClass('opaque');
-
-$('#btn-print').on('click', () => {
-    alert('Please tick the options for background colors, images and graphics from page setup/options');
-    window.print();
-});
