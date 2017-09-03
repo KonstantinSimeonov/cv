@@ -3,10 +3,10 @@ import skillsTemplate from './skills.hbs';
 import Tooltip from '../Tooltip/';
 import './skills.styl';
 import AnimatedModalWindow from '../AnimatedModalWindow';
-
+import Skill from './Skill/';
 
 export default {
-    render(data) {
+	render({ skills }) {
 		const $tooltip = Tooltip.render({
 			html: 'Click on a skill to see details',
 			size: 100,
@@ -14,21 +14,14 @@ export default {
 			css: { 'margin-left': '1em' }
 		});
 
-		const $renderedTemplate = $(skillsTemplate(data));
-
+		const $renderedTemplate = $(skillsTemplate(skills));
 		$renderedTemplate.eq(0).prepend($tooltip);
+		$renderedTemplate
+			.find('.skill-list')
+			.append(...skills.map(d => {
+				return $('<li class="skill rectangle" />').append(Skill.render(d))
+			}))
 
-        $renderedTemplate.find('.skills-container').on('click', '.rectangle', ev => {
-            $('body').prepend(AnimatedModalWindow.render({
-				title: 'writing shit code',
-				description: 'im a master at it',
-				code: 'main = putStrLn "zdr kp"',
-				type: 'tech'
-			}));
-
-			AnimatedModalWindow.mounted();
-        });
-
-        return $renderedTemplate;
-    }
+		return $renderedTemplate;
+	}
 };
