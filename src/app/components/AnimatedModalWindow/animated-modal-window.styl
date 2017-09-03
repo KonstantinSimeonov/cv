@@ -1,0 +1,75 @@
+@import '~styles/variables.styl';
+@import '~styles/mixins.styl';
+
+.skills-container
+	margin-top: 2em
+
+.skill-details-container
+	background: white
+	margin-top: -100em
+	min-height: 10em
+	padding: 1em 1em 3em 1em
+	position: fixed
+	width: 30%
+	margin-left: 35%
+	z-index: 999
+	transition(all 0.5s ease-in-out)
+
+.in
+	margin-top: 10em
+
+.skill-details-container.active
+	margin-top: 0
+
+.skill-title
+	text-transform: uppercase
+
+.skill-description
+	margin-top: 1em
+
+.close-btn
+	color: white
+	text-align: center
+	line-height: 1.4em
+	padding: 0.25em 1em
+	position: absolute
+	right: 1em
+	bottom: 1em
+	vertical-align: middle
+	text-decoration: none
+	font-weight: bold
+	display: inline-block
+	opacity: 0.75
+	transition(opacity 2s)
+
+.skill-details-container.tech p strong
+	color: main-color
+
+.close-btn.soft
+	background-color: main-color
+
+.close-btn:hover
+	opacity: 1
+
+.skill-details-container.soft p strong
+	color: main-color
+
+.close-btn.tech
+	background-color: main-color
+
+.skill-details-container
+	border: 2px solid main-color
+
+.gray-overlay
+	position: absolute
+	display: inline-block;
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(127, 127, 127, 0.5)
+	z-index: 100
+	margin: 0
+	display: flex
+	align-content: center
+	
