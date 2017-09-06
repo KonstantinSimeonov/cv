@@ -1,37 +1,24 @@
 # cv
 
-My resume built as a Single page app with HTML5, CSS and JavaScript.
+My resume built as a Single page app with HTML5, CSS and JavaScript. [See it in action](https://simeonov-resume.herokuapp.com/)
 
-## Restoring client dependencies
-```
-npm install
-```
+## How to run
 
-## Running the app
-- run in dev mode
+- dev:
 ```
-npm run dev-server
+yarn && yarn build:watch
 ```
 
-- run only client with live-server
+- production build:
 ```
-npm run dev-reload
-```
-
-## Building the client
-```
-npm run build
+yarn && cd build && yarn start
 ```
 
-This will output a `./build` folder, which contains the built client.
-
-### Tasklist
-- Remove placeholders and fill in meaningful content
-- ~~Rewrite styles using a preprocessor~~
-- ~~Setup compile step for preprocessor css~~
-- ~~Setup build step for assets~~
-- Refactor `skill.js`
-    - extract the dialog window in a jquery widget so it can be reused
-- ~~Make margins and paddings of different components consistent~~
-- ~~Reorder the skill rectangles in a more fashionable way~~
-- Add `about` in the menu and in the app
+## Todos:
+- Implement some way to declare child components via handlebars.
+- DOM manipulation in the app is not complicated at all. Ditch jQuery.
+- Implement lifecycle hooks for components - mount, unmount.
+- Components should implement update and/or data comparison to determine whether they should update.
+- Show dat eslint configuration some love.
+- Maybe use gulp to handle non-bundling tasks like copying/deleting stuff.
+- Maybe use shell-js instead of shell script.
