@@ -2,9 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 import HTMLWebpackPlugin from 'html-webpack-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 import * as constants from './build-constants';
 
@@ -65,7 +63,7 @@ const baseConfig = {
 				preferPathResolver: 'webpack'
 			}
 		}),
-		new ExtractTextPlugin('[name].css'),
+		new ExtractTextPlugin('[name].[hash].css'),
 		new HTMLWebpackPlugin({
 			template: constants.HTML_TEMPLATE_PATH,
 			filename: 'index.html',

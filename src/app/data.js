@@ -30,7 +30,7 @@ export default {
                 'type': 'url'
             }
         ],
-        'aboutMe': 'I\'m a 22 years old JavaScript developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I\'m currently looking for a job that will help me take my JavaScript skills and programming knowledge to the next level.'
+        'aboutMe': 'I\'m a 23 years old JavaScript developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I\'m currently employed @ ChaosGroup, but I\'m still open to opportunities will help me take my JavaScript skills and programming knowledge to the next level.'
     },
     'workExperience': [
         {
@@ -42,7 +42,17 @@ export default {
                 'Delivered lectures that reached more than 2000 students and helped them create their first web applications and dive into web development with C#, HTML, CSS and JavaScript',
                 'Experienced firsthand how important keeping deadlines is, became better at taking responsibilities and honed organizational skills'
             ]
-        }
+		},
+		{
+			'from': 'April 2017',
+			'to': 'ongoing',
+			'jobTitle': 'JavaScript Developer',
+			'location': 'Chaosgroup',
+			'descriptions': [
+				'Participated in the development of NeUI desktop application which provides a cross-platform user interface for interacting with V-Ray integrations for products like SketchUp and Rhino',
+				'Worked with Electron and React, gained expirience in setting up and using tools like Webpack, Flow and Gulp'
+			]
+		}
     ],
     'languages': [
         {
@@ -124,17 +134,16 @@ export default {
             'priority': 4
         },
         {
-            'name': 'Shell scripting',
-            'description': 'Ever since I graduated from Telerik Academy, I\'ve worked and developed under <strong>Fedora linux distribution</strong> on my personal laptop and I\'ve been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I\'m by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux.'
+            'name': 'Linux & Shell scripting',
+            'description': 'Ever since I graduated from Telerik Academy, I\'ve worked and developed under <strong>Fedora and later Gentoo linux distributions</strong> on my personal laptop and I\'ve been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I\'m by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux.'
         },
         {
             'name': 'C#, ASP.NET',
             'description': 'During the courses I\'ve passed at Telerik Academy and later in my work as a trainer, I developed web applications using <strong>ASP.NET (MVC, Webforms and Web API) with C#</strong> - as a part of the education program, later as demos in lectures and while maintaining and extending www.telerikacademy.com. I\'ve used C# to create <strong>RESTful web services, data service layers</strong> that decouple the data layer of an application, write <strong>unit tests</strong> and implement <strong>dependency inversion</strong> and <strong>dependency injection</strong> in back-end web applications.'
         },
         {
-            'name': 'MongoDB',
-            'description': '',
-            'code': 'db.my_skills.find({\n    $and: [\n        { name: { $regex: /^mongo\\s+db$/i } },\n        { level: { $gt: \'basic\', $lte: \'intermediate\' } },\n        { acquiredBy: {\n               $in: [\n                    \'MEAN stack course at Telerik Academy\',\n                 \'working on my own web projects\',\n                   \'using it as part of NodeJS presentations I\'ve delivered\'\n               ]\n           }\n        }\n    ] \n});',
+            'name': 'React',
+            'description': 'Using React at work to develop an electron desktop application showed me the awesome side of React - reusable components, terse and declarative code and comprehensible UI state management. Before trying out React I\'ve never had so much fun building user intefaces :)',
             'priority': 7
         },
         {
