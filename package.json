@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Resume app",
   "main": "index.js",
-  "engines": {
-    "node": "8.4.0"
-  },
   "scripts": {
     "start": "node app.js",
     "build:dev": "webpack --env=dev --progress --color --config webpack/webpack.config.js",

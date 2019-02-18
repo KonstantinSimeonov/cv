@@ -5,7 +5,7 @@ export default {
             'middle': 'Simeonov',
             'last': 'Simeonov'
         },
-        'title': 'Full-stack JavaScript developer who loves to dance',
+        'title': 'Software developer who loves javascript, haskell and dancing',
         'photoUrl': require('assets/photo.jpg'),
         'contacts': [
             {
@@ -42,17 +42,17 @@ export default {
                 'Delivered lectures that reached more than 2000 students and helped them create their first web applications and dive into web development with C#, HTML, CSS and JavaScript',
                 'Experienced firsthand how important keeping deadlines is, became better at taking responsibilities and honed organizational skills'
             ]
-		},
-		{
-			'from': 'April 2017',
-			'to': 'ongoing',
-			'jobTitle': 'JavaScript Developer',
-			'location': 'Chaosgroup',
-			'descriptions': [
-				'Participated in the development of NeUI desktop application which provides a cross-platform user interface for interacting with V-Ray integrations for products like SketchUp and Rhino',
-				'Worked with Electron and React, gained expirience in setting up and using tools like Webpack, Flow and Gulp'
-			]
-		}
+        },
+        {
+            'from': 'April 2017',
+            'to': 'ongoing',
+            'jobTitle': 'JavaScript Developer',
+            'location': 'Chaosgroup',
+            'descriptions': [
+                'Participated in the development of NeUI desktop application which provides a cross-platform user interface for interacting with V-Ray integrations for products like SketchUp and Rhino',
+                'Worked with Electron and React, gained expirience in setting up and using tools like Webpack, Flow, Gulp, Mocha and Eslint'
+            ]
+        }
     ],
     'languages': [
         {
@@ -89,10 +89,10 @@ export default {
             ]
         },
         {
-            'title': 'horsebin',
-            'description': 'Web platform for fast & easy code snippet sharing',
+            'title': 'tsx-control-statements',
+            'description': 'Typescript compiler plugin that adds control flow elements to jsx',
             'links': [
-                { 'url': 'https://horsebin.herokuapp.com/pastes/create', 'tooltip': 'deployed project' }
+                { 'url': 'https://github.com/KonstantinSimeonov/tsx-control-statements' }
             ]
         }
     ],
@@ -104,7 +104,7 @@ export default {
         },
         {
             'name': 'Passionate learner',
-            'description': 'No matter if it comes to teaching or dancing, learning new things,  skills and concepts has always been a great experience to me.',
+            'description': 'No matter if it comes to teaching or dancing, learning new things, skills and concepts has always been a great experience to me.',
             'iconUrl': require('assets/heart-icon.png')
         }
     ],
@@ -115,18 +115,14 @@ export default {
             'priority': 6
         },
         {
-            'name': 'HTML5, CSS, JS',
-            'description': 'Using comfortably HTML5, CSS and JavaScript to build dynamic web front-end application is a skill that I developed during my time at Telerik Academy, first as a student, later as a technical trainer, which included creating small single page applications and leading presentations, lectures and workshops about the <strong>DOM API, DOM manipulations, jQuery, DOM performance, building games using HTML5 canvas and developing single page applications.</strong>',
+            'name': 'Javascript/Typescript',
+            'description': 'I\'ve used Javascript (and to a lesser extent Typescript) in my jobs as a technical trainer @TelerikAcademy and later as a part of the ChaosGroup teams to build interactive user interfaces, single page applications, automate build and tests processes.',
             'priority': 2
         },
         {
             'name': 'NodeJS',
-            'description': 'NodeJS is one of the main reasons I love doing JavaScript! I\'ve passed a course at Telerik Academy and I\'ve been using it for many different purposes ever since - <strong>working with files, web crawling, creating RESTful APIs or web applications that do server-side rendering, doing small scripts to automate tasks</strong>. In the process I also became familiar with <strong>asynchronous programming</strong>, as well as parts of the JavaScript ecosystem such as <strong>npm, bower, testing, build process, continuos integration and deployment</strong> The thing I love most about Node is that it promotes simplicity and ease of development, but without forcing the developer to sacrifice code quality or performance.',
+            'description': 'NodeJS is one of the main reasons I love doing JavaScript! I\'ve passed a course at Telerik Academy and I\'ve been using it for many different purposes ever since - <strong>working with files, web crawling, creating RESTful APIs or web applications that do server-side rendering, doing small scripts to automate tasks</strong>. In the process I also became familiar with <strong>asynchronous programming</strong>, as well as tools of the JavaScript ecosystem such as <strong>npm and yarn</strong> and practices like <strong>testing, automated build processes, continuous integration and deployment.</strong> The thing I love most about Node is that it has a super rich system of libraries and allows developers to quickly get a prototype working.',
             'priority': 1
-        },
-        {
-            'name': 'Maths',
-            'description': 'I graduated from high school with solid knowledge in the area of <strong>algebra, geometry and stereometry</strong>. I further developed my skills in that area at university, where I studied <strong>linear algebra (vectors, matrices, polynomials), calculus (derivatives, functions, limits, integrals) and discrete mathematics (sets, graphs, regular expressions, combinatorics)</strong>.'
         },
         {
             'name': 'Communication',
@@ -134,8 +130,12 @@ export default {
             'priority': 4
         },
         {
+            'name': 'Functional programming',
+            'description': 'I\'ve had a great time studying functional programming with Haskell and using it for a range of tasks - automating build installation, small git hooks, web servers and command line interfaces. In the process I\'ve experienced how much a good type system and language features such as higher order functions, immutability, non-nullable values by default, functors/monads and algebraic data types can boost a developers productivity.'
+        },
+        {
             'name': 'Linux & Shell scripting',
-            'description': 'Ever since I graduated from Telerik Academy, I\'ve worked and developed under <strong>Fedora and later Gentoo linux distributions</strong> on my personal laptop and I\'ve been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, rsync and other to automate and simplify tasks ever since. I\'m by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux.'
+            'description': 'Ever since I graduated from Telerik Academy, I\'ve worked and developed under <strong>Fedora and later Gentoo and Arch linux distributions</strong>. I\'ve been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, sed, rsync, ssh and other to automate and simplify tasks ever since. I\'m by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux.'
         },
         {
             'name': 'C#, ASP.NET',
@@ -153,7 +153,7 @@ export default {
         },
         {
             'name': 'git',
-            'description': 'I started using <strong>git</strong> since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub, BitBucket or GitLab, which had me using git while studying and working. This in turn helped me understand the concept of <strong>distributed source control</strong> and get comfortable with <strong>branches, merging, committing, pulling, checking out git repositories at different commits, rewriting commits, looking at diffs and other great git features</strong>.'
+            'description': 'I started using <strong>git</strong> since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub or GitLab servers, which had me using git while studying and working. This in turn helped me understand the concept of <strong>distributed source control</strong> and get comfortable with <strong>branches, merging, rebasing and navigating repository history.</strong>.'
         },
         {
             'name': 'Creativity',
