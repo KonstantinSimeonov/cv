@@ -12,11 +12,10 @@ import Projects from './components/Projects';
 import PersonalInfo from './components/PersonalInfo';
 import Strengths from './components/Strengths';
 import WorkExperience from './components/WorkExperience';
-import Tooltip from './components/Tooltip';
 import Menu from './components/Menu';
 
 const selectors = [
-	['body', Menu],
+    ['body', Menu],
     ['.skills-section', Skills],
     ['.education-section', Education],
     ['.languages-section', Languages],

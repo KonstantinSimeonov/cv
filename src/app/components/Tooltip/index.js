@@ -6,8 +6,7 @@ export default {
         const {
             html: children,
             size,
-            css = {},
-            removeOn: { selector, eventName }
+            css = {}
         } = data;
 
         const tooltipHtml = `<div class="tooltip opaque"><p></p></div>`;
@@ -17,9 +16,7 @@ export default {
 
         $tooltip.width(size);
 
-        $tooltip
-            .css({ left: -$tooltip.outerWidth() - 30 + 'px' })
-            .css(css);
+        $tooltip.css(css);
 
         let remove = 'transparent',
             add = 'opaque';
@@ -30,8 +27,6 @@ export default {
         });
 
         setTimeout(() => $tooltip.removeClass(add).addClass(remove), 1000);
-
-        $(selector).one(eventName, () => $tooltip.remove());
 
         return $tooltip;
     }

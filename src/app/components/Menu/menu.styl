@@ -1,25 +1,26 @@
 @import '~styles/mixins.styl';
 
 .navigation
-    position: absolute
+    position: fixed
     display: inline-block
-    top: 1em
-    right: 1em
+    top: 16px
+    right: 16px
     z-index: 999
     transition(visibility 1s ease-in-out)
 
 .menu-img
-    height: 2em
-    width: 2em
+    height: 2rem
+    width: 2rem
 
 .menu
     position: relative
     top: -35em
     transition(all 0.5s .25s ease-in-out)
+    max-width: 15vw;
 
 @media screen and (max-width: 1346px)
     .menu .custom-btn
-        font-size: 3em
+        font-size: 1rem
 
 .navigation:hover .menu
     transform(translate(0, 35em))

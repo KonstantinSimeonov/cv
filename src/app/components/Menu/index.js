@@ -1,22 +1,15 @@
 import $ from 'jquery';
 import menuTemplate from './menu.hbs';
-import Tooltip from '../Tooltip/';
 import menuIcon from './menu-icon.png';
 import './menu.styl';
 
+const PRINT_MESSAGE = 'Please tick the options for background colors, images and graphics from page setup/options';
+
 export default {
 	render() {
-		const $tooltip = Tooltip.render({
-			html: 'Hover the menu icon to open the menu',
-			size: 150,
-			removeOn: { eventName: 'mouseover', selector: '.menu' }
-		});
-
 		const $menu = $(menuTemplate({ menuIcon }));
-		$menu.prepend($tooltip);
-
 		$menu.find('#btn-print').on('click', () => {
-			alert('Please tick the options for background colors, images and graphics from page setup/options');
+			alert(PRINT_MESSAGE);
 			window.print();
 		});
 

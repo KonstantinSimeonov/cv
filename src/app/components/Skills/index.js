@@ -1,28 +1,29 @@
 import $ from 'jquery';
 import skillsTemplate from './skills.hbs';
-import Tooltip from '../Tooltip/';
+import Tooltip from '../Tooltip';
+import Skill from './Skill';
 import './skills.styl';
-import AnimatedModalWindow from '../AnimatedModalWindow';
-import Skill from './Skill/';
 
 export default {
 	render({ skills }) {
 		const $tooltip = Tooltip.render({
 			html: 'Click on a skill to see details',
 			size: 100,
-			removeOn: { eventName: 'click', selector: '.skills-section' },
-			css: { 'margin-left': '1em' }
+			css: { right: '105%' }
 		});
 
-		const sortedSkils = skills.sort((first, second) => (first.priority || 9999) - (second.priority || 9999));
+		const skillItems = skills.sort(
+			(a, b) => (a.priority || Infinity) - (b.priority || Infinity)
+		).map(
+			skill => $('<li class="skill rectangle" />').append(Skill.render(skill))	
+		);
 
-		const $renderedTemplate = $(skillsTemplate(sortedSkils));
+		const $renderedTemplate = $(skillsTemplate());
 		$renderedTemplate.eq(0).prepend($tooltip);
 		$renderedTemplate
+			.one('click', () => $tooltip.remove())
 			.find('.skill-list')
-			.append(...sortedSkils.map(d => {
-				return $('<li class="skill rectangle" />').append(Skill.render(d))
-			}))
+			.append(...skillItems);
 
 		return $renderedTemplate;
 	}
