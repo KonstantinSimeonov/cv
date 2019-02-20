@@ -5,6 +5,6 @@
   "license": "MIT",
   "start": "node server.js",
   "engines": {
-	  "node": "8.4.0"
+	  "node": "10.2.0"
   }
 }
