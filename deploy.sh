@@ -1,12 +1,13 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
-BUILD_DIR="./build"
-LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+readonly BUILD_DIR="./build"
+readonly LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 
+yarn global add heroku
 yarn build:prod
 cd "$BUILD_DIR"
 git init
 git add .
 git commit -m "$LAST_COMMIT_MESSAGE"
-~/.node_modules/bin/heroku git:remote -a simeonov-resume
+heroku git:remote -a simeonov-resume
 git push -f heroku master
