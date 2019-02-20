@@ -3,7 +3,7 @@ import './laguages.styl';
 import $ from 'jquery';
 
 export default {
-    render(data) {
-        return $(languagesTemplate(data));
-    }
+	render(data) {
+		return $(languagesTemplate(data));
+	}
 };

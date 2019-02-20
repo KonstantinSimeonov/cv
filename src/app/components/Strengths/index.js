@@ -3,7 +3,7 @@ import './strengths.styl';
 import $ from 'jquery';
 
 export default {
-    render(data) {
-        return $(strengthsTemplate(data));
-    }
+	render(data) {
+		return $(strengthsTemplate(data));
+	}
 };

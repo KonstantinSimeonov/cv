@@ -1,6 +1,3 @@
-'use strict';
-
-/* dependencies */
 const fs = require('fs');
 const path = require('path');
 const http = require('http');
@@ -9,8 +6,6 @@ const stat = promisify(fs.stat);
 
 const getExtension = filePath => filePath.split('.').pop();
 
-/* constants */
-const PUBLIC_ROUTE = __dirname;
 const MIME_TYPES = Object.freeze({
 	'css': 'text/css',
 	'js': 'text/javascript',
@@ -48,10 +43,10 @@ const server = http.createServer((request, response) => {
 
 			readPipe$.pipe(response);
 		})
-		.catch(error => {
+		.catch(() => {
 			response.writeHead(404);
 			response.end();
 		});
 });
 
-server.listen(PORT, () => console.log(`Server running on ${PORT}`));
+server.listen(PORT, () => process.stdout.write(`Server running on ${PORT}`));

@@ -1,7 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import merge from 'webpack-merge';
-import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 

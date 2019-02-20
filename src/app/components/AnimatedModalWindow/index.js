@@ -3,7 +3,7 @@ import modalWindowTemplate from './animated-modal-window.hbs';
 import './animated-modal-window.styl';
 
 export default {
-	render(data){
+	render(data) {
 		this._component = $(modalWindowTemplate(data));
 
 		const close = () => {
@@ -13,14 +13,14 @@ export default {
 
 		this._component.find('.close-btn').on('click', close);
 		this._component.on('click', event => {
-			if(event.target === this._component.get(0)) {
+			if (event.target === this._component.get(0)) {
 				close();
 			}
-		})
+		});
 
 		return this._component;
 	},
 	mounted() {
 		setTimeout(() => this._component.find('.skill-details-container').addClass('in'), 200);
 	}
-}
+};

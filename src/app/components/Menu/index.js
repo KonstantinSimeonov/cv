@@ -9,10 +9,11 @@ export default {
 	render() {
 		const $menu = $(menuTemplate({ menuIcon }));
 		$menu.find('#btn-print').on('click', () => {
+			// eslint-disable-next-line no-alert
 			alert(PRINT_MESSAGE);
 			window.print();
 		});
 
 		return $menu;
 	}
-}
+};

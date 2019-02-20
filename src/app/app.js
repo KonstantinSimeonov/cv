@@ -15,14 +15,14 @@ import WorkExperience from './components/WorkExperience';
 import Menu from './components/Menu';
 
 const selectors = [
-    ['body', Menu],
-    ['.skills-section', Skills],
-    ['.education-section', Education],
-    ['.languages-section', Languages],
-    ['.work-expirience-section', WorkExperience],
-    ['.personal-info-panel', PersonalInfo],
-    ['.strengths-section', Strengths],
-    ['.projects-section', Projects]
+	['body', Menu],
+	['.skills-section', Skills],
+	['.education-section', Education],
+	['.languages-section', Languages],
+	['.work-expirience-section', WorkExperience],
+	['.personal-info-panel', PersonalInfo],
+	['.strengths-section', Strengths],
+	['.projects-section', Projects]
 ];
 
 selectors.forEach(([s, component]) => $(s).append(component.render(data)));

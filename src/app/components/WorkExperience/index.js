@@ -3,7 +3,7 @@ import './work-experience.styl';
 import $ from 'jquery';
 
 export default {
-    render(data) {
-        return $(workExperience(data));
-    }
+	render(data) {
+		return $(workExperience(data));
+	}
 };
