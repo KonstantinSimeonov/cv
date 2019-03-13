@@ -3,7 +3,7 @@ import menuTemplate from './menu.hbs';
 import menuIcon from './menu-icon.png';
 import './menu.styl';
 
-const PRINT_MESSAGE = 'Please tick the options for background colors, images and graphics from page setup/options';
+const PRINT_MESSAGE = 'Check the options for background colors, images and graphics from page setup/options before you print. In case of an export to pdf, A4 sheet option works best :)';
 
 export default {
 	render() {
