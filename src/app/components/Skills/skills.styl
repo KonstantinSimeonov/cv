@@ -1,6 +1,11 @@
 @import '~styles/variables.styl'
 @import '~styles/mixins.styl'
 
+.skill-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
 .skill-content
     background: main-color
 
@@ -15,9 +20,8 @@
     margin: 0.25em auto
 
 .rectangle
-    margin: 0.5em 1em
+    margin: 0.5em
     cursor: pointer
-    float: left
 
 .rectangle .skill-content
     margin: 0
@@ -27,7 +31,7 @@
     color: white
 
 .skill
-    font-size: 12px
+    font-size: 10px
     text-align: center
 
 .skills-title::before

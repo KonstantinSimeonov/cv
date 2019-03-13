@@ -7,9 +7,9 @@ import './skills.styl';
 export default {
 	render({ skills }) {
 		const $tooltip = Tooltip.render({
-			html: 'Click on a skill to see details',
+			html: 'Click a skill for details',
 			size: 100,
-			css: { right: '105%' }
+			css: { right: '10%', top: '-5%', width: '10em' }
 		});
 
 		const skillItems = skills.sort(

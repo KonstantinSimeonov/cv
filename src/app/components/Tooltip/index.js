@@ -6,10 +6,11 @@ export default {
 		const {
 			html: children,
 			size,
-			css = {}
+			css = {},
+			direction = 'right'
 		} = data;
 
-		const tooltipHtml = `<div class="tooltip opaque"><p></p></div>`;
+		const tooltipHtml = `<div class="tooltip opaque ${direction}"><p></p></div>`;
 		const $tooltip = $(tooltipHtml);
 
 		$tooltip.find('p').append(children);
