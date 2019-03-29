@@ -10,23 +10,23 @@ export default {
 		contacts: [
 			{
 				content: '+359 885 032 502',
-				iconUrl: require('assets/phone-icon.png'),
+				iconUrl: require('assets/phone-icon.svg'),
 				type: 'phone'
 			},
 			{
 				content: 'kon.simeonov@protonmail.com',
-				iconUrl: require('assets/email-icon.png'),
+				iconUrl: require('assets/email-icon.svg'),
 				type: 'url',
 				urlType: 'email'
 			},
 			{
 				content: 'Sofia, Bulgaria',
-				iconUrl: require('assets/address-icon.png'),
+				iconUrl: require('assets/address-icon.svg'),
 				type: 'address'
 			},
 			{
 				content: 'https://github.com/KonstantinSimeonov',
-				iconUrl: require('assets/github-icon.png'),
+				iconUrl: require('assets/github-icon.svg'),
 				type: 'url'
 			}
 		],

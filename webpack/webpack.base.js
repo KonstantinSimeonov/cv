@@ -8,7 +8,7 @@ import * as constants from './build-constants';
 
 const baseConfig = {
 	resolve: {
-		extensions: ['.styl', '.js', '.png', '.jpg', '.ico', '.gif'],
+		extensions: ['.styl', '.js', '.png', '.jpg', '.ico', '.gif', '.svg'],
 		alias: {
 			'handlebars': path.resolve(__dirname, 'node_modules', 'handlebars', 'dist', 'handlebars.js'),
 			'assets': path.resolve(constants.SRC_DIR, 'assets'),
@@ -42,7 +42,7 @@ const baseConfig = {
 				use: ExtractTextPlugin.extract(['css-loader', 'stylus-loader'])
 			},
 			{
-				test: /\.(png|gif|ico|jpe?g)/,
+				test: /\.(png|gif|ico|jpe?g|svg)/,
 				use: [
 					{
 						loader: 'image-webpack-loader',
