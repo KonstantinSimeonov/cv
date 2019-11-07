@@ -30,12 +30,12 @@ export default {
 				type: 'url'
 			}
 		],
-		aboutMe: `I'm a 24 years old developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I'm currently employed @ChaosGroup, but still open to opportunities that can take my skills and knowledge in programming to the next level.`
+		aboutMe: `I'm a 24 years old developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I'm currently employed @Pontica Solutions, but still open to opportunities that can take my skills and knowledge in programming to the next level.`
 	},
 	workExperience: [
 		{
-			from: 'Dec 2015',
-			to: 'Jan 2017',
+			from: 'December 2015',
+			to: 'January 2017',
 			jobTitle: 'Technical Trainer',
 			location: 'Telerik Academy',
 			descriptions: [
@@ -45,15 +45,27 @@ export default {
 		},
 		{
 			from: 'April 2017',
-			to: 'ongoing',
+			to: 'July 2017',
 			jobTitle: 'JavaScript Developer',
 			location: 'Chaosgroup',
 			descriptions: [
-				'Participated in the development of NeUI desktop application which provides a cross-platform user interface for interacting with V-Ray integrations for products like SketchUp and Rhino',
-				'Worked with Electron, React, Mobx and Altjs to build a dynamic user interface',
-				'Had some fun with setting up testing environments with Mocha/Ava and chai, implementing build processes with webpack and fuse-box, using jenkins and gitlab for CI/CD for both applications and libraries and ensuring code quality with tools like Eslint, Flow and Typescript'
+				'Participated in the development of NeUI desktop app which provides a cross-platform UI for interacting with V-Ray integrations for products like SketchUp and Rhino',
+				'Used Electron, React, Mobx and Altjs to build dynamic user interfaces',
+				'Had fun setting up testing environments with Mocha/Ava and Chai, implementing build processes with Webpack and Fuse-box, using Jenkins and Gitlab for CI/CD for applications and libraries and ensuring code quality with Eslint, Flow and Typescript'
 			]
-		}
+		},
+        {
+            from: 'July 2019',
+            to: 'January 2020',
+            jobTitle: 'Scala Developer',
+            location: 'Pontica Solutions Ltd',
+            descriptions: [
+                'Worked on a distributed email scheduling system leveraging the Akka framework and Apache Kafka',
+                'Took part in implementing email statistics using Apache Spark and Apache Kafka',
+                'Ensured code correctness by combining functional programming paradigms and automated testing with tools like ScalaTest and ScalaCheck',
+                'Encountered lots of "ClassNotFound" exceptions :)'
+            ]
+        }
 	],
 	languages: [
 		{
@@ -69,15 +81,15 @@ export default {
 		{
 			educationTitle: 'Web Development',
 			location: 'Telerik Academy',
-			from: 'Jan 2015',
-			to: 'Mar 2016',
+			from: 'January 2015',
+			to: 'March 2016',
 			certificateUrl: 'https://telerikacademy.com/Certificates/View/1980/6b7b6f44',
 			linkText: 'telerikacademy.com/1980/6b7b6f44'
 		},
 		{
 			educationTitle: 'Bachelor in Software Engineering',
 			location: 'FMI, Sofia University \'St. Kliment Ohridski\'',
-			from: 'Oct 2013',
+			from: 'October 2013',
 			to: 'ongoing'
 		}
 	],
@@ -95,7 +107,21 @@ export default {
 			links: [
 				{ 'url': 'https://github.com/KonstantinSimeonov/tsx-control-statements' }
 			]
-		}
+		},
+        {
+            title: 'sniffer',
+            description: 'Work-in-progress scala webcrawler that collects job offers and provides various statistics and insides on them',
+            links: [
+                { url: 'https://github.com/KonstantinSimeonov/sniffer' }
+            ]
+        },
+        {
+            title: 'hooters',
+            description: 'Research effort to bring various useful features of functional languages to the typescript language via the typescript compiler API',
+            links: [
+                { url: 'https://github.com/KonstantinSimeonov/hooters' }
+            ]
+        }
 	],
 	strengths: [
 		{
