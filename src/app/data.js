@@ -30,7 +30,8 @@ export default {
 				type: 'url'
 			}
 		],
-		aboutMe: `I'm a 24 years old developer who loves coding and dancing. I also enjoy reading, playing 8ball, meeting new people and learning new things. I'm currently employed @Pontica Solutions, but still open to opportunities that can take my skills and knowledge in programming to the next level.`
+		aboutMe: `Passionate about software, meeting new people and constantly on the lookout for opportunities that can take my skills and knowledge in programming to the next level. Enjoying travel, hitting the gym and reading on a comfy couch.`,
+        //aboutMe: 'Highest of efforts have been made on my part to grasp the entirety of the nature of the matters at hand, but understanding has, alas, to ill luck, unfortunately eluded me this far.'
 	},
 	workExperience: [
 		{
@@ -126,7 +127,7 @@ export default {
 	strengths: [
 		{
 			name: 'People person',
-			description: 'Dancing, working on group projects with fellow students, teaching programming and being part of the trainers team @ Telerik Academy, made team work as natural as breathing to me.',
+			description: 'Working on group projects with fellow students, teaching programming and being part of the trainers team @ Telerik Academy and dancing made team work as natural as breathing to me.',
 			iconUrl: require('assets/learning-icon.png')
 		},
 		{
@@ -185,10 +186,6 @@ export default {
 		{
 			name: 'Creativity',
 			description: '<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me improve those skills immensely during my time at Telerik Academy.'
-		},
-		{
-			name: 'Dancing',
-			description: `I've danced sport dances for 6 years and since 2 years, mostly salsa and bachata. Together with programming, dancing is one of the things that I am most passionate about :)`
 		},
 		{
 			name: 'Object-oriented programming',
