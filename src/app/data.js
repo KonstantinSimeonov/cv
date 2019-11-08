@@ -136,6 +136,11 @@ export default {
 		}
 	],
 	skills: [
+        {
+            name: `Scala`,
+            description: `During my time at Pontica Solutions and while working on my own project with Scala I came to love many thins about the language - the reasonable level of compile-time type-safety, the flexibility of the blend between functional, imperative and object-oriented programming and the amazing libraries and framework in the ecosystem, such as Akka, Spark and SBT.`,
+			priority: -1
+        },
 		{
 			name: 'Algorithms',
 			description: `One of the most fun things about university and Telerik Academy were the algorithms courses! Tackling an algorithmic problem is one of my favorite things about programming. I understand and can implement most basic and intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.`,
@@ -187,7 +192,7 @@ export default {
 			description: '<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me improve those skills immensely during my time at Telerik Academy.'
 		},
 		{
-			name: 'Object-oriented programming',
+			name: 'OOP',
 			description: 'In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction and polymorphism, encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects and mediators. Those techniques helped me write more <strong>maintainable, flexible, testable and reusable code</strong>.',
 			priority: 9
 		}
