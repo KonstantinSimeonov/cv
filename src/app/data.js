@@ -50,9 +50,9 @@ export default {
 			jobTitle: 'JavaScript Developer',
 			location: 'Chaosgroup',
 			descriptions: [
-				'Participated in the development of NeUI desktop app which provides a cross-platform UI for interacting with V-Ray integrations for products like SketchUp and Rhino',
-				'Used Electron, React, Mobx and Altjs to build dynamic user interfaces',
-				'Had fun setting up testing environments with Mocha/Ava and Chai, implementing build processes with Webpack and Fuse-box, using Jenkins and Gitlab for CI/CD for applications and libraries and ensuring code quality with Eslint, Flow and Typescript'
+				'Took part in NeUI desktop app development, which provides a cross-platform UI for interacting with V-Ray integrations for products like SketchUp and Rhino',
+				'Built dynamic user interfaces using Electron, React, Mobx and Altjs',
+				'Had fun setting up testing environments with Mocha/Ava and Chai, implementing build processes with Webpack and Fuse-box, doing CI/CD with Jenkins and Gitlab for apps and libraries and ensuring code quality with Eslint, Flow and Typescript'
 			]
 		},
         {
@@ -63,8 +63,7 @@ export default {
             descriptions: [
                 'Worked on a distributed email scheduling system leveraging the Akka framework and Apache Kafka',
                 'Took part in implementing email statistics using Apache Spark and Apache Kafka',
-                'Ensured code correctness by combining functional programming paradigms and automated testing with tools like ScalaTest and ScalaCheck',
-                'Encountered lots of "ClassNotFound" exceptions :)'
+                'Ensured code correctness by combining functional programming paradigms and automated testing with tools like ScalaTest and ScalaCheck'
             ]
         }
 	],
@@ -96,17 +95,17 @@ export default {
 	],
 	projects: [
 		{
-			title: 'fluent-schemer',
-			description: 'Small validation library in JavaScript for fluent and declarative validation',
+			title: 'react-multi-select',
+			description: 'Provide abstract multi-selection user interface logic for react components',
 			links: [
-				{ 'url': 'https://www.npmjs.com/package/fluent-schemer', 'tooltip': 'npm homepage' }
+				{ url: 'https://github.com/ChaosGroup/react-multi-select' }
 			]
 		},
 		{
 			title: 'tsx-control-statements',
 			description: 'Typescript compiler plugin that adds control flow elements to jsx',
 			links: [
-				{ 'url': 'https://github.com/KonstantinSimeonov/tsx-control-statements' }
+				{ url: 'https://github.com/KonstantinSimeonov/tsx-control-statements' }
 			]
 		},
         {
