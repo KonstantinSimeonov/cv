@@ -46,7 +46,7 @@ export default {
 		},
 		{
 			from: 'April 2017',
-			to: 'July 2017',
+			to: 'July 2019',
 			jobTitle: 'JavaScript Developer',
 			location: 'Chaosgroup',
 			descriptions: [
