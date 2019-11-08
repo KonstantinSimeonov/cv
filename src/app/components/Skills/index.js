@@ -9,7 +9,7 @@ export default {
 		const $tooltip = Tooltip.render({
 			html: 'Click a skill for details',
 			size: 100,
-			css: { right: '10%', top: '-5%', width: '10em' }
+			css: { right: '0', top: '-5%', width: '10em' }
 		});
 
 		const skillItems = skills.sort(
