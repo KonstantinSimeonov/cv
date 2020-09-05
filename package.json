@@ -41,7 +41,7 @@
 		"webpack-merge": "^4.1.0"
 	},
 	"dependencies": {
-		"handlebars": "^4.0.10",
+		"handlebars": "^4.5.3",
 		"jquery": "^3.2.1"
 	}
 }
