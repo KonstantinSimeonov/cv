@@ -12,7 +12,8 @@ enablePlugins(SbtStylus)
 name := "scalacv"
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.7.5",
-  "com.github.japgolly.scalajs-react" %%% "extra" % "1.7.5"
+  "com.github.japgolly.scalajs-react" %%% "extra" % "1.7.5",
+  "com.lihaoyi" %%% "upickle" % "1.2.0"
 )
 npmDependencies in Compile ++= Seq(
   "react" -> "16.13.1",

@@ -3,12 +3,11 @@ package example
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
+import example.models._
+
 object PersonalInfo {
-  case class Names(first: String, last: String)
-  case class Contact(url: String, content: String, iconUrl: String)
-  case class Props(names: Names, title: String, contacts: List[Contact])
   val Component =
-    ScalaComponent.builder[Props]
+    ScalaComponent.builder[PersonalInfo]
       .render_P { props =>
         <.section(
           ^.className := "cv-component personal-info-component clearfix",
@@ -20,12 +19,13 @@ object PersonalInfo {
               ^.className := "clearfix",
               props.contacts.map { c =>
                 <.div(
+                  ^.key := c.urlType,
                   ^.className := "pull-left",
                   <.img(^.className := "img-contact", ^.src := c.iconUrl),
-                  <.a(
-                    ^.href := c.url
-                  ),
-                  <.em(^.className := "content", c.content)
+                  if (c.urlType == "email")
+                    <.a(^.href := c.content, c.content)
+                  else
+                    <.em(^.className := "content", c.content)
                 )
               }.toVdomArray
             )

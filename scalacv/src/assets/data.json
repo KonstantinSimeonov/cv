@@ -7,30 +7,29 @@
         },
         "title": "Software developer who loves javascript, haskell and dancing",
         "photoUrl": "target/web/public/main/photo.jpg",
+        "aboutMe": "Passionate about software, meeting new people and constantly on the lookout for opportunities that can take my skills and knowledge in programming to the next level. Enjoying travel, hitting the gym and reading on a comfy couch.",
         "contacts": [
             {
                 "content": "+359 885 032 502",
                 "iconUrl": "target/web/public/main/phone-icon.png",
-                "type": "phone"
+                "urlType": "phone"
             },
             {
                 "content": "kon.simeonov@protonmail.com",
                 "iconUrl": "target/web/public/main/email-icon.png",
-                "type": "url",
                 "urlType": "email"
             },
             {
                 "content": "Sofia, Bulgaria",
                 "iconUrl": "target/web/public/main/address-icon.png",
-                "type": "address"
+                "urlType": "address"
             },
             {
                 "content": "https://github.com/KonstantinSimeonov",
                 "iconUrl": "target/web/public/main/github-icon.png",
-                "type": "url"
+                "urlType": "url"
             }
-        ],
-        "aboutMe": "Passionate about software, meeting new people and constantly on the lookout for opportunities that can take my skills and knowledge in programming to the next level. Enjoying travel, hitting the gym and reading on a comfy couch."
+        ]
     },
     "workExperience": [
         {
@@ -82,8 +81,8 @@
             "location": "Telerik Academy",
             "from": "January 2015",
             "to": "March 2016",
-            "certificateUrl": "https://telerikacademy.com/Certificates/View/1980/6b7b6f44",
-            "linkText": "telerikacademy.com/1980/6b7b6f44"
+            "certificateUrl": ["https://telerikacademy.com/Certificates/View/1980/6b7b6f44"],
+            "linkText": ["telerikacademy.com/1980/6b7b6f44"]
         },
         {
             "educationTitle": "Bachelor in Software Engineering",

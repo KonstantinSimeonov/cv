@@ -2,20 +2,18 @@ package example
 
 import org.scalajs.dom._
 import org.scalajs.dom.ext._
-import scala.scalajs.js._
 import scala.concurrent.ExecutionContext.Implicits.global
+import example.models._
+import upickle.default._
 
 object Hello extends App {
-  case class Names(first: String, middle: String, last: String)
   document.querySelector("#app") match {
     case appContainer: Element =>
-      Home.Component().renderIntoDOM(appContainer)
 
       Ajax.get("target/web/public/main/data.json").map {
-        case x =>
-          println(JSON.parse(x.responseText).personalInfo.names.asInstanceOf[Names].first)
+        x =>
+          val cvData = read[CVData](x.responseText)
+          Home.Component(cvData).renderIntoDOM(appContainer)
       }
-    case x =>
-      println("takova se", x)
   }
 }
