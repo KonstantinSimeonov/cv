@@ -1,0 +1,132 @@
+@import 'variables.styl'
+@import 'mixins.styl'
+
+html
+    font-size: 14px
+
+body
+    font-family: 'Arial Narrow Bold', sans-serif
+    opacity: 0
+    min-height: 89em
+    width: 100%
+    position: relative
+    text-align: center
+    background-color: black
+    transition(opacity 2s)
+
+.opaque, .custom-btn:hover
+    opacity: 1
+
+h1, h2
+    text-transform: uppercase
+
+*
+    margin: 0
+    padding: 0
+    color: #333333
+
+.hidden, .collapsed
+    display: none
+
+#app
+    background: url('./cv-background.png')
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    display: inline-block
+    position: relative
+    margin: 5em 0
+    width: 65em
+    height: 100%
+    text-align: left
+    padding-bottom: 3em
+
+.link
+    word-wrap: break-word
+    padding-left: 16px
+
+.link::before
+    content: ' '
+    height: 14px
+    width: 14px
+    display: inline-block
+    margin-left: -16px
+    background: url('~assets/link-icon.png')
+    background-size: cover
+    position: absolute
+
+.link.hover-highlight, .hover-highlight
+    transition(color 2s)
+
+.link.hover-highlight:hover, .hover-highlight:hover
+    color: secondary-color
+
+.no-bullets
+    list-style: none
+
+.cv-component
+    margin: 3em 2em 0 2em
+    position: relative
+
+.bottom-dashed
+    border-bottom: 2px dashed lightgray
+
+.section-title
+    border-bottom: 2px solid #333333
+    margin-left: 2.5em
+
+.section-title::before
+    content: ''
+    position: absolute
+    height: 32px
+    width: 32px
+    left: 0
+
+.timespan
+    display: inline-block
+    color: gray
+    font-weight: bold
+    font-size: 14px
+
+.timespan::before
+    content: ' '
+    display: inline-block
+    width: 16px
+    height: 16px
+    background: url('~assets/date-icon.jpg')
+    background-size: 16px
+
+.pull-left
+    float: left
+
+.pull-right
+    float: right
+
+.column-1, .column-2
+    width: 31em
+
+.clearfix::after
+    content: ' '
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.custom-btn
+    display: block
+    padding: 1em
+    background-color: main-color
+    color: white
+    font-weight: bold
+    cursor: pointer
+    border: 1px solid gray
+    text-decoration: none
+    opacity: 0.75
+    z-index: 9999
+    transition(opacity 2s)
+
+.custom-btn:active
+    border: 1px solid white
+
+.page-footer p
+    padding: 0.5em 5em 1.5em 5em
+    color: white

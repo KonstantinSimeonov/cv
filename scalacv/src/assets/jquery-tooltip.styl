@@ -1,0 +1,56 @@
+@import 'variables.styl'
+@import 'mixins.styl'
+
+.tooltip
+    position: absolute
+    background: main-color
+    padding: 0.5rem
+    padding-left: 2.5rem
+    text-align: center
+    font-weight: bold
+    z-index: 9999999
+    font-size: 16px
+    border: 2px solid gray
+    text-transform: none
+    transition(opacity 2s)
+
+.tooltip-opaque
+    opacity: 1
+
+.transparent
+    opacity: 0.4
+
+.tooltip p
+    color: white
+
+.tooltip::after
+    content: ' '
+    height: 0
+    position: absolute
+    width: 0
+    top: 0.5rem
+    border: 1rem solid transparent
+    z-index: 9999999
+
+.tooltip.left::after
+    border-left: 1rem solid gray
+    right: -2rem
+
+.tooltip.right::after
+    border-right: 1rem solid gray
+    left: -2rem
+
+.tooltip::before
+    content: 'i'
+    color: white
+    border: 2px solid white
+    border-radius: 50%
+    position: absolute
+    display: inline-block
+    width: 1rem
+    height: 1rem
+    left: 1rem
+    padding: 0.2rem
+    line-height: 1.2
+    text-align: center
+    font-size: 16px
