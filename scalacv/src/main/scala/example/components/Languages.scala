@@ -20,6 +20,7 @@ object Languages {
                 <.li(
                   ^.className := "bottom-dashed",
                   <.strong(lang.languageName),
+                  " ",
                   <.em(lang.level)
                 )
               }.toVdomArray

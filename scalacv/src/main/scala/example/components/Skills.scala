@@ -25,7 +25,12 @@ object Skills {
             ^.className := "skills-container",
             <.ul(
               ^.className := "skill-list no-bullets",
-              skills.map { Skill(_) }.toVdomArray
+              skills.sortBy(_.priority).map { s =>
+                <.li(
+                  ^.className := "skill rectangle",
+                  Skill(s)
+                )
+              }.toVdomArray
             )
           )
         )
