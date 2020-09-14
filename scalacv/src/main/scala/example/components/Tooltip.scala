@@ -6,14 +6,14 @@ import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
 object tooltip {
-  class TooltipBackend($: BackendScope[VdomNode, Boolean]) {
+  case class TooltipProps(text: String, className: String)
+  class TooltipBackend($: BackendScope[TooltipProps, Boolean]) {
     private val tooltipRef = Ref[html.Div]
 
-    def render(p: VdomNode, s: Boolean): VdomNode = {
-      println(s, p)
+    def render(props: TooltipProps, opaque: Boolean): VdomNode = {
       <.div.withRef(tooltipRef)(
-        ^.className := s"tooltip ${if (s) "opaque" else "transparent"}",
-        <.p(p)
+        ^.className := s"${props.className} tooltip ${if (opaque) "opaque" else "transparent"}",
+        <.p(props.text)
       )
     }
 
@@ -32,7 +32,7 @@ object tooltip {
   }
 
   val Tooltip =
-    ScalaComponent.builder[VdomNode]
+    ScalaComponent.builder[TooltipProps]
       .initialState(true)
       .renderBackend[TooltipBackend]
       .componentDidMount(_.backend.init)
