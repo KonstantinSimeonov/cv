@@ -3,12 +3,12 @@ package example
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
+import example.models._
+
 object Languages {
-  case class Language(name: String, level: String)
-  case class Props(languages: List[Language])
   val Component =
-    ScalaComponent.builder[Props]
-      .render_P { props =>
+    ScalaComponent.builder[List[LanguageExpertise]]
+      .render_P { languages =>
         <.article(
           ^.className := "languages-section",
           <.section(
@@ -16,10 +16,10 @@ object Languages {
             <.h2(^.className := "section-title languages-title", "Languages"),
             <.ul(
               ^.className := "no-bullets",
-              props.languages.map { lang =>
+              languages.map { lang =>
                 <.li(
                   ^.className := "bottom-dashed",
-                  <.strong(lang.name),
+                  <.strong(lang.languageName),
                   <.em(lang.level)
                 )
               }.toVdomArray

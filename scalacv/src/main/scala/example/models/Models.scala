@@ -65,7 +65,8 @@ package object models {
     languages: List[LanguageExpertise],
     educations: List[Education],
     skills: List[Skill],
-    strengths: List[Strength]
+    strengths: List[Strength],
+    projects: List[PersonalProject]
   )
   implicit val cvDataRW = macroRW[CVData]
 }

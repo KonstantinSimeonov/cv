@@ -17,11 +17,15 @@ object Home {
           ),
           <.section(
             ^.className := "pull-left column-1",
-            Languages.Component(Languages.Props(List())),
-            Education.Component(Education.Props(List()))
+            WorkExperience.Component(props.workExperience),
+            Education.Component(props.educations),
+            Languages.Component(props.languages),
           ),
           <.section(
-            ^.className := "pull-left column-2"
+            ^.className := "pull-left column-2",
+            Skills.Component(props.skills),
+            Strengths.Component(props.strengths),
+            Projects.Component(props.projects),
           )
         )
       }.build
