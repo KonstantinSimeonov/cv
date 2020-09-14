@@ -23,7 +23,7 @@ scalaJSUseMainModuleInitializer in Compile := true
 StylusKeys.useNib in Assets := true
 //WebKeys.packagePrefix in Assets := "public/"
 includeFilter in (Assets, StylusKeys.stylus) := "*.styl"
-includeFilter in Assets := "*.styl" | "*.png" | "*.json"
+includeFilter in Assets := "*.styl" | "*.png" | "*.jpg" | "*.json"
 sourceDirectory in Assets := file("./src/assets")
 
 Concat.groups := Seq(
