@@ -18,7 +18,7 @@ object tooltip {
     }
 
     def init: Callback =
-      tooltipRef.foreach({ tooltip =>
+      tooltipRef.foreach { tooltip =>
         tooltip.addEventListener(
           "transitionend",
           (e: Event) => $.modState(!_).runNow(),
@@ -28,7 +28,7 @@ object tooltip {
         setTimeout(2000)({
           $.modState(!_).runNow()
         })
-      })
+      }
   }
 
   val Tooltip =

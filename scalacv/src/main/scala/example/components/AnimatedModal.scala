@@ -15,8 +15,6 @@ object modal_window {
 
   class ModalWindowBackend($: BackendScope[ModalWindowProps, Boolean]) {
     def render(props: ModalWindowProps, in: Boolean): VdomNode = {
-      val cls = if (in) "in" else ""
-      val open = if (props.open) "open" else ""
       <.div(
         ^.classSet(
           "gray-overlay" -> true,
@@ -49,9 +47,9 @@ object modal_window {
     ScalaComponent.builder[ModalWindowProps]
       .initialState(false)
       .renderBackend[ModalWindowBackend]
-      .componentWillReceiveProps(rp => Callback {
-        if (rp.currentProps.open != rp.nextProps.open)
-          setTimeout(200) { rp.setState(rp.nextProps.open).runNow() }
+      .componentWillReceiveProps($ => Callback {
+        if ($.currentProps.open != $.nextProps.open)
+          setTimeout(200) { $.setState($.nextProps.open).runNow() }
       })
       .build
 }

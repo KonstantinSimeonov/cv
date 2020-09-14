@@ -23,6 +23,7 @@ object Strengths {
                   ^.className := "img-strength",
                   ^.src := s.iconUrl
                 ),
+                " ",
                 <.strong(s.name),
                 <.p(s.description)
               )
