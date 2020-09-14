@@ -4,6 +4,7 @@ import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
+import example.components._
 
 object Education {
   val Component =
@@ -20,7 +21,7 @@ object Education {
                   ^.className := "bottom-dashed no-bullets",
                   <.h4(^.className := "education-title", entry.educationTitle),
                   <.p(^.className := "location", s"@ ${entry.location}"),
-                  <.time(^.className := "timespan", s" ${entry.from} - ${entry.to}"),
+                  Timespan(entry.from, entry.to),
                   entry.certificateUrl.map { url =>
                     <.a(
                       ^.className := "link hover-highlight",

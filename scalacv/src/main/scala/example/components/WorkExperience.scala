@@ -1,10 +1,10 @@
 package example
 
-import japgolly.scalajs.react.feature.ReactFragment
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
+import example.components._
 
 object WorkExperience {
   val Component =
@@ -21,7 +21,7 @@ object WorkExperience {
                   <.li(
                     ^.className := "bottom-dashed",
                     <.h4(^.className := "job-title", entry.jobTitle),
-                    <.time(^.className := "timespan", s" ${entry.from} - ${entry.to}"),
+                    Timespan(entry.from, entry.to),
                     <.span(^.className := "location", s"@ ${entry.location}"),
                     <.ul(
                       ^.className := "description-highlights",
