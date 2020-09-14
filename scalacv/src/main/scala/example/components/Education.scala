@@ -20,7 +20,7 @@ object Education {
                   ^.className := "bottom-dashed no-bullets",
                   <.h4(^.className := "education-title", entry.educationTitle),
                   <.p(^.className := "location", s"@ ${entry.location}"),
-                  <.time(^.className := "timespan", s"${entry.from} - ${entry.to}"),
+                  <.time(^.className := "timespan", s" ${entry.from} - ${entry.to}"),
                   entry.certificateUrl.map { url =>
                     <.a(
                       ^.className := "link hover-highlight",

@@ -21,7 +21,7 @@ object WorkExperience {
                   <.li(
                     ^.className := "bottom-dashed",
                     <.h4(^.className := "job-title", entry.jobTitle),
-                    <.time(^.className := "timespan", s"${entry.from} - ${entry.to}"),
+                    <.time(^.className := "timespan", s" ${entry.from} - ${entry.to}"),
                     <.span(^.className := "location", s"@ ${entry.location}"),
                     <.ul(
                       ^.className := "description-highlights",

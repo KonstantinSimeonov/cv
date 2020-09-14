@@ -21,12 +21,13 @@ npmDependencies in Compile ++= Seq(
 )
 scalaJSUseMainModuleInitializer in Compile := true
 StylusKeys.useNib in Assets := true
-//WebKeys.packagePrefix in Assets := "public/"
 includeFilter in (Assets, StylusKeys.stylus) := "*.styl"
-includeFilter in Assets := "*.styl" | "*.png" | "*.jpg" | "*.json"
-sourceDirectory in Assets := file("./src/assets")
+includeFilter in Assets := "*.styl" | "*.png" | "*.jpg" | "*.gif" | "*.json"
+sourceDirectory in Assets := file(".") / "src" / "assets"
 
 Concat.groups := Seq(
-  "public/main/styles.css" -> group(file("./target/web/stylus/main") * "*.css")
+  "public/main/styles.css" -> group(
+    file(".") / "target" / "web" / "stylus" / "main" * "*.css"
+  )
 )
 pipelineStages := Seq(concat)
