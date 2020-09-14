@@ -4,6 +4,7 @@ import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
+import example.components.anchor._
 
 object Projects {
   val Component =
@@ -21,12 +22,7 @@ object Projects {
                   <.strong(p.title),
                   p.links.map { link =>
                     <.p(
-                      <.a(
-                        ^.href := link.url,
-                        ^.className := "link hover-highlight",
-                        ^.target := "_blank",
-                        link.url
-                      )
+                      Anchor(link.url)
                     )
                   }.toVdomArray,
                   <.p(^.className := "description", p.description)

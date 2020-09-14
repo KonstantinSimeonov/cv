@@ -5,6 +5,7 @@ import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
 import example.components._
+import example.components.timespan._
 
 object WorkExperience {
   val Component =

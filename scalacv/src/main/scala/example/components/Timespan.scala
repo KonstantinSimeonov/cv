@@ -1,9 +1,9 @@
-package example
+package example.components
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
-package object components {
+object timespan {
   val Timespan =
     ScalaComponent.builder[(String, String)]
       .render_P {

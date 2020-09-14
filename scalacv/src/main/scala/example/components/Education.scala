@@ -5,6 +5,8 @@ import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
 import example.components._
+import example.components.anchor._
+import example.components.timespan._
 
 object Education {
   val Component =
@@ -22,14 +24,7 @@ object Education {
                   <.h4(^.className := "education-title", entry.educationTitle),
                   <.p(^.className := "location", s"@ ${entry.location}"),
                   Timespan(entry.from, entry.to),
-                  entry.certificateUrl.map { url =>
-                    <.a(
-                      ^.className := "link hover-highlight",
-                      ^.href := url,
-                      ^.target := "_blank",
-                      url
-                    )
-                  }
+                  entry.certificateUrl.map { Anchor(_) }
                 )
               }.toVdomArray
             )

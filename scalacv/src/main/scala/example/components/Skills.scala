@@ -5,6 +5,7 @@ import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
 import example.models._
+import example.components.tooltip._
 
 object Skills {
   val Skill = ScalaComponent.builder[Skill]
@@ -19,6 +20,7 @@ object Skills {
     ScalaComponent.builder[List[Skill]]
       .render_P { skills =>
         <.section(
+          Tooltip("Click a skill to see more!"),
           ^.className := "cv-component skills-component",
           <.h2(^.className := "section-title skills-title", "Skills"),
           <.div(
