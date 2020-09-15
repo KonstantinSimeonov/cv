@@ -1,6 +1,6 @@
 # Resume app
 
-Build with scala/sbt/react/stylus.
+Built with scala/sbt/react/stylus. It's deployed [here](https://simeonov-resume.herokuapp.com/).
 
 ## How to run
 ```
