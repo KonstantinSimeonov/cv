@@ -49,7 +49,8 @@ package object models {
   case class PersonalProject(
     title: String,
     description: String,
-    links: List[Link]
+    links: List[Link],
+    priority: Int = 9999
   )
   implicit val personalProject = macroRW[PersonalProject]
 

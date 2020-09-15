@@ -16,7 +16,7 @@ object Projects {
             <.h2(^.className := "section-title projects-title", "Projects"),
             <.ul(
               ^.className := "no-bullets projects",
-              projects.map { p =>
+              projects.sortBy(_.priority).map { p =>
                 <.li(
                   ^.className := "bottom-dashed",
                   <.strong(p.title),

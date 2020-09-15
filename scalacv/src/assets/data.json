@@ -110,7 +110,8 @@
                 {
                     "url": "https://github.com/ChaosGroup/react-multi-select"
                 }
-            ]
+            ],
+            "priority": 20
         },
         {
             "title": "tsx-control-statements",
@@ -119,7 +120,8 @@
                 {
                     "url": "https://github.com/KonstantinSimeonov/tsx-control-statements"
                 }
-            ]
+            ],
+            "priority": 5
         },
         {
             "title": "sniffer",
@@ -128,7 +130,18 @@
                 {
                     "url": "https://github.com/KonstantinSimeonov/sniffer"
                 }
-            ]
+            ],
+            "priority": 15
+        },
+        {
+            "title": "guacamole-client typedefs",
+            "description": "Typescript library definitions for apache guacamole-client library which is used at Coursera",
+            "links": [
+                {
+                    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/45949"
+                }
+            ],
+            "priority": 10
         }
     ],
     "strengths": [
