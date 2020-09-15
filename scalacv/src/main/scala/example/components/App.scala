@@ -47,13 +47,13 @@ object App {
           ^.className := "pull-left column-1",
           WorkExperience.Component(cvData.workExperience),
           Education.Component(cvData.educations),
-          Languages.Component(cvData.languages),
         ),
         <.section(
           ^.className := "pull-left column-2",
           Skills.Component(cvData.skills),
           Strengths.Component(cvData.strengths),
           Projects.Component(cvData.projects),
+          Languages.Component(cvData.languages),
         )
       )
 

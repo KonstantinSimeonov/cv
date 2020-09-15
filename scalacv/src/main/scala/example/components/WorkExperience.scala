@@ -18,7 +18,7 @@ object WorkExperience {
             <.div(
               <.ol(
                 ^.className := "experiences no-bullets",
-                workExperience.map { entry =>
+                workExperience.reverse.map { entry =>
                   <.li(
                     ^.className := "bottom-dashed",
                     <.h4(^.className := "job-title", entry.jobTitle),

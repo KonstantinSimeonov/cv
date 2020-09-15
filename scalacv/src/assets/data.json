@@ -63,6 +63,17 @@
                 "Took part in implementing email statistics using Apache Spark and Apache Kafka",
                 "Ensured code correctness by combining functional programming paradigms and automated testing with tools like ScalaTest and ScalaCheck"
             ]
+        },
+        {
+            "from": "January 2020",
+            "to": "ongoing",
+            "jobTitle": "Software Developer",
+            "location": "Coursera",
+            "descriptions": [
+                "Participating in the development of Rhyme, which provides students with an interactive studying environment directly in their browser, completed with audio/video calls, video instructions and remote desktop connections",
+                "Having an awesome time exploring typescript and applying functional programming concepts in a react web app",
+                "Fighting hard to reduce complexity and improve stability by applying property-based testing, publishing typescript definitions for untyped libraries, setting up code coverage and automated dependency updates, simplifying the build processes and more"
+            ]
         }
     ],
     "languages": [
@@ -116,15 +127,6 @@
             "links": [
                 {
                     "url": "https://github.com/KonstantinSimeonov/sniffer"
-                }
-            ]
-        },
-        {
-            "title": "hooters",
-            "description": "Research effort to bring various useful features of functional languages to the typescript language via the typescript compiler API",
-            "links": [
-                {
-                    "url": "https://github.com/KonstantinSimeonov/hooters"
                 }
             ]
         }
