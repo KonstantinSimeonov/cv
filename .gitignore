@@ -6,3 +6,4 @@ typings
 build
 .vscode
 jsconfig.json
+target/
