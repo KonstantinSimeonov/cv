@@ -27,8 +27,25 @@ object App {
           Loader("fade"),
           renderUI(cvData, false)
         )
-      case Ready(cvData) =>
-        renderUI(cvData, true)
+      case Ready(cvData) => ReactFragment(
+        renderUI(cvData, true),
+        <.footer(
+          ^.className := "page-footer",
+          <.span("Created using Scalajs and other funky stuff."),
+          <.span(
+            <.a(
+              ^.href := "https://github.com/KonstantinSimeonov/cv",
+              ^.target := "_blank",
+              "Source code"
+            ),
+            <.a(
+              ^.href := "./target/web/public/main/resume.pdf",
+              ^.target := "_blank",
+              "Download as pdf"
+            )
+          )
+        )
+      )
     }
 
     private def renderUI(cvData: CVData, fadeIn: Boolean): VdomNode = 
@@ -54,7 +71,7 @@ object App {
           Strengths.Component(cvData.strengths),
           Projects.Component(cvData.projects),
           Languages.Component(cvData.languages),
-        )
+        ),
       )
 
     def fetchData: Callback = Callback {
@@ -63,7 +80,7 @@ object App {
           val cvData = read[CVData](xhr.responseText)
           setTimeout(1000) {
             $.setState(Fading(cvData)).runNow()
-            setTimeout(1000) {
+            setTimeout(2000) {
               $.setState(Ready(cvData)).runNow()
             }
           }

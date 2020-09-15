@@ -1,9 +1,7 @@
 import Dependencies._
 
 scalaVersion     := "2.13.3"
-version          := "0.1.0-SNAPSHOT"
-organization     := "com.example"
-organizationName := "example"
+organization     := "resume"
 
 enablePlugins(ScalaJSPlugin)
 enablePlugins(ScalaJSBundlerPlugin)
@@ -22,7 +20,7 @@ npmDependencies in Compile ++= Seq(
 scalaJSUseMainModuleInitializer in Compile := true
 StylusKeys.useNib in Assets := true
 includeFilter in (Assets, StylusKeys.stylus) := "*.styl"
-includeFilter in Assets := "*.css" | "*.styl" | "*.png" | "*.jpg" | "*.gif" | "*.json"
+includeFilter in Assets := "*.css" | "*.styl" | "*.png" | "*.jpg" | "*.gif" | "*.json" | "*.pdf"
 sourceDirectory in Assets := file(".") / "src" / "assets"
 
 Concat.groups := Seq(

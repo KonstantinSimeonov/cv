@@ -2,4 +2,4 @@ target/
 *.jar
 *.class
 build/
-server
+web

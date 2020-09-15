@@ -9,9 +9,9 @@ sbt 'assets; webPipeline; fullOptJS::webpack'
 mkdir -p $BUILD_DIR/target/{$ASSETS_DIR,$JS_DIR}
 cp index.html $BUILD_DIR
 cp "target/$ASSETS_DIR/styles.css" "$BUILD_DIR/target/$ASSETS_DIR"
-cp "target/$ASSETS_DIR/"*.{png,jpg,gif,json} "$BUILD_DIR/target/$ASSETS_DIR"
+cp "target/$ASSETS_DIR/"*.{png,jpg,gif,json,pdf} "$BUILD_DIR/target/$ASSETS_DIR"
 cp "target/$JS_DIR/scalacv-opt-bundle.js" "$BUILD_DIR/target/$JS_DIR/scalacv-fastopt-bundle.js"
-cp Procfile "$BUILD_DIR"
+echo > build/requirements.txt
 
-go build server.go
-cp server "$BUILD_DIR"
+env GOOS=linux GOARCH=amd64 go build web.go
+cp web package.json Procfile "$BUILD_DIR"

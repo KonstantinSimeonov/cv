@@ -1,0 +1,12 @@
+{
+  "name": "resume-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'cheeky package.json ^.-'",
+    "start": "./web"
+  },
+  "author": "",
+  "license": "ISC"
+}
