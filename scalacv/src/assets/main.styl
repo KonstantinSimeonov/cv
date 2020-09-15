@@ -29,7 +29,7 @@ h1, h2
 .hidden, .collapsed
     display: none
 
-#app
+.app
     background: url('./cv-background.png')
     background-size: 100% 100%
     background-repeat: no-repeat
@@ -40,6 +40,10 @@ h1, h2
     height: 100%
     text-align: left
     padding-bottom: 3em
+    transition: opacity 1s ease-out
+
+.app:not(.fade-in)
+    opacity: 0
 
 .link
     word-wrap: break-word
