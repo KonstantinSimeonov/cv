@@ -1,7 +1,7 @@
-package example
+package resume
 import upickle.default._
 
-package object models {
+object models {
   case class Names(first: String, middle: String, last: String)
   implicit val namesRW = macroRW[Names]
 

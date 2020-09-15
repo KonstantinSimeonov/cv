@@ -1,10 +1,10 @@
-package example
+package resume
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
-import example.models._
-import example.components.anchor._
+import resume.models._
+import resume.components.anchor._
 
 object Projects {
   val Component =

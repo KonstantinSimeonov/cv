@@ -1,10 +1,10 @@
-package example
+package resume
 
 import japgolly.scalajs.react.feature.ReactFragment
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
-import example.models._
+import resume.models._
 
 object Strengths {
   val Component =

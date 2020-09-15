@@ -1,12 +1,12 @@
-package example
+package resume
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
-import example.models._
-import example.components._
-import example.components.anchor._
-import example.components.timespan._
+import resume.models._
+import resume.components._
+import resume.components.anchor._
+import resume.components.timespan._
 
 object Education {
   val Component =

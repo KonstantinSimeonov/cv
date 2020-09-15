@@ -1,4 +1,4 @@
-package example.components
+package resume.components
 
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._

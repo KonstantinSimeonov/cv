@@ -1,12 +1,12 @@
-package example
+package resume
 
 import org.scalajs.dom._
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 
-import example.models._
-import example.components.tooltip._
-import example.components.modal_window._
+import resume.models._
+import resume.components.tooltip._
+import resume.components.modal_window._
 
 object Skills {
   val Skill = ScalaComponent.builder[Skill]

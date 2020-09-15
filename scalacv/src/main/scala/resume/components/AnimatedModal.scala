@@ -1,4 +1,4 @@
-package example.components
+package resume.components
 
 import org.scalajs.dom._
 import scala.scalajs.js.timers._

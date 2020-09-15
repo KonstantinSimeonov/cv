@@ -1,4 +1,4 @@
-package example
+package resume
 
 import org.scalajs.dom._
 import org.scalajs.dom.ext._
@@ -9,8 +9,8 @@ import japgolly.scalajs.react.vdom.html_<^._
 import scala.concurrent.ExecutionContext.Implicits.global
 import upickle.default._
 
-import example.components.loader._
-import example.models.CVData
+import resume.components.loader._
+import resume.models.CVData
 
 object App {
   sealed trait AppState
