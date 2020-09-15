@@ -12,7 +12,7 @@ import upickle.default._
 import example.components.loader._
 import example.models.CVData
 
-object Home {
+object App {
   sealed trait AppState
   case object Loading extends AppState
   case class Fading(data: CVData) extends AppState
@@ -70,7 +70,6 @@ object Home {
       }
     }
   }
-
 
   val Component =
     ScalaComponent.builder[Unit]

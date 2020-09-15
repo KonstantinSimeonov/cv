@@ -27,7 +27,7 @@ object PersonalInfo {
                     case "email" | "url" =>
                       val prefix = if (c.urlType == "email") "mailto:" else ""
                       <.a(
-                        ^.className := "link hover-highlight",
+                        ^.className := "hover-highlight",
                         ^.href := s"$prefix${c.content}",
                         c.content
                       )
