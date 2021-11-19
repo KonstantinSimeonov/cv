@@ -23,7 +23,7 @@ object WorkExperience {
                     ^.className := "bottom-dashed",
                     <.h4(^.className := "job-title", entry.jobTitle),
                     Timespan(entry.from, entry.to),
-                    <.span(^.className := "location", s"@ ${entry.location}"),
+                    <.span(^.className := "location", s" @ ${entry.location}"),
                     <.ul(
                       ^.className := "description-highlights",
                       entry.descriptions.map { <.li(_) }.toVdomArray

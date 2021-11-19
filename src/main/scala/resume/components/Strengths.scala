@@ -19,10 +19,6 @@ object Strengths {
               <.li(
                 ^.key := s.name,
                 ^.className := "bottom-dashed",
-                <.img(
-                  ^.className := "img-strength",
-                  ^.src := s.iconUrl
-                ),
                 " ",
                 <.strong(s.name),
                 <.p(s.description)

@@ -5,9 +5,9 @@
             "middle": "Simeonov",
             "last": "Simeonov"
         },
-        "title": "Software developer who loves javascript, haskell and dancing",
+        "title": "Software dev and haskell/linux hobbyist",
         "photoUrl": "target/web/public/main/konche-bonche.jpg",
-        "aboutMe": "Passionate about software, meeting new people and constantly on the lookout for opportunities that can take my skills and knowledge in programming to the next level. Enjoying travel, hitting the gym and reading on a comfy couch.",
+        "aboutMe": "Currently busy with mentoring 3 people, solving algorithmic problems in PSQL (yeah, it's as terrible and fun as it sounds) and making coursera.org faster",
         "contacts": [
             {
                 "content": "+359 885 032 502",
@@ -70,7 +70,7 @@
             "jobTitle": "Software Developer",
             "location": "Coursera",
             "descriptions": [
-                "Participating in the development of Rhyme, which provides students with an interactive studying environment directly in their browser, completed with audio/video calls, video instructions and remote desktop connections",
+                "Participating in the development of rhyme.com, which provides students with an interactive studying environment directly in their browser, completed with audio/video calls, video instructions and remote desktop connections",
                 "Having an awesome time exploring typescript and applying functional programming concepts in a react web app",
                 "Fighting hard to reduce complexity and improve stability by applying property-based testing, publishing typescript definitions for untyped libraries, setting up code coverage and automated dependency updates, simplifying the build processes and more"
             ]
@@ -96,26 +96,26 @@
             "linkText": ["telerikacademy.com/1980/6b7b6f44"]
         },
         {
-            "educationTitle": "Bachelor in Software Engineering",
+            "educationTitle": "Bachelor in Software Engineering (not completed)",
             "location": "FMI, Sofia University 'St. Kliment Ohridski'",
             "from": "October 2013",
-            "to": "ongoing"
+            "to": "January 2015"
         }
     ],
     "projects": [
         {
-            "title": "react-multi-select",
-            "description": "Provide abstract multi-selection user interface logic for react components",
+            "title": "funsusoticksass",
+            "description": "Aggregate and author programming problems which have local tests so programming beginners can practice on their local environments (and so I get to write haskell).",
             "links": [
                 {
-                    "url": "https://github.com/ChaosGroup/react-multi-select"
+                    "url": "https://github.com/KonstantinSimeonov/funsusoticksass"
                 }
             ],
             "priority": 20
         },
         {
             "title": "tsx-control-statements",
-            "description": "Typescript compiler plugin that adds control flow elements to jsx",
+            "description": "Typescript compiler plugin that adds control flow elements to jsx.",
             "links": [
                 {
                     "url": "https://github.com/KonstantinSimeonov/tsx-control-statements"
@@ -124,18 +124,18 @@
             "priority": 5
         },
         {
-            "title": "sniffer",
-            "description": "Work-in-progress scala webcrawler that collects job offers and provides various statistics and insides on them",
+            "title": "tsfck",
+            "description": "Pure compile-time implementation of various fun programs (fibs, primes, string ops) using typescript type language. Not a single line of runtime code! Apparently that's what happens when you read too much of Aphyr's blogs.",
             "links": [
                 {
-                    "url": "https://github.com/KonstantinSimeonov/sniffer"
+                    "url": "https://github.com/KonstantinSimeonov/tsfck"
                 }
             ],
             "priority": 15
         },
         {
             "title": "guacamole-client typedefs",
-            "description": "Typescript library definitions for apache guacamole-client library which is used at Coursera",
+            "description": "Typescript library definitions for apache guacamole-client library which is used at Coursera.",
             "links": [
                 {
                     "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/45949"
@@ -146,8 +146,8 @@
     ],
     "strengths": [
         {
-            "name": "People person",
-            "description": "Working on group projects with fellow students, teaching programming and being part of the trainers team @ Telerik Academy and dancing made team work as natural as breathing to me.",
+            "name": "Curiosity",
+            "description": "From algorithms to UX to how the product I'm building fits the market, curiosity has always driven me to understand every aspect of my work as deep as possible and draw benefits from that understanding.",
             "iconUrl": "target/web/public/main/learning-icon.png"
         },
         {
@@ -164,12 +164,12 @@
         },
         {
             "name": "Algorithms",
-            "description": "One of the most fun things about university and Telerik Academy were the algorithms courses! Tackling an algorithmic problem is one of my favorite things about programming. I understand and can implement most basic and intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
+            "description": "Tormenting your colleagues with a new algorithmic problem is always fun! I understand and can implement all basic and most intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
             "priority": 6
         },
         {
             "name": "Javascript/Typescript",
-            "description": "I've used Javascript and Typescript in my jobs as a technical trainer @TelerikAcademy and later as a part of the ChaosGroup teams to build interactive user interfaces, single page applications, automate build and tests processes.",
+            "description": "I've used Javascript and Typescript in my jobs as a technical trainer at TelerikAcademy, dev at ChaosGroup and Rhyme teams to build interactive user interfaces, single page applications, automate build and tests processes.",
             "priority": 2
         },
         {
