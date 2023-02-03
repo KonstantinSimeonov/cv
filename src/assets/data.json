@@ -7,27 +7,27 @@
         },
         "title": "Software dev and haskell/linux hobbyist",
         "photoUrl": "target/web/public/main/konche-bonche.jpg",
-        "aboutMe": "Currently busy with mentoring 3 people, solving algorithmic problems in PSQL (yeah, it's as terrible and fun as it sounds) and making coursera.org faster",
+        "aboutMe": "Located in Sofia, Bulgaria, currently busy with mentoring 2 people, creating challenges for geektastic.com and reading the Designing Data Intensive Applications book.",
         "contacts": [
+            {
+                "content": "https://www.hackerrank.com/kon_trombon",
+                "iconUrl": "target/web/public/main/hackerrank.png",
+                "urlType": "url"
+            },
             {
                 "content": "+359 885 032 502",
                 "iconUrl": "target/web/public/main/phone-icon.png",
                 "urlType": "phone"
             },
             {
-                "content": "kon.simeonov@protonmail.com",
-                "iconUrl": "target/web/public/main/email-icon.png",
-                "urlType": "email"
-            },
-            {
-                "content": "Sofia, Bulgaria",
-                "iconUrl": "target/web/public/main/address-icon.png",
-                "urlType": "address"
-            },
-            {
                 "content": "https://github.com/KonstantinSimeonov",
                 "iconUrl": "target/web/public/main/github-icon.png",
                 "urlType": "url"
+            },
+            {
+                "content": "kon.simeonov@protonmail.com",
+                "iconUrl": "target/web/public/main/email-icon.png",
+                "urlType": "email"
             }
         ]
     },
@@ -48,9 +48,9 @@
             "jobTitle": "JavaScript Developer",
             "location": "Chaosgroup",
             "descriptions": [
-                "Took part in NeUI desktop app development, which provides a cross-platform UI for interacting with V-Ray integrations for products like SketchUp and Rhino",
-                "Built dynamic user interfaces using Electron, React, Mobx and Altjs",
-                "Had fun setting up testing environments with Mocha/Ava and Chai, implementing build processes with Webpack and Fuse-box, doing CI/CD with Jenkins and Gitlab for apps and libraries and ensuring code quality with Eslint, Flow and Typescript"
+                "Worked on V-Ray for Sketchup/Rhino/Revit, which provides a cross-platform UI for interacting with V-Ray",
+                "Built dynamic user interfaces using Electron, React, Typescript, Mobx and Redux",
+                "Set up unit and e2e test environments with Mocha/Ava/Jest, implemented builds with Webpack, Gitlab/Jenkins CI/CD for apps and libraries"
             ]
         },
         {
@@ -59,20 +59,32 @@
             "jobTitle": "Scala Developer",
             "location": "Pontica Solutions Ltd",
             "descriptions": [
-                "Worked on a distributed email scheduling system leveraging the Akka framework and Apache Kafka",
-                "Took part in implementing email statistics using Apache Spark and Apache Kafka",
-                "Ensured code correctness by combining functional programming paradigms and automated testing with tools like ScalaTest and ScalaCheck"
+                "Scheduled emails leveraging Akka and Apache Kafka",
+                "Implemented email statistics using Apache Spark and Apache Kafka",
+                "Ensured code correctness by combining functional programming and automated testing with ScalaTest and ScalaCheck"
             ]
         },
         {
             "from": "January 2020",
-            "to": "ongoing",
+            "to": "March 2022",
             "jobTitle": "Software Developer",
             "location": "Coursera",
             "descriptions": [
-                "Participating in the development of rhyme.com, which provides students with an interactive studying environment directly in their browser, completed with audio/video calls, video instructions and remote desktop connections",
-                "Having an awesome time exploring typescript and applying functional programming concepts in a react web app",
-                "Fighting hard to reduce complexity and improve stability by applying property-based testing, publishing typescript definitions for untyped libraries, setting up code coverage and automated dependency updates, simplifying the build processes and more"
+                "Developed rhyme.com, interactive studying VM environment directly in their browser, complete with audio/video calls, video instructions and remote desktop connections",
+                "Explored typescript and applied functional programming concepts in a react web app",
+                "Reduced complexity/improved stability with property-based testing, publishing typescript definitions for untyped libraries, setting up code coverage and automated dependency updates, simplifying the build processes"
+            ]
+        },
+        {
+            "from": "March 2022",
+            "to": "November 2022",
+            "jobTitle": "Full-Stack Developer",
+            "location": "Synthesis",
+            "descriptions": [
+                "Worked on portal.synthesis.is with nextjs, typeorm, mysql, zod and react-query",
+                "Optimized typeorm/mysql queries, modified indexes and constraints, migrated table schemas to improve performance and maintainability",
+                "Sped up CI runtime from 13 down to 3 mins using github action sharding, parallel db testing and job splitting",
+                "Helped improve app security by enforcing authorization through strong typing and introduced zod to help maintain data integrity"
             ]
         }
     ],
@@ -104,11 +116,11 @@
     ],
     "projects": [
         {
-            "title": "funsusoticksass",
-            "description": "Aggregate and author programming problems which have local tests so programming beginners can practice on their local environments (and so I get to write haskell).",
+            "title": "AoC 2022",
+            "description": "How I fell in love with Rust while blasting some algorithms (Advent of Code 2022 solutions).",
             "links": [
                 {
-                    "url": "https://github.com/KonstantinSimeonov/funsusoticksass"
+                    "url": "https://github.com/KonstantinSimeonov/aoc2o22"
                 }
             ],
             "priority": 20
@@ -147,23 +159,19 @@
     "strengths": [
         {
             "name": "Curiosity",
-            "description": "From algorithms to UX to how the product I'm building fits the market, curiosity has always driven me to understand every aspect of my work as deep as possible and draw benefits from that understanding.",
+            "description": "From algorithms to UX to how the product I'm building fits the market, curiosity has always driven me to understand every aspect of the product I'm working on and apply that understanding to my work.",
             "iconUrl": "target/web/public/main/learning-icon.png"
         },
         {
             "name": "Hollistic Ownership",
-            "description": "Participating in different stages of a features lifecycle (requirements gathering, design, development, testing, monitoring, documentation) is a way for me to engage more with the product, show off my craftsmanship and help drive the team goals forward.",
+            "description": "Participating in different stages of a features lifecycle (requirements gathering, design, development, testing, monitoring, documentation) is a way for me to better engage with the product, show off my craftsmanship and help drive the product forward.",
             "iconUrl": "target/web/public/main/heart-icon.png"
         }
     ],
     "skills": [
         {
-            "name": "Scala",
-            "description": "During my time at Pontica Solutions and while working on my own project with Scala I came to love many thins about the language - the reasonable level of compile-time type-safety, the flexibility of the blend between functional, imperative and object-oriented programming and the amazing libraries and framework in the ecosystem, such as Akka, Spark and SBT."
-        },
-        {
             "name": "Algorithms",
-            "description": "Tormenting your colleagues with a new algorithmic problem is always fun! I understand and can implement all basic and most intermediate data structures, such as <strong>arrays, lists, stacks, queues, maps, some trees, graphs and heaps</strong>. I'm familiar with <strong>sorting algorithms (mergesort, quicksort), breadth- and depth-first search, topological sorting, rolling hash, dynammic programming</strong> problems like the knapsack problem and others.",
+            "description": "Stuff",
             "priority": 6
         },
         {
@@ -177,43 +185,34 @@
             "priority": 1
         },
         {
-            "name": "Communication",
-            "description": "My work as a technical trainer required cooperation and communication with a wide range of different people - students, colleagues, managers, children and parents - this helped me become a <strong>good listener</strong>, taught me to <strong>explain and express my ideas clear and concise</strong>. My contacts with parents and students also taught me <strong>how to reduce the tension in a conversation</strong>, how to <strong>look for and address the concerns of the other side</strong> and how to <strong>give constructive feedback</strong> without offending others.",
+            "name": "Mentoring",
+            "description": "Mentoring is a natural part of working in a team - I had the opportunity to mentor a lot of students during my stint as a teacher in TelerikAcademy and that helped me successfully mentor fresh team members in Coursera and Synthesis. I'm also mentoring several people outside of work - check out <a>https://latrovaliev.dev/</a>, he's my best student!",
             "priority": 4
         },
         {
             "name": "Functional programming",
-            "description": "I've had a great time studying functional programming with Haskell and using it for a range of tasks - automating build installations, small git hooks, web servers and command line interfaces. In the process I've experienced how much a good type system and language features such as higher order functions, immutability, non-nullable values by default, functors/monads and algebraic data types can boost a developers productivity. It also made me a lot more concious about how I design my types when writing in other languages."
+            "description": "FP can provide amazing benefits (immutability, pure functions, abstraction via monads/functions/composition) in the right circumstances - I've had a blast leveraging the strong sides of FP with Haskell/Typescript/Scala in a variety of situations like automation, restful APIs, front-end development and testing."
         },
         {
             "name": "Linux & bash",
-            "description": "I've worked and developed under <strong>Fedora and later Gentoo and Arch linux distributions</strong>. I've been using <strong>bash</strong> features, such as loops, pipes, streams and command line utilities such as grep, cat, sed, rsync, ssh and other to automate and simplify tasks ever since. I'm by no means an expert, but the increase in productivity which bash brings motivates me to keep learning more about bash and linux."
+            "description": "I've used <strong>Fedora</strong>, <strong>Gentoo</strong> and later <strong>Arch linux distributions</strong> since my first year as a developer. I've been using <strong>bash</strong> features, such as loops, pipes, streams and command line tools like grep, cat, sed, rsync, ssh, less and other to automate and simplify tasks ever since. I love the increase in productivity which bash bring for me!"
         },
         {
-            "name": "C#, ASP.NET",
-            "description": "During the courses I've passed at Telerik Academy and later in my work as a trainer, I developed web applications using <strong>ASP.NET (MVC, Webforms and Web API) with C#</strong> - as a part of the education program, later as demos in lectures and while maintaining and extending www.telerikacademy.com. I've used C# to create <strong>RESTful web services, data service layers</strong> that decouple the data layer of an application, write <strong>unit tests</strong> and implement <strong>dependency inversion</strong> and <strong>dependency injection</strong> in back-end web applications."
+            "name": "SQL",
+            "description": "Building projects like editable video transcriptions (Coursera), 3d material library store (ChaosGroup), student system with different user roles (Synthesis), user search (Synthesis), event scheduling (Synthesis) made me appreciate how powerful and fun, but also sometimes frustrating and complex relational databases/SQL can be."
         },
         {
             "name": "React",
-            "description": "Using React at work to develop an electron desktop application showed me the awesome side of React - reusable components, terse and declarative code and comprehensible UI state management. Before trying out React I've never had so much fun building user intefaces :)",
+            "description": "I've been using React for 7 (at TelerikAcademy, ChaosGroup, Coursera, Synthesis) years and I love what it offers - reusable components/hooks, terse and declarative code, comprehensible UI state management and reasonable performance. Of course it has it's bad sides, but before using React I've never had so much fun building user intefaces :)",
             "priority": -1
-        },
-        {
-            "name": "Organization",
-            "description": "Part of my job @ Telerik Academy was the organization of exams, lectures and other events. <strong>To succeed in those tasks, I had to manage my and other people's time, set deadlines for activities, synchronize and oversee tasks, approach and negotiate with different people at different positions</strong>, like colleagues, students and parents. All of that developed and honed my skills at organizing events, planning and managing tasks and processes.",
-            "priority": 5
         },
         {
             "name": "git",
             "description": "I started using <strong>git</strong> since day one of doing programming - many of the materials I learned from and all the projects I contributed to were either hosted on GitHub or GitLab servers, which had me using git while studying and working. This in turn helped me understand the concept of <strong>distributed source control</strong> and get comfortable with <strong>branches, merging, rebasing and navigating repository history.</strong>"
         },
         {
-            "name": "Creativity",
-            "description": "<strong>Creation of exam and homework tasks, thinking of clear and concise ways of explaining programming concepts, creating programming demos, writing code live during presentations and working around legacy systems were a huge part of being a good technical trainer</strong> - all of those tasks required good problem solving skills, creativity, ability to lay out plans, while also keeping in mind constraints and problems. Such tasks helped me improve those skills immensely during my time at Telerik Academy."
-        },
-        {
             "name": "OOP",
-            "description": "In the course of studying and working with <strong>C#, ASP.NET and JavaScript</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction and polymorphism, encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects and mediators. Those techniques helped me write more <strong>maintainable, flexible, testable and reusable code</strong>.",
+            "description": "In the course of studying and working with <strong>C#, ASP.NET</strong>, <string>JavaScript</strong> and <strong>Scala</strong> I had contact with diverse object-oriented features, such as class and prototypal inheritance, interfacing, object composition, abstraction, polymorphism and encapsulation. Also, while learning and using object-oriented programming, I became familiar with <strong>design patterns</strong> such as decorators, chain of responsibility, command pattern, composite objects, factories and mediators. Those techniques helped me better understand how to write more <strong>maintainable, flexible, testable and reusable code</strong>.",
             "priority": 9
         }
     ]

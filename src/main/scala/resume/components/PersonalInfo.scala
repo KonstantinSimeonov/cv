@@ -20,7 +20,7 @@ object PersonalInfo {
               props.contacts.map { c =>
                 <.div(
                   ^.key := c.urlType,
-                  ^.className := "pull-left",
+                  ^.className := "contact-entry",
                   <.img(^.className := "img-contact", ^.src := c.iconUrl),
                   " ",
                   c.urlType match {

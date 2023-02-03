@@ -1,7 +1,7 @@
 @import 'variables.styl'
 
 .personal-info-component
-    padding-left: 2rem
+    padding-left: 1rem
 
 .personal-info-component .cv-name
     font-size: 42px
@@ -18,28 +18,27 @@
 .img-contact
     width: 2rem
 
+.contact-entry
+    display: flex
+    align-items: center
+
 .contacts
+    display: grid
+    grid-template-columns: 25rem 25rem
+    row-gap: 1rem
     margin-top: 1rem
     margin-left: 0
-    padding-left: 1rem
     text-align: left
-    width: 40rem
+    width: 45rem
 
 @media screen and (max-width: 1024px)
     .contacts
         width: 30rem
 
-.contacts .pull-left
-    min-width: 15rem
-    display: inline-block
-    margin: 0.5rem
-    line-height: 0.5rem
-    vertical-align: middle
-
 .contacts em, .contacts a
-    vertical-align: middle
-    display: inline-block
     height: 1.5rem
+    margin-left: 0.5rem
+    font-style: italic
 
 .cv-title
     color: main-color
