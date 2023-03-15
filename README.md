@@ -1,6 +1,6 @@
 # Resume app
 
-Built with scala/sbt/react/stylus. It's deployed [here](https://simeonov-resume.herokuapp.com/).
+Built with scala/sbt/react/stylus. ~It's deployed [here](https://simeonov-resume.herokuapp.com/).~ New website: https://konsimeonov.lol
 
 ## Run with docker
 ```bash
